@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>security on TsaiのAntarctica</title>
+        <link>https://tsairongfu.github.io/en/tags/security/</link>
+        <description>Recent content in security on TsaiのAntarctica</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/tags/security/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Software automatic security detection technology</title>
+        <link>https://tsairongfu.github.io/en/p/software-automatic-security-detection-technology/</link>
+        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/p/software-automatic-security-detection-technology/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/software-automatic-security-detection-technology/The%20Helix%20Nebula%20%28NGC%207293%29.png" alt="Featured image of post Software automatic security detection technology" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuawn/Mediatek-Fuzzing-Workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;yuawn/Mediatek-Fuzzing-Workshop&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;fuzz-testing&#34;&gt;Fuzz Testing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Black-box&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;binary only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grey-box&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;utilize some program information to guide fuzzing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;White-box&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;get a full picture of program&lt;/li&gt;
+&lt;li&gt;e.g, sysbolic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;coverage-gudided-fuzzing&#34;&gt;Coverage-Gudided Fuzzing&lt;/h2&gt;
+&lt;p&gt;seed pool -&amp;gt; selsect a seed -&amp;gt; mutation -&amp;gt; run with instrumented binary -&amp;gt; crash&lt;/p&gt;
+&lt;p&gt;Binary instrumentation&lt;/p&gt;
+&lt;p&gt;LLVM - ir change *&lt;/p&gt;
+&lt;h2 id=&#34;sanitizer&#34;&gt;Sanitizer&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://githum.com/google/sanitizers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://githum.com/google/sanitizers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ubdefined Behavior sanitizer&lt;/p&gt;
+&lt;p&gt;memorySanitizer&lt;/p&gt;
+&lt;p&gt;leak-checjer&lt;/p&gt;
+&lt;h2 id=&#34;sanitizer---asan&#34;&gt;Sanitizer - ASAN&lt;/h2&gt;
+&lt;p&gt;heap, stack, global-buffer overflow&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ALF
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/google/AFL&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/google/AFL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ALF++
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/AFLplusplus/AFLplusplus&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/AFLplusplus/AFLplusplus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;libfuzzer
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://llvm.org/docs/LibFuzzer.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://llvm.org/docs/LibFuzzer.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;syzkaller
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/google/syzkaller&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/google/syzkaller&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;paper&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.comp.nus.edu.sg/~abhik/pdf/CCS16.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.comp.nus.edu.sg/~abhik/pdf/CCS16.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.usenix.org/conference/usenixsecurity19/presentation/lyu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.usenix.org/conference/usenixsecurity19/presentation/lyu&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.google.com/search?client=safari&amp;amp;rls=en&amp;amp;q=optiMin&amp;#43;IssTA&amp;#43;2021&amp;amp;ie=UTF-8&amp;amp;oe=UTF-8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.google.com/search?client=safari&amp;rls=en&amp;q=optiMin+IssTA+2021&amp;ie=UTF-8&amp;oe=UTF-8&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/41/Toward-Optimal-MC-DC-Test-Case-Generation&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/41/Toward-Optimal-MC-DC-Test-Case-Generation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/1/Seed-Selection-for-Successful-Fuzzing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/1/Seed-Selection-for-Successful-Fuzzing&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.usenix.org/conference/usenixsecurity21/presentation/lee-gwangmu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.usenix.org/conference/usenixsecurity21/presentation/lee-gwangmu&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.usenix.org/conference/usenixsecurity20/presentation/osterlund&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.usenix.org/conference/usenixsecurity20/presentation/osterlund&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/1906.07327&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://arxiv.org/abs/1906.07327&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wcventure.github.io/FuzzingPaper/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://wcventure.github.io/FuzzingPaper/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

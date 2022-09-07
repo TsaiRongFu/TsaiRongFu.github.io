@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>RAID on Tsaiの南極洲</title>
+        <link>https://tsairongfu.github.io/tags/raid/</link>
+        <description>Recent content in RAID on Tsaiの南極洲</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Sat, 11 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/tags/raid/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linux伺服器Raid</title>
+        <link>https://tsairongfu.github.io/p/linux%E4%BC%BA%E6%9C%8D%E5%99%A8raid/</link>
+        <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/p/linux%E4%BC%BA%E6%9C%8D%E5%99%A8raid/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/linux%E4%BC%BA%E6%9C%8D%E5%99%A8raid/Pickering%27s%20Triangle%20-%20HOO.png" alt="Featured image of post Linux伺服器Raid" /&gt;&lt;h2 id=&#34;error&#34;&gt;Error&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://askubuntu.com/questions/973632/unable-to-mount-raid1-md0-wrong-fs-type-bad-option-bad-superblock-on-dev-md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Reference Article&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Unable to Mount RAID1 md0 - wrong fs type, bad option, bad superblock on /dev/md0, missing codepage or helper program, or other error&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;掛載磁區&#34;&gt;掛載磁區&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;mount /home/Raid6&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;sudo mount /dev/sdb* /path&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;查看磁碟指令&#34;&gt;查看磁碟指令&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;sudo blkid&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo fdisk -l&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo fdisk -l /dev/sd*&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;df&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;格式化硬碟&#34;&gt;格式化硬碟&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;sudo mkfs.ext4 /dev/sd*&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;配置開機自掛載&#34;&gt;配置開機自掛載&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;sudo nano /etc/fstab &lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;寫入設定檔範例&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;UUID=e8d9acdd-4161-4efc-9ad1-7907e6a339a4 /path ext4 defaults 0 1&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;掛載&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;sudo mount -a&lt;/code&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
