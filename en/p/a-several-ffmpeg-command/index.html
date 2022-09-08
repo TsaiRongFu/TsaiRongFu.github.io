@@ -613,6 +613,50 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i image_source -vf vflip out_source
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h3 id="specify-length-and-width">Specify length and width</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf scale=320:240 output_320x240.png
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="specify-the-length-and-height-to-scale-proportionally">Specify the length and height to scale proportionally</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf scale=320:-1 output_320x240.png
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="scale-twice-as-before">Scale twice as before</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf scale=iw*2:ih input_double_width.png
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="scale-to-one-half-of-the-previous">Scale to one-half of the previous</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf “scale=iw*.5:ih*.5” input_half_size.png
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf “scale=iw/2:ih/2” input_half_size.png
+</span></span></code></pre></td></tr></table>
+</div>
 </div>
 </section>
 
@@ -955,6 +999,10 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
         <li><a href="#image-rotation-special-and-convenient-commands">Image rotation special and convenient commands</a></li>
         <li><a href="#mirror-image-left-and-right">Mirror image left and right</a></li>
         <li><a href="#mirror-the-picture-up-and-down">Mirror the picture up and down</a></li>
+        <li><a href="#specify-length-and-width">Specify length and width</a></li>
+        <li><a href="#specify-the-length-and-height-to-scale-proportionally">Specify the length and height to scale proportionally</a></li>
+        <li><a href="#scale-twice-as-before">Scale twice as before</a></li>
+        <li><a href="#scale-to-one-half-of-the-previous">Scale to one-half of the previous</a></li>
       </ol>
     </li>
   </ol>

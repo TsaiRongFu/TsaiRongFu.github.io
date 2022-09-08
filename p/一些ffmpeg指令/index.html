@@ -613,6 +613,50 @@ route_number=3逆時針旋轉90度再左右鏡像</p>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i image_source -vf vflip out_source
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h3 id="指定長度和寬度">指定長度和寬度</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf scale=320:240 output_320x240.png
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="指定要按比例縮放的長度和高度">指定要按比例縮放的長度和高度</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf scale=320:-1 output_320x240.png
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="縮放兩倍於以前">縮放兩倍於以前</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf scale=iw*2:ih input_double_width.png
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="縮放到上一個的二分之一">縮放到上一個的二分之一</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf “scale=iw*.5:ih*.5” input_half_size.png
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ffmpeg -i input.jpg -vf “scale=iw/2:ih/2” input_half_size.png
+</span></span></code></pre></td></tr></table>
+</div>
 </div>
 </section>
 
@@ -955,6 +999,10 @@ route_number=3逆時針旋轉90度再左右鏡像</p>
         <li><a href="#圖片旋轉特殊簡便命令">圖片旋轉特殊簡便命令</a></li>
         <li><a href="#圖片左右鏡像">圖片左右鏡像</a></li>
         <li><a href="#將圖片上下鏡像">將圖片上下鏡像</a></li>
+        <li><a href="#指定長度和寬度">指定長度和寬度</a></li>
+        <li><a href="#指定要按比例縮放的長度和高度">指定要按比例縮放的長度和高度</a></li>
+        <li><a href="#縮放兩倍於以前">縮放兩倍於以前</a></li>
+        <li><a href="#縮放到上一個的二分之一">縮放到上一個的二分之一</a></li>
       </ol>
     </li>
   </ol>
