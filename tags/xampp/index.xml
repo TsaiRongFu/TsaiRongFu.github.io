@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>XAMPP on Tsai の Antarctica</title>
+        <title>XAMPP on Tsaiの南極洲</title>
         <link>https://tsairongfu.github.io/tags/xampp/</link>
-        <description>Recent content in XAMPP on Tsai の Antarctica</description>
+        <description>Recent content in XAMPP on Tsaiの南極洲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/tags/xampp/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Mac OS XAMPP can’t open</title>
-        <link>https://tsairongfu.github.io/p/mac-os-xampp-can-not-open/</link>
+        <title>Mac OS XAMPP 啟動錯誤</title>
+        <link>https://tsairongfu.github.io/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</link>
         <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/mac-os-xampp-can-not-open/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/mac-os-xampp-can-not-open/picture.jpg" alt="Featured image of post Mac OS XAMPP can’t open" /&gt;&lt;p&gt;mysql cannot be opened
-The reason for this is because the sql service is occupied by mac system resources&lt;/p&gt;
-&lt;p&gt;Solution
-Open Terminal&lt;/p&gt;
+        <guid>https://tsairongfu.github.io/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/picture.jpg" alt="Featured image of post Mac OS XAMPP 啟動錯誤" /&gt;&lt;p&gt;mysql打不開
+出現此原因是因為sql服務被mac系統資源佔用&lt;/p&gt;
+&lt;p&gt;解決辦法
+打開Terminal&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

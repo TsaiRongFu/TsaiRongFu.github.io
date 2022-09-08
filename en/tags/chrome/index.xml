@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Chrome on Tsai の Antarctica</title>
+        <link>https://tsairongfu.github.io/en/tags/chrome/</link>
+        <description>Recent content in Chrome on Tsai の Antarctica</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/tags/chrome/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Python selenium solves the problem that chrome://settings cannot be located</title>
+        <link>https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</link>
+        <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/picture.jpg" alt="Featured image of post Python selenium solves the problem that chrome://settings cannot be located" /&gt;&lt;h2 id=&#34;great-god-answers&#34;&gt;Great God answers:&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56763683/selenium-python-unable-to-clear-chrome-browser-cache&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stackoverflow-56763683&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56380091/how-to-interact-with-the-elements-within-shadow-root-open-while-clearing-brow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stackoverflow-56380091&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;implementation-example&#34;&gt;Implementation example&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Clear browsing history button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-section &amp;gt; settings-privacy-page &amp;#39;).shadowRoot.querySelector(&amp;#39;settings-clear-browsing-data-dialog&amp;#39;).shadowRoot.querySelector(&amp;#39;#clearBrowsingDataDialog&amp;#39;).querySelector(&amp;#39;#clearBrowsingDataConfirm&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Added sound button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot .querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;#addSite&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Added sound button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot .querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;add-site-dialog&amp;#39;).shadowRoot.querySelector( &amp;#39;#site&amp;#39;).shadowRoot.querySelector(&amp;#39;#input&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Added sound confirmation button&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot .querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;add-site-dialog&amp;#39;).shadowRoot.querySelector( &amp;#39;#add&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;##Python:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;clearButton = browser.execute_script(&amp;#34;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings- privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;#addSite&amp;#39;)&amp;#34; )
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#click on the clear button now
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;clearButton.click()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

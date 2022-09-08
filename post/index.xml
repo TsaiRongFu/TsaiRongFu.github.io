@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Tsai の Antarctica</title>
+        <title>Posts on Tsaiの南極洲</title>
         <link>https://tsairongfu.github.io/post/</link>
-        <description>Recent content in Posts on Tsai の Antarctica</description>
+        <description>Recent content in Posts on Tsaiの南極洲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>A Several FFmpeg command</title>
-        <link>https://tsairongfu.github.io/p/a-several-ffmpeg-command/</link>
+        <title>一些FFmpeg指令</title>
+        <link>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/</link>
         <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/a-several-ffmpeg-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/a-several-ffmpeg-command/picture.jpg" alt="Featured image of post A Several FFmpeg command" /&gt;&lt;h3 id=&#34;picture-to-gif&#34;&gt;picture to Gif&lt;/h3&gt;
+        <guid>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/picture.jpg" alt="Featured image of post 一些FFmpeg指令" /&gt;&lt;h3 id=&#34;picture-to-gif&#34;&gt;picture to Gif&lt;/h3&gt;
 &lt;p&gt;Define custom palette
 The converted GIF has only three colors: white and two tints of blue, therefore, the default 256 color palette can be reduced to 16. The custom palette is created with the palettegen filter.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -32,7 +32,7 @@ The converted GIF has only three colors: white and two tints of blue, therefore,
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i frames/%03d.png -i palette.png -filter_complex &amp;#34;fps=20,scale=720:-1:flags=lanczos[x];[x][1:v]paletteuse&amp;#34; logo.gif
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;image-compression&#34;&gt;Image Compression&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;圖片壓縮&#34;&gt;圖片壓縮&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -42,9 +42,9 @@ The converted GIF has only three colors: white and two tints of blue, therefore,
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;compress_level: The compression level is a positive integer, the larger the value, the higher the compression level&lt;/p&gt;
+&lt;p&gt;compress_level：壓縮等級為正整數，數值越大壓縮等級越高&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;constrained-proportional-compression&#34;&gt;Constrained proportional compression&lt;/h3&gt;
+&lt;h3 id=&#34;約束比例壓縮&#34;&gt;約束比例壓縮&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -54,11 +54,11 @@ The converted GIF has only three colors: white and two tints of blue, therefore,
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;width is the compressed image width
-height is the height of the compressed image
-When either width or height has a value of -1, it will keep the original image size ratio and compress&lt;/p&gt;
+&lt;p&gt;width為壓縮後的圖片寬度
+height為壓縮後的圖片高度
+當width或height其中有一個數值為-1時將保持原來圖片尺寸比例壓縮&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;image-crop&#34;&gt;Image crop&lt;/h3&gt;
+&lt;h3 id=&#34;圖片裁切&#34;&gt;圖片裁切&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -68,62 +68,62 @@ When either width or height has a value of -1, it will keep the original image s
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;width is the width of the image to be cropped out
-height is the height of the image to be cropped
-from_x is the position of the starting X axis of the crop
-from_y is the position of the starting Y axis of the crop
-If from_x and from_y are not specified, it means to start cropping from the center of the original image&lt;/p&gt;
+&lt;p&gt;width是要裁剪出的圖片的寬度
+height是要裁剪出的圖片的高度
+from_x是裁剪的起始X軸的位置
+from_y是裁剪的起始Y軸的位置
+如果不指定from_x和from_y表示從原始圖片中心位置開始裁剪&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;add-watermark-image&#34;&gt;Add watermark image&lt;/h3&gt;
+&lt;h3 id=&#34;添加水印圖片&#34;&gt;添加水印圖片&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf movie=logo_source,scale=logo_width:logo_height,lut=a=val*opacity_num[watermask];[in][watermask] overlay=from_x:from_y[out] -y out_source
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf movie=logo_source,scale=logo_width:logo_height,lut=a=val*opacity_num[watermask];[in][watermask] overlay=from_x:from_y[out] -y  out_source
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;logo_source is the watermark image address
-logo_width is the width of the watermark image
-logo_height is the height of the watermark image
-opacity_num is the transparency of the watermark image
-from_x is the position of the starting X axis of the watermark
-from_y is the position of the starting Y axis of the watermark&lt;/p&gt;
+&lt;p&gt;logo_source為水印圖片地址
+logo_width為水印圖片的寬度
+logo_height為水印圖片的高度
+opacity_num為水印圖片的透明度
+from_x為水印的起始X軸的位置
+from_y為水印的起始Y軸的位置&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;add-text-watermark&#34;&gt;Add text watermark&lt;/h3&gt;
+&lt;h3 id=&#34;添加文字水印&#34;&gt;添加文字水印&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf drawtext=fontfile=font_ttf_path:fontcolor=font_color:fontsize=font_size:text=message_info:x=from_x:y=from_y out_source
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf drawtext=fontfile=font_ttf_path:fontcolor=font_color:fontsize=font_size:text=message_info:x=from_x:y=from_y  out_source
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;font_ttf_path is the font path, this item must be set, otherwise there will be an error that the font cannot be found
-The font path should be set to an absolute path and pay attention to the slash escape of the path (eg C\:/Windows/Fonts/simhei.ttf)
-font_color is the color of the font
-font_size is the size of the font
-message_info is the watermark text content
-from_x is the position of the starting X axis of the watermark
-from_y is the position of the starting Y axis of the watermark
-If the watermark content is Chinese, you need to set the Chinese font, otherwise the text will display garbled characters&lt;/p&gt;
+&lt;p&gt;font_ttf_path為字體路徑，此項必須設置否則會出現字體無法找到的錯誤
+字體路徑要設置絕對路徑並且要注意路徑正反斜線轉義(例如C\:/Windows/Fonts/simhei.ttf)
+font_color為字體的顏色
+font_size為字體的大小 
+message_info為水印文字內容
+from_x為水印的起始X軸的位置
+from_y為水印的起始Y軸的位置
+如果水印內容是中文需要設置中文字體否則會文字顯示亂碼&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;rotate-the-picture-by-the-specified-angle&#34;&gt;Rotate the picture by the specified angle&lt;/h3&gt;
+&lt;h3 id=&#34;圖片旋轉指定的角度&#34;&gt;圖片旋轉指定的角度&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf rotate=route_num*PI/180 -y out_source
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf rotate=route_num*PI/180 -y  out_source
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;route_num is the angle to rotate&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Rotate clockwise when route_num is greater than 0, and rotate counterclockwise when route_num is less than 0&lt;/p&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;route_num是要旋轉的角度
+當route_num大於0的時候順時針旋轉,當route_num小於0的時候逆時針旋轉&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;image-rotation-special-and-convenient-commands&#34;&gt;Image rotation special and convenient commands&lt;/h3&gt;
+&lt;h3 id=&#34;圖片旋轉特殊簡便命令&#34;&gt;圖片旋轉特殊簡便命令&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -133,12 +133,12 @@ If the watermark content is Chinese, you need to set the Chinese font, otherwise
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;route_number=0 Rotate 90 degrees clockwise and then mirror left and right
-route_number=1 rotate 90 degrees clockwise
-route_number=2 rotate 90 degrees counterclockwise
-route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right&lt;/p&gt;
+&lt;p&gt;route_number=0順時針旋轉90度再左右鏡像
+route_number=1順時針旋轉90度
+route_number=2逆時針旋轉90度
+route_number=3逆時針旋轉90度再左右鏡像&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;mirror-image-left-and-right&#34;&gt;Mirror image left and right&lt;/h3&gt;
+&lt;h3 id=&#34;圖片左右鏡像&#34;&gt;圖片左右鏡像&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -147,7 +147,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf hflip out_source
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;mirror-the-picture-up-and-down&#34;&gt;Mirror the picture up and down&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;將圖片上下鏡像&#34;&gt;將圖片上下鏡像&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -156,7 +156,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf vflip out_source
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;specify-length-and-width&#34;&gt;Specify length and width&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;指定長度和寬度&#34;&gt;指定長度和寬度&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -165,7 +165,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i input.jpg -vf scale=320:240 output_320x240.png
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;specify-the-length-and-height-to-scale-proportionally&#34;&gt;Specify the length and height to scale proportionally&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;指定要按比例縮放的長度和高度&#34;&gt;指定要按比例縮放的長度和高度&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -174,7 +174,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i input.jpg -vf scale=320:-1 output_320x240.png
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;scale-twice-as-before&#34;&gt;Scale twice as before&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;縮放兩倍於以前&#34;&gt;縮放兩倍於以前&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -183,7 +183,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i input.jpg -vf scale=iw*2:ih input_double_width.png
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;scale-to-one-half-of-the-previous&#34;&gt;Scale to one-half of the previous&lt;/h3&gt;
+&lt;/div&gt;&lt;h3 id=&#34;縮放到上一個的二分之一&#34;&gt;縮放到上一個的二分之一&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -203,12 +203,12 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Youtube-dl or Yt-dlp Download Facebook Video</title>
-        <link>https://tsairongfu.github.io/p/youtube-dl-or-yt-dlp-download-facebook-video/</link>
+        <title>Youtube-dl or Yt-dlp 下載Facebook影片</title>
+        <link>https://tsairongfu.github.io/p/youtube-dl-or-yt-dlp-%E4%B8%8B%E8%BC%89facebook%E5%BD%B1%E7%89%87/</link>
         <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/youtube-dl-or-yt-dlp-download-facebook-video/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/youtube-dl-or-yt-dlp-download-facebook-video/picture.jpg" alt="Featured image of post Youtube-dl or Yt-dlp Download Facebook Video" /&gt;&lt;h2 id=&#34;facebook-cookice---youtube-dl&#34;&gt;Facebook Cookice - Youtube-dl&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/p/youtube-dl-or-yt-dlp-%E4%B8%8B%E8%BC%89facebook%E5%BD%B1%E7%89%87/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/youtube-dl-or-yt-dlp-%E4%B8%8B%E8%BC%89facebook%E5%BD%B1%E7%89%87/picture.jpg" alt="Featured image of post Youtube-dl or Yt-dlp 下載Facebook影片" /&gt;&lt;h2 id=&#34;facebook-cookice---youtube-dl&#34;&gt;Facebook Cookice - Youtube-dl&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -229,28 +229,82 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>PostgreSQL pgAdmin reset password</title>
-        <link>https://tsairongfu.github.io/p/postgresql-pgadmin-reset-password/</link>
+        <title>PostgreSQL pgAdmin重置密碼</title>
+        <link>https://tsairongfu.github.io/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/</link>
         <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/postgresql-pgadmin-reset-password/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/postgresql-pgadmin-reset-password/picture.jpg" alt="Featured image of post PostgreSQL pgAdmin reset password" /&gt;&lt;ol&gt;
-&lt;li&gt;Change METHOD of all rows in your pg_hba.conf file from scram-sha-256 to trust&lt;/li&gt;
-&lt;li&gt;Add bin folder of Postgres installation to path, if you haven&amp;rsquo;t&lt;/li&gt;
-&lt;li&gt;Open command prompt and enter &lt;code&gt;psql -U postgres&lt;/code&gt; You won&amp;rsquo;t be asked for password here.&lt;/li&gt;
-&lt;li&gt;Enter &lt;code&gt;\password postgres&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Choose and confirm your password&lt;/li&gt;
-&lt;li&gt;Revert pg_hba.conf to original state&lt;/li&gt;
+        <guid>https://tsairongfu.github.io/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/picture.jpg" alt="Featured image of post PostgreSQL pgAdmin重置密碼" /&gt;&lt;ol&gt;
+&lt;li&gt;將 pg_hba.conf 文件中所有行的 METHOD 從 scram-sha-256 更改為 trust&lt;/li&gt;
+&lt;li&gt;將 Postgres 安裝的 bin 文件夾添加到路徑中，如果沒有的話&lt;/li&gt;
+&lt;li&gt;打開命令提示符並輸入&lt;code&gt;psql -U postgres&lt;/code&gt; 這裡不會要求你輸入密碼。&lt;/li&gt;
+&lt;li&gt;輸入&lt;code&gt;\password postgres&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;選擇並確認您的密碼&lt;/li&gt;
+&lt;li&gt;將 pg_hba.conf 恢復為原始狀態&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         </item>
         <item>
-        <title>Software automatic security detection technology</title>
-        <link>https://tsairongfu.github.io/p/software-automatic-security-detection-technology/</link>
+        <title>Windows port狀態指令</title>
+        <link>https://tsairongfu.github.io/p/windows-port%E7%8B%80%E6%85%8B%E6%8C%87%E4%BB%A4/</link>
         <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/software-automatic-security-detection-technology/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/software-automatic-security-detection-technology/picture.jpg" alt="Featured image of post Software automatic security detection technology" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuawn/Mediatek-Fuzzing-Workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://tsairongfu.github.io/p/windows-port%E7%8B%80%E6%85%8B%E6%8C%87%E4%BB%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/windows-port%E7%8B%80%E6%85%8B%E6%8C%87%E4%BB%A4/picture.jpg" alt="Featured image of post Windows port狀態指令" /&gt;&lt;h2 id=&#34;find-all-running-ports&#34;&gt;Find all running ports&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -ano
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -alp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;view-the-pid-of-the-occupied-port&#34;&gt;View the PID of the occupied port&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -aon|findstr &amp;#34;80&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;view-the-process-with-the-specified-pid&#34;&gt;View the process with the specified PID&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tasklist|findstr &amp;#34;80&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;end-the-process&#34;&gt;end the process&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;taskkill /T /F /PID 80
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>軟體自動化安全檢測技術</title>
+        <link>https://tsairongfu.github.io/p/%E8%BB%9F%E9%AB%94%E8%87%AA%E5%8B%95%E5%8C%96%E5%AE%89%E5%85%A8%E6%AA%A2%E6%B8%AC%E6%8A%80%E8%A1%93/</link>
+        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/p/%E8%BB%9F%E9%AB%94%E8%87%AA%E5%8B%95%E5%8C%96%E5%AE%89%E5%85%A8%E6%AA%A2%E6%B8%AC%E6%8A%80%E8%A1%93/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E8%BB%9F%E9%AB%94%E8%87%AA%E5%8B%95%E5%8C%96%E5%AE%89%E5%85%A8%E6%AA%A2%E6%B8%AC%E6%8A%80%E8%A1%93/picture.jpg" alt="Featured image of post 軟體自動化安全檢測技術" /&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuawn/Mediatek-Fuzzing-Workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;yuawn/Mediatek-Fuzzing-Workshop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;fuzz-testing&#34;&gt;Fuzz Testing&lt;/h2&gt;
 &lt;ul&gt;
@@ -354,65 +408,12 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 </description>
         </item>
         <item>
-        <title>Windows Port state command</title>
-        <link>https://tsairongfu.github.io/p/windows-port-state-command/</link>
-        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/p/windows-port-state-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/windows-port-state-command/picture.jpg" alt="Featured image of post Windows Port state command" /&gt;&lt;h2 id=&#34;查找所有運行的端口&#34;&gt;查找所有運行的端口&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -ano
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -alp
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;查看被佔用端口的pid&#34;&gt;查看被佔用端口的PID&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -aon|findstr &amp;#34;80&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;查看指定pid的進程&#34;&gt;查看指定PID的進程&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tasklist|findstr &amp;#34;80&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;結束流程&#34;&gt;結束流程&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;taskkill /T /F /PID 80
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>WiFi Hacker</title>
-        <link>https://tsairongfu.github.io/p/wifi-hacker/</link>
+        <title>WiFi 破解</title>
+        <link>https://tsairongfu.github.io/p/wifi-%E7%A0%B4%E8%A7%A3/</link>
         <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/wifi-hacker/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/wifi-hacker/picture.jpg" alt="Featured image of post WiFi Hacker" /&gt;&lt;h2 id=&#34;environment-of-system&#34;&gt;Environment of System&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/p/wifi-%E7%A0%B4%E8%A7%A3/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/wifi-%E7%A0%B4%E8%A7%A3/picture.jpg" alt="Featured image of post WiFi 破解" /&gt;&lt;h2 id=&#34;environment-of-system&#34;&gt;Environment of System&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Operating System: Kali Linux 2021.3&lt;/li&gt;
 &lt;li&gt;WiFi Adapters: ALFA AWUS036ACS&lt;/li&gt;
@@ -548,16 +549,16 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Linux server Raid</title>
-        <link>https://tsairongfu.github.io/p/linux-server-raid/</link>
+        <title>Linux server Raid配置</title>
+        <link>https://tsairongfu.github.io/p/linux-server-raid%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/linux-server-raid/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/linux-server-raid/picture.jpg" alt="Featured image of post Linux server Raid" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://askubuntu.com/questions/973632/unable-to-mount-raid1-md0-wrong-fs-type-bad-option-bad-superblock-on-dev-md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://tsairongfu.github.io/p/linux-server-raid%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/linux-server-raid%E9%85%8D%E7%BD%AE/picture.jpg" alt="Featured image of post Linux server Raid配置" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://askubuntu.com/questions/973632/unable-to-mount-raid1-md0-wrong-fs-type-bad-option-bad-superblock-on-dev-md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;askubuntu-973632&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Unable to Mount RAID1 md0 - wrong fs type, bad option, bad superblock on /dev/md0, missing codepage or helper program, or other error&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;mount-the-volume&#34;&gt;mount the volume&lt;/h2&gt;
+&lt;h2 id=&#34;掛載磁區&#34;&gt;掛載磁區&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -575,7 +576,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;view-disk-instructions&#34;&gt;View disk instructions&lt;/h2&gt;
+&lt;h2 id=&#34;查看磁碟指令&#34;&gt;查看磁碟指令&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -609,7 +610,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;##Format the hard drive&lt;/p&gt;
+&lt;h2 id=&#34;格式化硬碟&#34;&gt;格式化硬碟&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -619,7 +620,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;configure-boot-self-mounting&#34;&gt;Configure boot self-mounting&lt;/h2&gt;
+&lt;h2 id=&#34;配置開機自掛載&#34;&gt;配置開機自掛載&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -637,7 +638,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;Test&lt;/p&gt;
+&lt;p&gt;測試&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -650,19 +651,19 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Reporting Server installation</title>
-        <link>https://tsairongfu.github.io/p/reporting-server-installation/</link>
+        <title>Reporting Server 安裝</title>
+        <link>https://tsairongfu.github.io/p/reporting-server-%E5%AE%89%E8%A3%9D/</link>
         <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/reporting-server-installation/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/reporting-server-installation/picture.jpg" alt="Featured image of post Reporting Server installation" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
-&lt;p&gt;SQL Server network configuration TCP to open&lt;/p&gt;
-&lt;p&gt;Connection Test Open with Microsoft SQL Server Managerment Studio
-tcp:hostname/databasename,Port&lt;/p&gt;
-&lt;p&gt;SQL Server Default Port: (TCP) 1433&lt;/p&gt;
-&lt;p&gt;The firewall remembers to whitelist the port&lt;/p&gt;
+        <guid>https://tsairongfu.github.io/p/reporting-server-%E5%AE%89%E8%A3%9D/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/reporting-server-%E5%AE%89%E8%A3%9D/picture.jpg" alt="Featured image of post Reporting Server 安裝" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
+&lt;p&gt;SQL Server 網路組態 TCP要開啟&lt;/p&gt;
+&lt;p&gt;連線測試 使用Microsoft SQL Server Managerment Studio 開啟
+tcp:主機名稱/資料庫名稱,Port&lt;/p&gt;
+&lt;p&gt;SQL Server預設Port：（TCP）1433&lt;/p&gt;
+&lt;p&gt;防火牆記得要把port設定白名單&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&#34;reference-document&#34;&gt;reference document&lt;/h3&gt;
+&lt;h3 id=&#34;參考文件&#34;&gt;參考文件&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -672,126 +673,118 @@ tcp:hostname/databasename,Port&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Install Linux system hard disk space configuration</title>
-        <link>https://tsairongfu.github.io/p/install-linux-system-hard-disk-space-configuration/</link>
+        <title>安裝Linux系統硬碟空間配置</title>
+        <link>https://tsairongfu.github.io/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/install-linux-system-hard-disk-space-configuration/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/install-linux-system-hard-disk-space-configuration/picture.jpg" alt="Featured image of post Install Linux system hard disk space configuration" /&gt;&lt;blockquote&gt;
-&lt;p&gt;/boot&lt;/p&gt;
+        <guid>https://tsairongfu.github.io/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg" alt="Featured image of post 安裝Linux系統硬碟空間配置" /&gt;&lt;blockquote&gt;
+&lt;p&gt;/boot
+1.選擇空閒區，點擊“+”號添加引導分區：
+大小：400MB
+新分區的類型：主分區
+新分區的位置：空間起始位置
+用於：Ext4日誌文件系統
+掛載點：/boot&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;Select the free area and click the &amp;ldquo;+&amp;rdquo; sign to add a boot partition:
-Size: 400MB
-Type of new partition: primary partition
-The location of the new partition: the beginning of the space
-Used for: Ext4 journaling filesystem
-Mount point: /boot&lt;/li&gt;
-&lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;swap&lt;/p&gt;
+&lt;p&gt;swap
+2.繼續選擇空閒區，點擊“+”號添加交換分區，設置為實際內存的2倍：
+大小：8192MB(4GB×2)
+新分區的類型：邏輯分區
+新分區的位置：空間起始位置
+用於：交換空間&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Continue to select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the swap partition, and set it to 2 times the actual memory:
-Size: 8192MB (4GB×2)
-Type of new partition: logical partition
-The location of the new partition: the beginning of the space
-Used for: swap space&lt;/li&gt;
-&lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;/&lt;/p&gt;
+&lt;p&gt;/
+3.繼續選擇空閒區，點擊“+”號添加root分區：
+大小：至少10-20GB
+新分區的類型：邏輯分區
+新分區的位置：空間起始位置
+用於：Ext4日誌文件系統
+掛載點：/&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Continue to select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the root partition:
-Size: At least 10-20GB
-Type of new partition: logical partition
-The location of the new partition: the beginning of the space
-Used for: Ext4 journaling filesystem
-mount point: /&lt;/li&gt;
-&lt;/ol&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;/home&lt;/p&gt;
+&lt;p&gt;/home
+4.繼續選擇空閒區，點擊“+”號添加home分區：
+大小：餘下所有的空間
+新分區的類型：邏輯分區
+新分區的位置：空間起始位置
+用於：Ext4日誌文件系統
+掛載點：/home&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Continue to select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the home partition:
-Size: All remaining space
-Type of new partition: logical partition
-The location of the new partition: the beginning of the space
-Used for: Ext4 journaling filesystem
-Mount point: /home&lt;/li&gt;
-&lt;/ol&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;install-the-bootloader-device&#34;&gt;Install the bootloader device&lt;/h2&gt;
+&lt;h3 id=&#34;安裝啟動引導器的設備&#34;&gt;安裝啟動引導器的設備&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;If you want to use the Ubuntu bootloader instead of the Windows bootloader, choose /dev/sda.&lt;/p&gt;
+&lt;p&gt;如果要用Ubuntu的引導器代替Windows的引導器，就選 /dev/sda。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;If you want to keep the Windows bootloader, select the /boot partition.&lt;/p&gt;
+&lt;p&gt;如果要保留Windows的引導器，就選 /boot分區。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
         </item>
         <item>
-        <title>Python selenium solves the problem that chrome://settings cannot be located</title>
-        <link>https://tsairongfu.github.io/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</link>
+        <title>Python selenium 解決 chrome://settings 無法定位問題</title>
+        <link>https://tsairongfu.github.io/p/python-selenium-%E8%A7%A3%E6%B1%BA-chrome-settings-%E7%84%A1%E6%B3%95%E5%AE%9A%E4%BD%8D%E5%95%8F%E9%A1%8C/</link>
         <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/picture.jpg" alt="Featured image of post Python selenium solves the problem that chrome://settings cannot be located" /&gt;&lt;h2 id=&#34;great-god-answers&#34;&gt;Great God answers:&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/p/python-selenium-%E8%A7%A3%E6%B1%BA-chrome-settings-%E7%84%A1%E6%B3%95%E5%AE%9A%E4%BD%8D%E5%95%8F%E9%A1%8C/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/python-selenium-%E8%A7%A3%E6%B1%BA-chrome-settings-%E7%84%A1%E6%B3%95%E5%AE%9A%E4%BD%8D%E5%95%8F%E9%A1%8C/picture.jpg" alt="Featured image of post Python selenium 解決 chrome://settings 無法定位問題" /&gt;&lt;h2 id=&#34;大神解答&#34;&gt;大神解答：&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56763683/selenium-python-unable-to-clear-chrome-browser-cache&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;stackoverflow-56763683&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56380091/how-to-interact-with-the-elements-within-shadow-root-open-while-clearing-brow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;stackoverflow-56380091&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;implementation-example&#34;&gt;Implementation example&lt;/h2&gt;
+&lt;h2 id=&#34;實作範例&#34;&gt;實作範例&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Clear browsing history button&lt;/li&gt;
+&lt;li&gt;清除瀏覽紀錄按鈕&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-section &amp;gt; settings-privacy-page &amp;#39;).shadowRoot.querySelector(&amp;#39;settings-clear-browsing-data-dialog&amp;#39;).shadowRoot.querySelector(&amp;#39;#clearBrowsingDataDialog&amp;#39;).querySelector(&amp;#39;#clearBrowsingDataConfirm&amp;#39;)
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-section &amp;gt; settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-clear-browsing-data-dialog&amp;#39;).shadowRoot.querySelector(&amp;#39;#clearBrowsingDataDialog&amp;#39;).querySelector(&amp;#39;#clearBrowsingDataConfirm&amp;#39;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Added sound button&lt;/li&gt;
+&lt;li&gt;新增聲音按鈕&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot .querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;#addSite&amp;#39;)
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;#addSite&amp;#39;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Added sound button&lt;/li&gt;
+&lt;li&gt;新增聲音按鈕&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot .querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;add-site-dialog&amp;#39;).shadowRoot.querySelector( &amp;#39;#site&amp;#39;).shadowRoot.querySelector(&amp;#39;#input&amp;#39;)
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;add-site-dialog&amp;#39;).shadowRoot.querySelector(&amp;#39;#site&amp;#39;).shadowRoot.querySelector(&amp;#39;#input&amp;#39;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Added sound confirmation button&lt;/li&gt;
+&lt;li&gt;新增聲音確認新增按鈕&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot .querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;add-site-dialog&amp;#39;).shadowRoot.querySelector( &amp;#39;#add&amp;#39;)
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;add-site-dialog&amp;#39;).shadowRoot.querySelector(&amp;#39;#add&amp;#39;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;##Python:&lt;/p&gt;
+&lt;/div&gt;&lt;h2 id=&#34;python&#34;&gt;Python：&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -799,7 +792,7 @@ Mount point: /home&lt;/li&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;clearButton = browser.execute_script(&amp;#34;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings- privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;#addSite&amp;#39;)&amp;#34; )
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;clearButton = browser.execute_script(&amp;#34;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;#addSite&amp;#39;)&amp;#34;)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#click on the clear button now
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;clearButton.click()
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -807,12 +800,12 @@ Mount point: /home&lt;/li&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Nginx all http to https</title>
-        <link>https://tsairongfu.github.io/p/nginx-all-http-to-https/</link>
+        <title>Nginx將http流量導至https</title>
+        <link>https://tsairongfu.github.io/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/</link>
         <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/nginx-all-http-to-https/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/nginx-all-http-to-https/picture.jpg" alt="Featured image of post Nginx all http to https" /&gt;&lt;h2 id=&#34;edit-config&#34;&gt;Edit config&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/picture.jpg" alt="Featured image of post Nginx將http流量導至https" /&gt;&lt;h2 id=&#34;修改-config&#34;&gt;修改 config&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -829,25 +822,25 @@ Mount point: /home&lt;/li&gt;
         <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/p/windows-nginx-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/windows-nginx-command/picture.jpg" alt="Featured image of post Windows Nginx Command" /&gt;&lt;p&gt;Start Nginx: &lt;strong&gt;&lt;code&gt;start nginx&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Check Nginx status: &lt;strong&gt;&lt;code&gt;tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Quickly stop Nginx: &lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Complete and orderly stop Nginx: &lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Use tsakkill to shut down: &lt;strong&gt;&lt;code&gt;taskkill /f /t /im nginx.exe&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/p/windows-nginx-command/picture.jpg" alt="Featured image of post Windows Nginx Command" /&gt;&lt;p&gt;啟動 Nginx：&lt;strong&gt;&lt;code&gt;啟動 nginx&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;檢查 Nginx 狀態：&lt;strong&gt;&lt;code&gt;tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;快速停止Nginx：&lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;完整有序的停止Nginx：&lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用tsakkill關閉：&lt;strong&gt;&lt;code&gt;taskkill /f /t /im nginx.exe&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;fast shutdown：&lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;graceful shutdown：&lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes ：&lt;strong&gt;&lt;code&gt;nginx -s reload&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;re-opening log files：&lt;strong&gt;&lt;code&gt;nginx -s reopen&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;快速關機：&lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;優雅關機：&lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;更改配置，使用新配置啟動新工作進程，正常關閉舊工作進程：&lt;strong&gt;&lt;code&gt;nginx -s reload&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;重新打開日誌文件：&lt;strong&gt;&lt;code&gt;nginx -s reboot&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Python selenium solves the problem of iframe switching</title>
-        <link>https://tsairongfu.github.io/p/python-selenium-solves-the-problem-of-iframe-switching/</link>
+        <title>Python selenium 解決 iframe 切換問題</title>
+        <link>https://tsairongfu.github.io/p/python-selenium-%E8%A7%A3%E6%B1%BA-iframe-%E5%88%87%E6%8F%9B%E5%95%8F%E9%A1%8C/</link>
         <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/python-selenium-solves-the-problem-of-iframe-switching/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/python-selenium-solves-the-problem-of-iframe-switching/picture.jpg" alt="Featured image of post Python selenium solves the problem of iframe switching" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <guid>https://tsairongfu.github.io/p/python-selenium-%E8%A7%A3%E6%B1%BA-iframe-%E5%88%87%E6%8F%9B%E5%95%8F%E9%A1%8C/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/python-selenium-%E8%A7%A3%E6%B1%BA-iframe-%E5%88%87%E6%8F%9B%E5%95%8F%E9%A1%8C/picture.jpg" alt="Featured image of post Python selenium 解決 iframe 切換問題" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
@@ -855,7 +848,7 @@ Mount point: /home&lt;/li&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iframe = browser.find_element_by_xpath(&amp;#39;//iframe[contains(@name, &amp;#34;m2k&amp;#34;)]&amp;#39;)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;enter iframe&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;進入iframe&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -864,7 +857,7 @@ Mount point: /home&lt;/li&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;browser.switch_to_frame(iframe1)
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;exit iframe&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;退出iframe&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -876,12 +869,12 @@ Mount point: /home&lt;/li&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Nvidia NX Make Darknet</title>
-        <link>https://tsairongfu.github.io/p/nvidia-nx-make-darknet/</link>
+        <title>Nvidia NX 編譯 Darknet</title>
+        <link>https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</link>
         <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/nvidia-nx-make-darknet/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/nvidia-nx-make-darknet/picture.jpg" alt="Featured image of post Nvidia NX Make Darknet" /&gt;&lt;h3 id=&#34;edit-makefile-nvcc-path-with-sudo-nano&#34;&gt;Edit Makefile NVCC path with sudo nano&lt;/h3&gt;
+        <guid>https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/picture.jpg" alt="Featured image of post Nvidia NX 編譯 Darknet" /&gt;&lt;h3 id=&#34;用sudo-nano-edit-makefile-nvcc-path&#34;&gt;用sudo nano edit Makefile NVCC path&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -916,24 +909,24 @@ Mount point: /home&lt;/li&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;for-tx2-use-see-the-camera-open-command&#34;&gt;For TX2 use, see the camera open command&lt;/h3&gt;
+&lt;h3 id=&#34;tx2使用見相機開啟指令&#34;&gt;TX2使用見相機開啟指令&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 !nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&amp;#39;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>A Several Linux interesting command</title>
-        <link>https://tsairongfu.github.io/p/a-several-linux-interesting-command/</link>
+        <title>一些Linux有趣的命令</title>
+        <link>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/a-several-linux-interesting-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/a-several-linux-interesting-command/picture.jpg" alt="Featured image of post A Several Linux interesting command" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yaronn/blessed-contrib&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/picture.jpg" alt="Featured image of post 一些Linux有趣的命令" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yaronn/blessed-contrib&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;yaronn/blessed-contrib&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -961,10 +954,10 @@ Mount point: /home&lt;/li&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install figlet $sudo apt-get install toilet
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install figlet$sudo apt-get install toilet
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;figlet Hellow!
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;toilet i love you
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;figlet Hellow !
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;toilet I love you
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;toilet -f mono12 -F gay Hellow
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -982,13 +975,13 @@ Mount point: /home&lt;/li&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-v&#34; data-lang=&#34;v&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//github.com/will8211/unimatrix.git
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;no&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;module&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;named&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;_curses&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;  &lt;span class=&#34;nv&#34;&gt;no&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;module&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;named&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;_curses&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;windows&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;curses&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;Instruction Example&lt;/p&gt;
+&lt;p&gt;指令Example&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1000,12 +993,12 @@ Mount point: /home&lt;/li&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Video to Gif use FFmpeg</title>
-        <link>https://tsairongfu.github.io/p/video-to-gif-use-ffmpeg/</link>
+        <title>使用FFmpeg將影片轉換成動圖</title>
+        <link>https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/</link>
         <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/video-to-gif-use-ffmpeg/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/video-to-gif-use-ffmpeg/picture.jpg" alt="Featured image of post Video to Gif use FFmpeg" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <guid>https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/picture.jpg" alt="Featured image of post 使用FFmpeg將影片轉換成動圖" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
@@ -1024,12 +1017,12 @@ Mount point: /home&lt;/li&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>GitHub Short URL use git.io</title>
-        <link>https://tsairongfu.github.io/p/github-short-url-use-git.io/</link>
+        <title>使用 git.io 縮網址</title>
+        <link>https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8-git.io-%E7%B8%AE%E7%B6%B2%E5%9D%80/</link>
         <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/github-short-url-use-git.io/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/github-short-url-use-git.io/picture.jpg" alt="Featured image of post GitHub Short URL use git.io" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <guid>https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8-git.io-%E7%B8%AE%E7%B6%B2%E5%9D%80/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8-git.io-%E7%B8%AE%E7%B6%B2%E5%9D%80/picture.jpg" alt="Featured image of post 使用 git.io 縮網址" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
@@ -1069,17 +1062,17 @@ Location: &lt;a class=&#34;link&#34; href=&#34;https://google.com&#34;  target=&
 </description>
         </item>
         <item>
-        <title>Communication Network and Multimedia Applications</title>
-        <link>https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/</link>
+        <title>通訊網路與多媒體應用</title>
+        <link>https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/</link>
         <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/picture.jpg" alt="Featured image of post Communication Network and Multimedia Applications" /&gt;&lt;h2 id=&#34;week-3-basic-multimedia-network-communication&#34;&gt;Week 3: Basic Multimedia Network Communication&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/picture.jpg" alt="Featured image of post 通訊網路與多媒體應用" /&gt;&lt;h2 id=&#34;第3週基礎多媒體網路通訊&#34;&gt;第3週：基礎多媒體網路通訊&lt;/h2&gt;
 &lt;h3 id=&#34;homework1&#34;&gt;HomeWork1&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/3sIUu0L.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/3sIUu0L.png&#34;
 	width=&#34;1022&#34;
 	height=&#34;627&#34;
-	srcset=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/3sIUu0L_hu7ada9fbe35a80907a517c28cceb3fefa_431610_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/3sIUu0L_hu7ada9fbe35a80907a517c28cceb3fefa_431610_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/3sIUu0L_hu7ada9fbe35a80907a517c28cceb3fefa_431610_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/3sIUu0L_hu7ada9fbe35a80907a517c28cceb3fefa_431610_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1088,35 +1081,35 @@ Location: &lt;a class=&#34;link&#34; href=&#34;https://google.com&#34;  target=&
 		data-flex-basis=&#34;391px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;what-are-the-features-of-multimedia&#34;&gt;What are the features of multimedia?&lt;/h4&gt;
-&lt;p&gt;The characteristics of media technology include: diversity, integration, interactivity
-In terms of data transmission requirements, it will vary depending on the data&lt;/p&gt;
-&lt;h4 id=&#34;what-are-the-special-requirements-when-transmitting-multimedia&#34;&gt;What are the special requirements when transmitting multimedia?&lt;/h4&gt;
-&lt;p&gt;It is necessary to use network transmission. In order to avoid the burden of excessive data transmission and increase the storage capacity of the computer, data compression is required, and different forms of multimedia (pictures, videos, and sounds) also have various protocols.&lt;/p&gt;
-&lt;h4 id=&#34;please-list-the-information-services-and-equipment-that-can-be-called-multimedia-communication-in-the-surrounding-environment&#34;&gt;Please list the information services and equipment that can be called multimedia communication in the surrounding environment:&lt;/h4&gt;
-&lt;p&gt;I think that the most commonly used ibon machines in supermarkets nowadays are very convenient for printing, paying bills, storing value, and purchasing tickets. Next, it should be the smart phone that is currently carried around, which can carry out various information service functions.&lt;/p&gt;
-&lt;h4 id=&#34;choose-a-multimedia-communication-application-collect-relevant-information-and-explain-its-development-status-and-future-trends&#34;&gt;Choose a multimedia communication application, collect relevant information, and explain its development status and future trends&lt;/h4&gt;
-&lt;p&gt;Application of wireless sensor network: For example, the development status of RFID and ZigBee is applied to wireless embedded (sensing) network or logistics supply chain management system. The future trend will be more targeted by industry players. Improve the processing and distribution of the collected data in the supply chain management system, as well as the technology development related to data security, the identification and screening of sensing signals, and the communication with the back-end database server.&lt;/p&gt;
-&lt;h4 id=&#34;what-impact-will-the-video-conference-system-have-on-distance-teaching-list-other-possible-uses-of-video-conferencing-systems&#34;&gt;What impact will the video conference system have on distance teaching? List other possible uses of video conferencing systems:&lt;/h4&gt;
-&lt;p&gt;I think the impact of the video conference system on distance teaching must be positive. It makes it easier for teachers to manage student dynamics, and also has complete message boards and video functions, and can transplant the model of physical classes to online distance teaching to a certain extent.&lt;/p&gt;
-&lt;p&gt;Other uses of video conferencing, I think the progress of the Internet now, it is not like the past to reunite, it must spend a lot of time to move, although there will be a lack of part of the feeling of actual meeting, but like the current severe epidemic period, it has slowed down to a certain extent. It meets the social needs that people need to meet, and achieves the effect of calming people&amp;rsquo;s hearts.&lt;/p&gt;
-&lt;h4 id=&#34;try-to-find-standards-related-to-multimedia-communication-on-the-internet&#34;&gt;Try to find standards related to multimedia communication on the Internet.&lt;/h4&gt;
-&lt;p&gt;Common multimedia standard compression techniques:&lt;/p&gt;
+&lt;h4 id=&#34;多媒體有什麼特性&#34;&gt;多媒體有什麼特性？&lt;/h4&gt;
+&lt;p&gt;媒體技術具有的特性包括：多樣性、集成性、交互性
+在資料傳輸需求上，會因資料不同而相異&lt;/p&gt;
+&lt;h4 id=&#34;在傳輸多媒體時有什麼特別的需求&#34;&gt;在傳輸多媒體時有什麼特別的需求？&lt;/h4&gt;
+&lt;p&gt;需要利用網路傳輸，為了避免資料傳輸量過大造成負擔以及提高電腦儲存量，需要進行資料壓縮，且不同形式的多媒體（圖片、影片、聲音）也擁有各種不同的協議。&lt;/p&gt;
+&lt;h4 id=&#34;請舉列周圍環境中可以稱之為多媒體通訊的資訊服務與設備&#34;&gt;請舉列周圍環境中，可以稱之為多媒體通訊的資訊服務與設備：&lt;/h4&gt;
+&lt;p&gt;我認為現在普遍最常用的就是超商的ibon機器，進行列印、繳費、儲值、購票等都十分方便。再來應該就是目前隨身攜帶的智慧型手機，裡面可以進行各種不同的資訊服務功能。&lt;/p&gt;
+&lt;h4 id=&#34;任選一種多媒體通訊的應用搜集相關資料並說明其發展現況及未來趨勢&#34;&gt;任選一種多媒體通訊的應用，搜集相關資料，並說明其發展現況及未來趨勢&lt;/h4&gt;
+&lt;p&gt;無線感測網路的應用:舉例來說，像是RFID、ZigBee的發展現況是應用在無線嵌入式（感測）網路或物流供應鏈管理系統上，未來趨勢以業者來說會更加去針對將收集到的資料在供應鏈管理系統中的處理與分佈、以及與資料安全相關的技術開發、感測訊號的辨識和篩選、與後端資料庫伺服器的溝通等等的技術去做精進。&lt;/p&gt;
+&lt;h4 id=&#34;視訊會議系統對於遠距教學會有什麼樣的影響列舉視訊會議系統其他可能的用途&#34;&gt;視訊會議系統對於遠距教學，會有什麼樣的影響？列舉視訊會議系統其他可能的用途：&lt;/h4&gt;
+&lt;p&gt;我認為視訊會議系統對於遠距教學的影響，一定是正向的。它使得教師能夠更便於管理學生動態，也擁有完整的留言板、視訊功能，能夠一定程度地將實體上課的模式移植到線上遠距教學。&lt;/p&gt;
+&lt;p&gt;視訊會議的其他用途，我認為現在網路的進步，已經不像過去要團聚，必須耗費大量時間去移動，雖然會缺少一部分實際見面的感覺，但像目前疫情嚴峻的時期，它一定程度的減緩了人與人之間極需見面的社交需求，達到安定人心的作用。&lt;/p&gt;
+&lt;h4 id=&#34;試由網路上找尋和多媒體通訊相關的標準&#34;&gt;試由網路上找尋和多媒體通訊相關的標準。&lt;/h4&gt;
+&lt;p&gt;常見的多媒體標準壓縮技術:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;JPEG&lt;/li&gt;
 &lt;li&gt;MPEG-1&lt;/li&gt;
 &lt;li&gt;MPEG-2&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The wireless network standard used by the computer:&lt;/p&gt;
+&lt;p&gt;電腦使用的無線網路標準:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;The first generation, based on the original IEEE 802.11 standard, the working frequency band is 2.4GHz&lt;/li&gt;
-&lt;li&gt;The second generation, subject to IEEE 802.11b, the working frequency band is 2.4GHz&lt;/li&gt;
-&lt;li&gt;The third generation, based on IEEE 802.11a, the working frequency band is 5GHz&lt;/li&gt;
-&lt;li&gt;The fourth generation, based on IEEE 802.11n, the generation name is &amp;ldquo;Wi-Fi 4&amp;rdquo;, the channel width is 20MHz, 40MHz, and the operating frequency bands are 2.4GHz and 5GHz&lt;/li&gt;
-&lt;li&gt;The fifth generation, based on IEEE 802.11ac, the generation name is &amp;ldquo;Wi-Fi 5&amp;rdquo;, the channel width is 20MHz, 40MHz, 80MHz, 80+ 80MHz, 160MHz, and the operating frequency band is 5GHz&lt;/li&gt;
-&lt;li&gt;The sixth generation, based on IEEE 802.11ax, the generation name is &amp;ldquo;Wi-Fi 6&amp;rdquo;, the channel width is 20MHz, 40MHz, 80MHz, 80+ 80MHz, 160MHz, and the operating frequency bands are 2.4GHz and 5GHz&lt;/li&gt;
+&lt;li&gt;第一代，以IEEE 802.11原始標準為準，工作頻段為2.4GHz&lt;/li&gt;
+&lt;li&gt;第二代，以IEEE 802.11b為準，工作頻段為2.4GHz&lt;/li&gt;
+&lt;li&gt;第三代，以IEEE 802.11a為準，工作頻段為5GHz&lt;/li&gt;
+&lt;li&gt;第四代，以IEEE 802.11n為準，世代名稱為「Wi-Fi 4」，信道寬度20MHz、40MHz，工作頻段為2.4GHz和5GHz&lt;/li&gt;
+&lt;li&gt;第五代，以IEEE 802.11ac為準，世代名稱為「Wi-Fi 5」，信道寬度20MHz、40MHz、80MHz、80+ 80MHz、160MHz，工作頻段為5GHz&lt;/li&gt;
+&lt;li&gt;第六代，以IEEE 802.11ax為準，世代名稱為「Wi-Fi 6」，信道寬度20MHz、40MHz、80MHz、80+ 80MHz、160MHz，工作頻段為2.4GHz和5GHz&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Wireless communication standards designed for short-distance transmission:&lt;/p&gt;
+&lt;p&gt;短距離傳輸所設計的無線通訊標準:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;bluetooth&lt;/li&gt;
 &lt;li&gt;ZigBee&lt;/li&gt;
@@ -1127,10 +1120,10 @@ In terms of data transmission requirements, it will vary depending on the data&l
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;homework2&#34;&gt;HomeWork2&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/mzCoHSu.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/mzCoHSu.png&#34;
 	width=&#34;1073&#34;
 	height=&#34;634&#34;
-	srcset=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/mzCoHSu_hu3ff50a51e7ea31c95fbaaee1be057a09_406660_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/mzCoHSu_hu3ff50a51e7ea31c95fbaaee1be057a09_406660_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/mzCoHSu_hu3ff50a51e7ea31c95fbaaee1be057a09_406660_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/mzCoHSu_hu3ff50a51e7ea31c95fbaaee1be057a09_406660_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1139,25 +1132,25 @@ In terms of data transmission requirements, it will vary depending on the data&l
 		data-flex-basis=&#34;406px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;what-are-the-advantages-of-streaming-in-multimedia-applications&#34;&gt;What are the advantages of streaming in multimedia applications?&lt;/h4&gt;
-&lt;p&gt;Streaming refers to compressing a series of images and sending them to the client stably and quickly. When the protocol is enabled, you can save space without saving files on the client.&lt;/p&gt;
-&lt;h4 id=&#34;please-explain-the-difference-between-unicast-and-multicast-broadband-usage&#34;&gt;Please explain the difference between unicast and multicast broadband usage&lt;/h4&gt;
-&lt;p&gt;Unicast technically requires that the MAC addresses of the NLB network interfaces of the two hosts of the two computers be exactly the same, so that the two hosts cannot connect to each other.&lt;/p&gt;
-&lt;p&gt;Multicast messages are delivered to a group of destination addresses at the same time. It uses a strategy that is most efficient because messages only need to be delivered once per network line, and messages are only replicated when lines fork.&lt;/p&gt;
-&lt;h4 id=&#34;why-is-the-routing-mechanism-needed-in-the-multicast-protocol&#34;&gt;Why is the routing mechanism needed in the multicast protocol?&lt;/h4&gt;
-&lt;p&gt;The IP address used by multicast has a specific format, so once the network node finds that there is a multicast address in the packet, it will use the multicast processing method. The main problem is routing. Routers that support multicast Routing is established through the information provided by IGMP. There are many methods of multicast routing, including PIM (Protocol Independent Multicast), DVMRP (Distance-Vector Multicast Routing Protocol), CBT (Core-Based Tree) and MOSPF (Multicast Open Shortest Path First) . Multicast routing also takes into account the distribution of users, so there are so-called dense mode and sparse mode. The network domain where the user is located is also one of the technical considerations.&lt;/p&gt;
-&lt;h4 id=&#34;please-explain-how-the-agreement-on-quality-of-service-is-related-to-streaming-services&#34;&gt;Please explain how the agreement on quality of service is related to streaming services?&lt;/h4&gt;
-&lt;p&gt;In order to ensure quality of service (QoS), several protocols have been developed specifically for QoS requirements. Among them, RSVP can reserve resources at the network edge (edge), MPLS can control traffic, and DiffServ can specify the priority order of packets. However, in the event of network overloading, these agreements still do not work.&lt;/p&gt;
-&lt;h4 id=&#34;explain-the-difference-between-streaming-and-downloading&#34;&gt;Explain the difference between streaming and downloading?&lt;/h4&gt;
-&lt;p&gt;Streaming can be imagined as downloading while playing. It is mainly different from downloading and playing. For downloading and playing, you need to download the file to the computer and then play it. This feature allows the file to be retained, but it also causes the loss of storage space.
-For streaming, since the video is downloaded while playing, it does not need to be fully loaded to watch the video, and the file will not be saved on the local computer, but only exists in the form of temporary storage.&lt;/p&gt;
+&lt;h4 id=&#34;試說明串流在多媒體的應用中有什麼樣的優點&#34;&gt;試說明串流在多媒體的應用中有什麼樣的優點？&lt;/h4&gt;
+&lt;p&gt;串流指的是將一連串影像壓縮，穩定快速的傳送到用戶端，利用協議開啟時，可以不用在用戶端留存檔案，節省空間。&lt;/p&gt;
+&lt;h4 id=&#34;請說明單點播送與群播網路寬頻上的運用有什麼樣的差異&#34;&gt;請說明單點播送與群播網路寬頻上的運用有什麼樣的差異&lt;/h4&gt;
+&lt;p&gt;單點播送在技術上，需要將兩台電腦的兩台主機 NLB 網路介面的 MAC 位址變成完全一樣，以至於讓兩台主機彼此無法互相連線。&lt;/p&gt;
+&lt;p&gt;群播信息同時傳遞給一組目的地址。它使用策略是最高效的，因為消息在每條網絡線路上只需傳遞一次，而且只有在線路分叉的時候，消息才會被複製。&lt;/p&gt;
+&lt;h4 id=&#34;群播的協定中為什麼需要路由的機制&#34;&gt;群播的協定中為什麼需要路由的機制？&lt;/h4&gt;
+&lt;p&gt;群播使用的IP位址有特定的格式，所以一旦網路節點發現封包中有群播的位址，就會採用群播的處理方式，主要的問題是路由(routing)，支援群播的路由器透過IGMP提供的資訊來建立路由，群播路由的方法很多，包括PIM(Protocol Independent Multicast)、DVMRP(Distance-Vector Multicast Routing Protocol)、CBT(Core-Based Tree)與MOSPF(Multicast Open Shortest Path First)。群播路由還要考慮到用戶的分布狀況，所以有所謂的dense mode與sparse mode的情形，用戶所在的網域也是技術上考慮的因素之一&lt;/p&gt;
+&lt;h4 id=&#34;請說明服務品質的協定與串流服務之間有何關聯&#34;&gt;請說明服務品質的協定與串流服務之間有何關聯？&lt;/h4&gt;
+&lt;p&gt;為了能保證服務品質(QoS)，有幾個協定特別針對QoS的要求發展出來，其中RSVP可以在網路邊界(edge)預約資源、MPLS可以控制流量、DiffServ可以指定封包的優先順序。不過，萬一往來網路超載，這些協定還是起不了作用。&lt;/p&gt;
+&lt;h4 id=&#34;是說明串流播放與下載播放的差別&#34;&gt;是說明串流播放與下載播放的差別？&lt;/h4&gt;
+&lt;p&gt;串流可以試想為邊播放邊下載，它主要不同於下載播放為下載播放需要將檔案下載到電腦再進行播放，此特性使得檔案得以留存，但也會造成儲存空間的損耗。
+串流的話，由於邊播放邊下載，因此不需要完全加載完畢才能觀看影片，也不會在本地端電腦將檔案留存，僅作為暫存形式存在。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;week-4-video-encoding-and-error-repair-techniques&#34;&gt;Week 4: Video Encoding and Error Repair Techniques&lt;/h2&gt;
+&lt;h2 id=&#34;第4週視訊編碼與錯誤修復技術&#34;&gt;第4週：視訊編碼與錯誤修復技術&lt;/h2&gt;
 &lt;h3 id=&#34;homework3&#34;&gt;HomeWork3&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/gdjSOqG.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/gdjSOqG.png&#34;
 	width=&#34;1009&#34;
 	height=&#34;676&#34;
-	srcset=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/gdjSOqG_hubf960300ce07de4080f8a37cb954950e_248100_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/gdjSOqG_hubf960300ce07de4080f8a37cb954950e_248100_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/gdjSOqG_hubf960300ce07de4080f8a37cb954950e_248100_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/gdjSOqG_hubf960300ce07de4080f8a37cb954950e_248100_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1166,45 +1159,44 @@ For streaming, since the video is downloaded while playing, it does not need to 
 		data-flex-basis=&#34;358px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;trying-to-compare-the-difference-between-the-original-video-content-and-the-encoded-video-content&#34;&gt;Trying to compare the difference between the original video content and the encoded video content?&lt;/h4&gt;
+&lt;h4 id=&#34;試著比較原始視訊內容與編碼過後視訊內容的差異&#34;&gt;試著比較原始視訊內容與編碼過後視訊內容的差異?&lt;/h4&gt;
 &lt;ol&gt;
-&lt;li&gt;During the encoding conversion process, there will be video distortion.&lt;/li&gt;
-&lt;li&gt;The overall number of bits after encoding is reduced.&lt;/li&gt;
-&lt;li&gt;Convert the spatial domain to the frequency domain.&lt;/li&gt;
+&lt;li&gt;編碼的轉換過程中，會有視訊失真的產生。&lt;/li&gt;
+&lt;li&gt;編碼後整體的位元總數減少。&lt;/li&gt;
+&lt;li&gt;空間域轉換成頻率域。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;why-do-video-encoding&#34;&gt;Why do video encoding?&lt;/h4&gt;
+&lt;h4 id=&#34;為什麼要做視訊編碼&#34;&gt;為什麼要做視訊編碼?&lt;/h4&gt;
 &lt;ol&gt;
-&lt;li&gt;The difference between the original video content and the encoded video content, most applications cannot handle such a huge amount of data.&lt;/li&gt;
-&lt;li&gt;The original video content requires a lot of storage space. Therefore, it must be coded to reduce the burden of storage space.&lt;/li&gt;
-&lt;li&gt;The transmission capacity of the network is limited, so coding must be done to reduce the burden of storage and transmission.&lt;/li&gt;
+&lt;li&gt;原始視訊內容與編碼過後視訊內容的差異，絕大多數的應用無法處理如此龐大的資料量。&lt;/li&gt;
+&lt;li&gt;原始的視訊內容儲存起來需要很大的儲存空間。所以必須編碼減少儲存空間負擔。&lt;/li&gt;
+&lt;li&gt;網路的傳輸能力有限，所以必須編碼減少儲存傳輸負擔。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;please-compare-the-differences-and-features-between-i-p-and-b-frames&#34;&gt;Please compare the differences and features between I, P and B frames.&lt;/h4&gt;
+&lt;h4 id=&#34;請比較ip與b-frame之間的差異與特性&#34;&gt;請比較I、P與B frame之間的差異與特性。&lt;/h4&gt;
 &lt;ol&gt;
-&lt;li&gt;The frame that must exist in the I Frame has the largest amount of data and does not need to refer to other pictures. Without the I Frame, the GOP cannot be reorganized.&lt;/li&gt;
-&lt;li&gt;In the amount of P Frame data, you must refer to the I Frame, and add the difference part of the picture from the adjacent solution of the I Frame.&lt;/li&gt;
-&lt;li&gt;B Frame has the smallest amount of data and the worst picture quality. It is necessary to refer to I Frame and P Frame, and then add the different pictures.&lt;/li&gt;
+&lt;li&gt;I Frame 必須要存在的Frame，資料量最大，不需要去參考其他的畫面，沒有I Frame則無法重組GOP。&lt;/li&gt;
+&lt;li&gt;P Frame 資料量次中，必須參考I Frame，從鄰近解出來的I Frame所加上差異部分的畫面。&lt;/li&gt;
+&lt;li&gt;B Frame 資料量最小，畫質最差，必須參考I Frame與P Frame，然後加上差異部分的畫面。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;what-is-spatial-and-temporal-redundancy&#34;&gt;What is Spatial and Temporal Redundancy?&lt;/h4&gt;
+&lt;h4 id=&#34;何謂spatial與temporal-redundancy&#34;&gt;何謂Spatial與Temporal Redundancy?&lt;/h4&gt;
 &lt;ol&gt;
-&lt;li&gt;Temporal: In video data, there is usually a strong correlation between adjacent frames, and such correlation is redundant information in time. The redundant part of time is basically only a slight movement, but the actual video is similar.&lt;/li&gt;
-&lt;li&gt;Spatial: In the same frame, there is usually a strong correlation between adjacent pixels, which is the redundant information in space. Because each point in the video is often correlated, for example, in the video of a car, the colors of the opposite points are similar between the points in the car.&lt;/li&gt;
-&lt;li&gt;Statistical: Statistically redundant information means that the probability distribution of the symbol to be encoded is non-uniform.&lt;/li&gt;
-&lt;li&gt;Perceptual: Perceptually redundant information refers to information that cannot be detected by the human eye when viewing the video.&lt;/li&gt;
+&lt;li&gt;Temporal：在視訊資料中，相鄰的影格（frame）與影格之間通常有很強的關連性，這樣的關連性即為時間上的冗餘資訊。時間的冗餘部分，基本上只是稍微的移動而已，但是實際上的視訊大同小異。&lt;/li&gt;
+&lt;li&gt;Spatial：在同一張影格之中，相鄰的像素之間通常有很強的關連性，這樣的關連性即為空間上的冗餘資訊。因為視訊中的每一個點與點之間，常常都是有相關性的，例如：一台車子的視訊，車子裡面的點與點之間，相對的點的顏色都是類似的。&lt;/li&gt;
+&lt;li&gt;Statistical:統計上的冗餘資訊指的是欲編碼的符號（symbol）的機率分布是不均勻（non-uniform）的。&lt;/li&gt;
+&lt;li&gt;perceptual:感知上的冗餘資訊是指在人在觀看視訊時，人眼無法察覺的資訊。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;coding-is-mainly-composed-of-which-three-steps-and-explain&#34;&gt;&amp;ldquo;Coding&amp;rdquo; is mainly composed of which three steps? And explain.&lt;/h4&gt;
+&lt;h4 id=&#34;編碼主要由哪三個步驟所組成並解釋說明&#34;&gt;『編碼』主要由哪三個步驟所組成?並解釋說明。&lt;/h4&gt;
 &lt;ol&gt;
-&lt;li&gt;Representation: parameters condensed into several important messages.&lt;/li&gt;
-&lt;li&gt;Quantization: Discrete parameters.&lt;/li&gt;
-&lt;li&gt;Binary encoding: Use unequal quantization parameter statistics.
-4.&lt;/li&gt;
+&lt;li&gt;表示法(Representation)：濃縮成幾個重要訊息的參數。&lt;/li&gt;
+&lt;li&gt;量化(Quantization)：離散參數。&lt;/li&gt;
+&lt;li&gt;編碼(Binary encoding)：利用非等量化參數統計。&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;week-5-video-encoding-and-error-repair-techniques&#34;&gt;Week 5: Video Encoding and Error Repair Techniques&lt;/h2&gt;
+&lt;h2 id=&#34;第5週視訊編碼與錯誤修復技術&#34;&gt;第5週：視訊編碼與錯誤修復技術&lt;/h2&gt;
 &lt;h3 id=&#34;homework4&#34;&gt;HomeWork4&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/LLCB2gL.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/LLCB2gL.png&#34;
 	width=&#34;883&#34;
 	height=&#34;557&#34;
-	srcset=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/LLCB2gL_hu09a7f8de2c128c864d2cb2704e190e82_72040_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/LLCB2gL_hu09a7f8de2c128c864d2cb2704e190e82_72040_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/LLCB2gL_hu09a7f8de2c128c864d2cb2704e190e82_72040_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/LLCB2gL_hu09a7f8de2c128c864d2cb2704e190e82_72040_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1213,29 +1205,29 @@ For streaming, since the video is downloaded while playing, it does not need to 
 		data-flex-basis=&#34;380px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;why-is-video-encoding-widely-used-in-internet-video-streaming&#34;&gt;Why is video encoding widely used in Internet video streaming?&lt;/h4&gt;
-&lt;p&gt;But high-efficiency video compression can bring huge changes to applications, solve the disproportionate gap between file size and network speed, so that videos and pictures can be spread quickly, and there is a lot of application space, so that people can now master it anytime, anywhere. Instant video information&lt;/p&gt;
-&lt;p&gt;It should prove a sentence said by the ancients: the scholars will know the world&amp;rsquo;s affairs without leaving them.&lt;/p&gt;
-&lt;h4 id=&#34;explains-the-hierarchical-structure-of-h263&#34;&gt;Explains the hierarchical structure of H.263.&lt;/h4&gt;
-&lt;p&gt;H.263 is composed of a hierarchical structure, which is divided into four layers: Picture, Group of blocks (GOB), Macroblock (MB), and Block in order from top to bottom.&lt;/p&gt;
+&lt;h4 id=&#34;視訊編碼為什麼會廣泛在網路視訊串流普遍使用&#34;&gt;視訊編碼為什麼會廣泛在網路視訊串流普遍使用?&lt;/h4&gt;
+&lt;p&gt;可高效率視訊壓縮可以為應用來來巨大的改變，解決了檔案大小跟網路速度不成比的差距讓影片圖片都可以快速的傳播，多了很多應用的空間，以至於人們現在隨時隨地都能掌握即時影音資訊&lt;/p&gt;
+&lt;p&gt;應證了古人所說的一句話：秀才不出們便知天下事。&lt;/p&gt;
+&lt;h4 id=&#34;說明解釋h263的階層式架構&#34;&gt;說明解釋H.263的階層式架構。&lt;/h4&gt;
+&lt;p&gt;H.263以一種階層式的結構組成，由上而下依序分為Picture、Group of blocks(GOB)、Macroblock(MB)、Block四層&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Picture Layer&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Group of blocks (GOB) Layer: It is mainly composed of Macroblocks with a column-like structure, forming a group of GOBs.&lt;/p&gt;
+&lt;p&gt;Group of blocks(GOB) Layer：主要是條列狀結構的Macroblock所組成，組成一組一組的GOB。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Macroblock Layer: The area covered by a Macroblock is 16*16 pixels, and a Macroblock is composed of 6 blocks.&lt;/p&gt;
+&lt;p&gt;Macroblock Layer：一個Macroblock所涵蓋的區域是16 * 16 pixels，而一個Macroblock是由6個Block組成的。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Block Layer: A Block contains 8 * 8 pixels.&lt;/p&gt;
+&lt;p&gt;Block Layer：一個Block包含了 8 * 8 個pixels。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/GHk9lMW.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/GHk9lMW.jpg&#34;
 	width=&#34;600&#34;
 	height=&#34;353&#34;
-	srcset=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/GHk9lMW_hu3f2a162f79977b683e0ecdc2ed2ead55_16648_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/GHk9lMW_hu3f2a162f79977b683e0ecdc2ed2ead55_16648_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/GHk9lMW_hu3f2a162f79977b683e0ecdc2ed2ead55_16648_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/GHk9lMW_hu3f2a162f79977b683e0ecdc2ed2ead55_16648_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1244,80 +1236,80 @@ For streaming, since the video is downloaded while playing, it does not need to 
 		data-flex-basis=&#34;407px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;try-to-compare-the-differences-between-h261-and-h263&#34;&gt;Try to compare the differences between H.261 and H.263.&lt;/h4&gt;
-&lt;p&gt;Application of H.261: for face-to-face video telephony and video conferencing.&lt;/p&gt;
-&lt;p&gt;Applications of H.263: H.263 was originally designed for transmission in H.324-based systems (ie, public switched telephone networks and other circuit-switched-based
-network for video conferencing and video telephony).&lt;/p&gt;
-&lt;p&gt;Overview of H.261: H.261 is a video coding standard formulated by ITU-T in 1990 and belongs to a video codec.&lt;/p&gt;
-&lt;p&gt;Overview of H.263: H.263 is a low-bit-rate video coding standard for video conferencing formulated by ITU-T and belongs to a video codec.&lt;/p&gt;
-&lt;p&gt;Features of H.261: H.261 requires much less CPU computation than MPEG in real-time encoding. In order to optimize bandwidth usage, this algorithm introduces a trade-off mechanism between image quality and motion amplitude. That is, images that are vigorously moving are of poorer quality than relatively still images.&lt;/p&gt;
-&lt;p&gt;Features of H.263: Motion compensation in H.263 uses half-pixel precision, while H.261 uses full-pixel precision and loop filtering; some parts of the data stream hierarchy are optional in H.263, making Codecs can be configured for lower data rates or better error correction; H.263 includes four negotiable options to improve performance; H.263 uses unlimited motion vectors and syntax-based arithmetic coding.&lt;/p&gt;
-&lt;p&gt;The accuracy of H.263 Motion compensation can reach half-pixel accuracy;
-This method is similar to the one used by MPEG, mainly because of the characteristics of human eye vision, let us
-This method can be used to improve the accuracy of displacement estimation. Therefore, we can use the phase of the image in time
-to compress the image more. Compared with H.261, there are only integer pixels ((Integer-pixel accuracy)
-Overlapped block motion compensation (OBMC): After finding the most similar blocks using displacement estimation, the traditional method directly covers these blocks, and the estimated error value is added to form the current block. image.
-However, in H.263, all current blocks will be the weighted average of the three blocks plus the error value, but the three blocks inside will have an adjacent relationship. So the size of the block has changed from the original 16x16 to 8x8. Therefore, the quality of the compressed image will be better, and it can also maintain a better compression ratio.&lt;/p&gt;
-&lt;h4 id=&#34;h263-compared-to-h261&#34;&gt;H.263 compared to H.261&lt;/h4&gt;
+&lt;h4 id=&#34;試著比較h261與h263的差異&#34;&gt;試著比較H.261與H.263的差異。&lt;/h4&gt;
+&lt;p&gt;H.261的應用：用於面對面的可視電話和視頻會議。&lt;/p&gt;
+&lt;p&gt;H.263的應用：H.263最初設計為基於H.324的系統進行傳輸（即基於公共交換電話網和其它基於電路交換的
+網絡進行視頻會議和視頻電話）。&lt;/p&gt;
+&lt;p&gt;H.261的概述：H.261是1990年ITU-T制定的一個視頻編碼標準，屬於視頻編解碼器。&lt;/p&gt;
+&lt;p&gt;H.263的概述：H.263是由ITU-T制定的視頻會議用的低碼率視頻編碼標準，屬於視頻編解碼器。&lt;/p&gt;
+&lt;p&gt;H.261的特點：H.261在實時編碼時比MPEG所佔用的CPU運算量少得多，此算法為了優化帶寬佔用量，引進了在圖像質量與運動幅度之間的平衡折中機制，也就是說，劇烈運動的圖像比相對靜止的圖像質量要差。&lt;/p&gt;
+&lt;p&gt;H.263的特點：H.263的運動補償使用半像素精度，而H.261則用全像素精度和環路濾波；數據流層次結構的某些部分在H.263中是可選的，使得編解碼可以配置成更低的數據率或更好的糾錯能力；H.263包含四個可協商的選項以改善性能；H.263採用無限制的運動向量以及基於語法的算術編碼。&lt;/p&gt;
+&lt;p&gt;H.263的Motion compensation的精準度可以達到半個像點(Half-pixel accuracy)；
+這種方式與 MPEG 使用的方式互相類似，主要是因為人類眼睛視覺的特性，讓我們
+可以利用這種方法將位移估計的準確度提高。所以可以利用影像在時間上的相
+關性來把影像作更多壓縮。相較於H.261卻只有整數個像點((Integer-pixel accuracy)
+可重疊式區塊位移補償(Overlapped block motion compensation, OBMC)：利用移位估計找出最相似的Block之後，傳統的方法就直接把這些Block覆蓋上去，再加上估計的誤差值就形成了目前的影像。
+但是相對的在H.263中，所有目前的Block都會是三個Block的加權平均值再加上誤差值，然而裡面的三個Block都會有相鄰的關係。所以在Block的大小從原本的16x16變成8x8。所以會讓壓縮過後的影像品質更好，而且還能保值較佳的壓縮比例。&lt;/p&gt;
+&lt;h4 id=&#34;h263相較於h261&#34;&gt;H.263相較於H.261&lt;/h4&gt;
 &lt;ol&gt;
-&lt;li&gt;Many cost reductions&lt;/li&gt;
-&lt;li&gt;More video formats are supported&lt;/li&gt;
-&lt;li&gt;Provide Overlapped block motion compensation (OBMC).&lt;/li&gt;
-&lt;li&gt;Take advantage of the new Arithmetic coding&lt;/li&gt;
+&lt;li&gt;減少了許多成本&lt;/li&gt;
+&lt;li&gt;支援了更多的視訊格式&lt;/li&gt;
+&lt;li&gt;提供Overlapped block motion compensation (OBMC)。&lt;/li&gt;
+&lt;li&gt;利用新的Arithmetic coding&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;h264svc-video-quality-is-divided-into-three-adjustable-modes&#34;&gt;H.264/SVC video quality is divided into three adjustable modes:&lt;/h4&gt;
+&lt;h4 id=&#34;h264svc視訊品質分成三種可調方式&#34;&gt;H.264/SVC視訊品質分成三種可調方式：&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;SNR scalability&lt;/li&gt;
 &lt;li&gt;Temporal scalability&lt;/li&gt;
 &lt;li&gt;Spatial scalability&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;compare-the-differences-between-h264svc-and-avc&#34;&gt;Compare the differences between H.264/SVC and AVC&lt;/h4&gt;
+&lt;h4 id=&#34;比較h264svc與avc的差異&#34;&gt;比較H.264/SVC與AVC的差異&lt;/h4&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;&lt;/th&gt;
-&lt;th&gt;Legacy Video Protocol (H.264/AVC)&lt;/th&gt;
-&lt;th&gt;Vidyo Video Protocol (H.264/SVC)&lt;/th&gt;
+&lt;th&gt;傳統視訊協議 (H.264/AVC)&lt;/th&gt;
+&lt;th&gt;Vidyo視訊協議 (H.264/SVC)&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;Tolerable network packet loss rate for video conferencing&lt;/td&gt;
+&lt;td&gt;視訊會議可以容忍的網路丟包率&lt;/td&gt;
 &lt;td&gt;&amp;lt; 2 – 3 %&lt;/td&gt;
 &lt;td&gt;&amp;lt;20%&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Requirements for Network&lt;/td&gt;
-&lt;td&gt;Dedicated Line&lt;/td&gt;
-&lt;td&gt;Shared Line&lt;/td&gt;
+&lt;td&gt;對網路的要求&lt;/td&gt;
+&lt;td&gt;專線&lt;/td&gt;
+&lt;td&gt;共享線路&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Video Conference Latency&lt;/td&gt;
-&lt;td&gt;400ms&lt;/td&gt;
-&lt;td&gt;&amp;lt; 200ms&lt;/td&gt;
+&lt;td&gt;視訊會議延遲&lt;/td&gt;
+&lt;td&gt;400毫秒&lt;/td&gt;
+&lt;td&gt;&amp;lt; 200毫秒&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Video conference effect&lt;/td&gt;
-&lt;td&gt;Non-real-time interaction&lt;/td&gt;
-&lt;td&gt;Real-time interaction&lt;/td&gt;
+&lt;td&gt;視訊會議效果&lt;/td&gt;
+&lt;td&gt;非實時互動&lt;/td&gt;
+&lt;td&gt;實時互動&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;Cost of HD conference room terminals&lt;/td&gt;
-&lt;td&gt;Expensive&lt;/td&gt;
-&lt;td&gt;Universal&lt;/td&gt;
+&lt;td&gt;HD 會議室型終端的開銷&lt;/td&gt;
+&lt;td&gt;昂貴&lt;/td&gt;
+&lt;td&gt;普及型&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;AVC is actually an alias for the H.264 protocol. But since the SVC part was added to the H.264 protocol, people used to call the part of the H.264 protocol that does not contain SVC as AVC, and the SVC part as SVC alone.
-H.264 SVC (H.264 Scalable Coding) was originally developed by JVT in 2004 as an extension of the H.264 standard, and was approved by ITU in July 2007. H.264 SVC is based on the H.264 AVC video codec standard, and utilizes various efficient algorithm tools of the AVC codec. Expansion kits, and are extensible in terms of video quality, and can produce decoded video at different frame rates, resolutions or quality levels. Video quality can be adjusted. The video encoding quality is better. Single or multiple bit streams can be used. Better network adaptability.
-When the quality of network transmission is poor, AVC cannot play the video in real time. Relatively, SVC can play the action with lower video quality. Although it cannot provide high-quality video, it improves the smoothness of video streaming.&lt;/p&gt;
+&lt;p&gt;AVC實際上是H.264協議的別名。但自從H.264協議中增加了SVC的部分之後，人們習慣將不包含 SVC 的 H.264協議那一部分稱為AVC，而將 SVC 這一部分單獨稱為SVC。
+H.264 SVC（H.264可分級編碼）作為H.264標準的一個擴充套件最初由JVT在2004年開始制定，並於2007年7月獲得ITU批准。H.264 SVC以H.264 AVC視訊編解碼器標準為基礎，利用了AVC編解碼器的各種高效演算法工具，在編碼產生的編碼視訊時間上（幀率）、空間上（解析度）可擴充套件，並且是在視訊質 量方面可擴充套件的，可產生不同幀速率、解析度或質量等級的解碼視訊。可進行視訊品質的調整。視訊編碼品質較佳。可使用單一或多個bit stream。網路適應性較佳。
+AVC在網路傳輸品質較差時，並無法即時撥放視訊視訊，相對的SVC可以用較低的視訊品質進行播放的動作，雖然無法提供高品質的視訊，但是提升了視訊串流的流暢性。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;week-8-video-encoding-and-bug-fixing-techniques&#34;&gt;Week 8: Video Encoding and Bug Fixing Techniques&lt;/h2&gt;
+&lt;h2 id=&#34;第8週視訊編碼與錯誤修復技術&#34;&gt;第8週：視訊編碼與錯誤修復技術&lt;/h2&gt;
 &lt;h3 id=&#34;homework5&#34;&gt;HomeWork5&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/qvSfZ3L.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/qvSfZ3L.png&#34;
 	width=&#34;762&#34;
 	height=&#34;556&#34;
-	srcset=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/qvSfZ3L_hu00a0dd7ade069720994f5cd482ac49b5_72388_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/qvSfZ3L_hu00a0dd7ade069720994f5cd482ac49b5_72388_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/qvSfZ3L_hu00a0dd7ade069720994f5cd482ac49b5_72388_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/qvSfZ3L_hu00a0dd7ade069720994f5cd482ac49b5_72388_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1326,20 +1318,20 @@ When the quality of network transmission is poor, AVC cannot play the video in r
 		data-flex-basis=&#34;328px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;which-of-the-two-error-response-mechanisms-arq-and-fec-is-more-suitable-for-online-video-streaming&#34;&gt;Which of the two error response mechanisms, ARQ and FEC, is more suitable for online video streaming?&lt;/h4&gt;
+&lt;h4 id=&#34;網路視訊串流中arq與fec兩種錯誤回覆機制哪種比較合適&#34;&gt;網路視訊串流中，ARQ與FEC兩種錯誤回覆機制哪種比較合適？&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;FEC must be used because when errors are found, the raw material is no longer available using the ARQ mechanism.&lt;/li&gt;
+&lt;li&gt;必須使用FEC，因為當發現錯誤時，使用ARQ機制原始資料已不再可用。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;please-explain-how-arq-works&#34;&gt;Please explain how ARQ works&lt;/h4&gt;
-&lt;p&gt;ANS: When the server and the client want to transmit data, if an error occurs during the transmission of the message, the receiver will reply to the transmitter, and there are three common methods:
+&lt;h4 id=&#34;請說明arq的運作方式&#34;&gt;請說明ARQ的運作方式&lt;/h4&gt;
+&lt;p&gt;ANS：當Server與Client端要傳送資料的時候，如果訊息在傳輸的過程當中發生了錯誤，接收端會回覆傳送端，而常見的方法有以下三種：
 Stop-and-wait Automatic Repeat Request:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Each time the sender transmits a data packet, it temporarily stops and waits until it receives the ACK/NACK returned by the receiver (Receiver), or decides to transmit new data/retransmission when the ACK/NACK has not been received after a certain time. .&lt;/li&gt;
+&lt;li&gt;發送端每傳送一筆資料封包就先暫時停下來，待其收到接收端(Receiver)傳回的ACK/NACK，或者在特定時間後尚未收到ACK/NACK時才決定傳新資料/重傳。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/q1N0Z1u.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/q1N0Z1u.jpg&#34;
 	width=&#34;500&#34;
 	height=&#34;240&#34;
-	srcset=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/q1N0Z1u_hud25a4271c4de0ab8bdca6bdb972a3931_25374_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/q1N0Z1u_hud25a4271c4de0ab8bdca6bdb972a3931_25374_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/q1N0Z1u_hud25a4271c4de0ab8bdca6bdb972a3931_25374_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/q1N0Z1u_hud25a4271c4de0ab8bdca6bdb972a3931_25374_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1350,12 +1342,12 @@ Stop-and-wait Automatic Repeat Request:&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;Go-back N Automatic Repeat Request:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The sender continuously transmits data packets. If it receives ACK, it does not change its action, but when it receives NACK, it will jump back to the wrong data packet and retransmit it in sequence. After returning a NACK, the receiving end discards the next received packet, and continues to store the data packets in sequence only after the previously wrongly transmitted data is correctly decoded (received).&lt;/li&gt;
+&lt;li&gt;發送端持續不斷地傳送資料封包，若收到ACK時不改變其動作，但收到NACK時會跳回錯誤的資料封包再依序重傳一次。接收端在回傳NACK後便捨棄接下來收到的封包，待前一次傳錯的資料正確解碼(接收)後，才開始繼續依序儲存資料封包。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/YSNb2lh.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/YSNb2lh.jpg&#34;
 	width=&#34;500&#34;
 	height=&#34;246&#34;
-	srcset=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/YSNb2lh_hud25a4271c4de0ab8bdca6bdb972a3931_35336_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/YSNb2lh_hud25a4271c4de0ab8bdca6bdb972a3931_35336_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/YSNb2lh_hud25a4271c4de0ab8bdca6bdb972a3931_35336_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/YSNb2lh_hud25a4271c4de0ab8bdca6bdb972a3931_35336_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1366,12 +1358,12 @@ Stop-and-wait Automatic Repeat Request:&lt;/p&gt;
 &gt;&lt;/p&gt;
 &lt;p&gt;Select Repeat Automatic Repeat Request:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;The method is similar to Go-back-N ARQ, but when receiving NACK, only the wrong data packet is retransmitted instead of retransmitting in sequence. In addition, the receiving end does not discard the next received data packet after returning NACK The packets are stored in a buffer (Buffer), and they are rearranged in sequence after all the data is received (correctly decoded).&lt;/li&gt;
+&lt;li&gt;做法與Go-back-N ARQ相似，但收到NACK時僅重傳錯誤的那份資料封包，而非重新依序重傳，另外，接收端在回傳NACK後並非捨棄接下來收到的封包而是存在緩衝器(Buffer)，待資料全部接收(正確解碼)完成後再重新依序排列。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/jEDXjhF.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/jEDXjhF.jpg&#34;
 	width=&#34;500&#34;
 	height=&#34;269&#34;
-	srcset=&#34;https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/jEDXjhF_hud25a4271c4de0ab8bdca6bdb972a3931_38992_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/p/communication-network-and-multimedia-applications/jEDXjhF_hud25a4271c4de0ab8bdca6bdb972a3931_38992_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/jEDXjhF_hud25a4271c4de0ab8bdca6bdb972a3931_38992_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/jEDXjhF_hud25a4271c4de0ab8bdca6bdb972a3931_38992_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1380,35 +1372,35 @@ Stop-and-wait Automatic Repeat Request:&lt;/p&gt;
 		data-flex-basis=&#34;446px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h4 id=&#34;please-explain-how-fec-works&#34;&gt;Please explain how FEC works?&lt;/h4&gt;
-&lt;p&gt;ANS: The basic FEC transmission operation. When the Server wants to transmit k bytes data, it will first perform an encoding operation through the FEC encoder to generate (n-k)=h bytes and transmit it together with the original data k bytes, and allow the loss of h bytes or error, when an error occurs during transmission, the client can already use the received k bytes to decode the data by the FEC decoder. If the error occurs within the h bytes error, the erroneous data can be restored. and reconstruct the original data.&lt;/p&gt;
-&lt;h4 id=&#34;try-to-compare-the-difference-between-arq-and-fec-error-response-mechanism&#34;&gt;Try to compare the difference between ARQ and FEC error response mechanism?&lt;/h4&gt;
-&lt;p&gt;ANS: Automatic Repeat-reQuest
-practice:
-When data is lost, retransmission of unreceived data is required.
-advantage:
-Just resend the lost data.
-shortcoming:
-Timeliness and a lot of lost bandwidth consumption.
+&lt;h4 id=&#34;請說明fec的運作方式&#34;&gt;請說明FEC的運作方式？&lt;/h4&gt;
+&lt;p&gt;ANS：基本的FEC傳送運作，Server欲傳送k bytes資料時，它會先經由FEC encoder進行編碼動作，產生(n-k)=h bytes連同原始資料k bytes一起傳送出去，並且允許發生h bytes的loss或error，當傳輸的過程中若發生錯誤時，client端可已經由FEC decoder利用所接收到的k bytes進行資料解碼，如果錯誤發生的範圍在h bytes錯誤內，就可將錯誤的資料修復回來，並重新建構原始的資料。&lt;/p&gt;
+&lt;h4 id=&#34;試著比較arq與fec兩種錯誤回覆機制的差異&#34;&gt;試著比較ARQ與FEC兩種錯誤回覆機制的差異？&lt;/h4&gt;
+&lt;p&gt;ANS：Automatic Repeat-reQuest
+做法：
+當資料遺失時，則要求重新傳送未收到的資料。
+優點：
+只需重送遺失的資料。
+缺點：
+時效性與大量遺失頻寬消耗。
 Forward Error Correction
-practice:
-With some additional information, when the data received by the receiver is incomplete, it can be repaired and restored through the additional information.&lt;/p&gt;
-&lt;p&gt;advantage:
-Some errors can be fixed without relying on server resend.&lt;/p&gt;
-&lt;p&gt;shortcoming:
-Consume additional bandwidth and resources.&lt;/p&gt;
-&lt;h4 id=&#34;please-explain-the-difference-between-packet-leavel-fec-and-byte-leavel-fec&#34;&gt;Please explain the difference between Packet-Leavel FEC and Byte Leavel FEC?&lt;/h4&gt;
-&lt;p&gt;ANS: Byte-level FEC is the correcting codes, usually used in the physical layer. In FEC(n, k), n is the block size, which means that it contains k message symbols and n-k parity symbols to provide error correction at the decoding end. One symbol corresponds to For a set of bit sequences (such as bytes), it is impossible to know which symbols have errors, so correcting codes can only repair (n-k)/2 symbol errors at most. The general correcting codes cannot resist the occurrence of a large number of error bursts, so they are usually transmitted with interleaving, in order to disperse errors and reduce the impact of bursts.
-Packet-level FEC is erasure codes, which are usually used in Transport or Application layer. In FEC(n, k), n is block size, including k data packets and n-k parity packets, because we can know which ones are above the IP layer. There is an error in the packets, so we use erasure codes, that is, assuming that MH can correctly receive any k packets out of n packets, any missing data packets will be correctly reconstructed.&lt;/p&gt;
+做法：
+加上些許額外的資訊，當接收端接收的資料不完整時，可以透過額外的資訊來修復與還原。&lt;/p&gt;
+&lt;p&gt;優點：
+不需要仰賴server重送即可逕行修復部分錯誤。&lt;/p&gt;
+&lt;p&gt;缺點：
+耗費額外的頻寬與資源。&lt;/p&gt;
+&lt;h4 id=&#34;請解釋packet-leavel-fec與byte-leavel-fec的差異&#34;&gt;請解釋Packet-Leavel FEC與Byte Leavel FEC的差異？&lt;/h4&gt;
+&lt;p&gt;ANS：Byte-level FEC為correcting codes，通常使用在physical layer，FEC(n, k)中n為block size，表示包含k個message symbols與n-k個parity symbols提供解碼端進行錯誤的修正，一個symbol對應一組bit sequence(如byte)，因無法知道到底有哪些symbols發生了error，所以correcting codes最多只能修復(n-k)/2個symbol錯誤。一般的correcting codes無法抵抗大量error burst的發生，所以通常會搭配interleaving的方式傳送，為的就是要將錯誤分散而減少burst所造成的影響。
+Packet-level FEC為erasure codes，通常使用在Transport或Application layer，FEC(n, k)中n為block size，包含k個data packets與n-k個parity packets，因為在IP層以上我們可以知道到底有哪些packets發生了error，所以我們採用erasure codes，也就是假設MH可以正確的接收到n個packets中的任何k個packets，任何遺失的data packets將可以正確的被重建回來。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Create ssh-agent key</title>
-        <link>https://tsairongfu.github.io/p/create-ssh-agent-key/</link>
+        <title>創建 ssh-agent 密鑰</title>
+        <link>https://tsairongfu.github.io/p/%E5%89%B5%E5%BB%BA-ssh-agent-%E5%AF%86%E9%91%B0/</link>
         <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/create-ssh-agent-key/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/create-ssh-agent-key/picture.jpg" alt="Featured image of post Create ssh-agent key" /&gt;&lt;p&gt;創建 ssh-agent 密鑰&lt;/p&gt;
+        <guid>https://tsairongfu.github.io/p/%E5%89%B5%E5%BB%BA-ssh-agent-%E5%AF%86%E9%91%B0/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E5%89%B5%E5%BB%BA-ssh-agent-%E5%AF%86%E9%91%B0/picture.jpg" alt="Featured image of post 創建 ssh-agent 密鑰" /&gt;&lt;p&gt;Create ssh-agent key&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1418,7 +1410,7 @@ Packet-level FEC is erasure codes, which are usually used in Transport or Applic
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;key路徑&lt;/p&gt;
+&lt;p&gt;key path&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1428,19 +1420,19 @@ Packet-level FEC is erasure codes, which are usually used in Transport or Applic
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;貼到你的github上&lt;/p&gt;
+&lt;p&gt;Post it on your github&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>Mac OS XAMPP can’t open</title>
-        <link>https://tsairongfu.github.io/p/mac-os-xampp-can-not-open/</link>
+        <title>Mac OS XAMPP 啟動錯誤</title>
+        <link>https://tsairongfu.github.io/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</link>
         <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/mac-os-xampp-can-not-open/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/mac-os-xampp-can-not-open/picture.jpg" alt="Featured image of post Mac OS XAMPP can’t open" /&gt;&lt;p&gt;mysql cannot be opened
-The reason for this is because the sql service is occupied by mac system resources&lt;/p&gt;
-&lt;p&gt;Solution
-Open Terminal&lt;/p&gt;
+        <guid>https://tsairongfu.github.io/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/picture.jpg" alt="Featured image of post Mac OS XAMPP 啟動錯誤" /&gt;&lt;p&gt;mysql打不開
+出現此原因是因為sql服務被mac系統資源佔用&lt;/p&gt;
+&lt;p&gt;解決辦法
+打開Terminal&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1452,17 +1444,17 @@ Open Terminal&lt;/p&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>A Several Laravel tips</title>
-        <link>https://tsairongfu.github.io/p/a-several-laravel-tips/</link>
+        <title>一些關於Laravel的小提示</title>
+        <link>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/</link>
         <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/a-several-laravel-tips/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/a-several-laravel-tips/picture.jpg" alt="Featured image of post A Several Laravel tips" /&gt;&lt;h2 id=&#34;there-was-an-error-in-opening-the-project&#34;&gt;There was an error in opening the project&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/picture.jpg" alt="Featured image of post 一些關於Laravel的小提示" /&gt;&lt;h2 id=&#34;專案打開出現錯誤&#34;&gt;專案打開出現錯誤&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;try &lt;code&gt;Composer update&lt;/code&gt; OR &lt;code&gt;Composer i&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;嘗試 &lt;code&gt;Composer update&lt;/code&gt; OR &lt;code&gt;Composer i&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;composer-version-update&#34;&gt;Composer version update&lt;/h2&gt;
-&lt;p&gt;To update to 2.0 just execute the following command&lt;/p&gt;
+&lt;h2 id=&#34;composer-版本更新&#34;&gt;Composer 版本更新&lt;/h2&gt;
+&lt;p&gt;更新至 2.0 只要執行以下命令&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1471,23 +1463,23 @@ Open Terminal&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer self-update --2
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;go-back-to-version-11010-with-composer-self-update---rollback&#34;&gt;Go back to version 1.10.10 with composer self-update &amp;ndash;rollback&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;使用-composer-self-update---rollback-返回到-11010-版本&#34;&gt;使用 composer self-update &amp;ndash;rollback 返回到 1.10.10 版本&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer self-update --1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer self-update --1 
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;the-webpage-displays-debug-mode&#34;&gt;The webpage displays Debug mode&lt;/h2&gt;
+&lt;h2 id=&#34;網頁顯示debug模式&#34;&gt;網頁顯示Debug模式&lt;/h2&gt;
 &lt;p&gt;laravel/config/app.php&lt;/p&gt;
 &lt;p&gt;&amp;lsquo;debug&amp;rsquo; =&amp;gt; (bool) env(&amp;lsquo;APP_DEBUG&amp;rsquo;, false),&lt;/p&gt;
 &lt;p&gt;-&amp;gt;&lt;/p&gt;
 &lt;p&gt;&amp;lsquo;debug&amp;rsquo; =&amp;gt; (bool) env(&amp;lsquo;APP_DEBUG&amp;rsquo;, true),&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;to-install-xml-suite&#34;&gt;To install XML suite&lt;/h2&gt;
+&lt;h2 id=&#34;要裝xml套件&#34;&gt;要裝XML套件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1496,7 +1488,7 @@ Open Terminal&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer require mtownsend/response-xml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;to-install-the-sql-server-reporting-servers-suite&#34;&gt;To install the SQl Server Reporting Servers suite&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;要安裝sql-server-reporting-servers-套件&#34;&gt;要安裝SQl Server Reporting Servers 套件&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1506,15 +1498,15 @@ Open Terminal&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;encountered-fatal-error-class-soapclient-not-found&#34;&gt;Encountered Fatal error: Class &amp;lsquo;SoapClient&amp;rsquo; not found&lt;/h2&gt;
+&lt;h2 id=&#34;遇到fatal-error-class-soapclient-not-found&#34;&gt;遇到Fatal error: Class &amp;lsquo;SoapClient&amp;rsquo; not found&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;Go to php.ini in C:/xampp/php&lt;/li&gt;
-&lt;li&gt;In front of extension=soap; just remove it&lt;/li&gt;
+&lt;li&gt;到C:/xampp/php中php.ini&lt;/li&gt;
+&lt;li&gt;extension=soap前面的;移除掉即可&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;encountered-in-providerrepositoryphp-line-208-class-elibyytcpdfserviceprovider-not-found&#34;&gt;Encountered In ProviderRepository.php line 208: Class &amp;lsquo;Elibyy\TCPDF\ServiceProvider&amp;rsquo; not found&lt;/h2&gt;
+&lt;h2 id=&#34;遇到in-providerrepositoryphp-line-208-class-elibyytcpdfserviceprovider-not-found&#34;&gt;遇到In ProviderRepository.php line 208: Class &amp;lsquo;Elibyy\TCPDF\ServiceProvider&amp;rsquo; not found&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1524,11 +1516,11 @@ Open Terminal&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;p&gt;##PostgreSQL&lt;/p&gt;
+&lt;h2 id=&#34;postgresql&#34;&gt;PostgreSQL&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://tonyfrenzy.medium.com/using-postgresql-with-laravel-c4c320ca7f34&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://tonyfrenzy.medium.com/using-postgresql-with-laravel-c4c320ca7f34&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;encountered-the-following-errors&#34;&gt;Encountered the following errors:&lt;/h2&gt;
+&lt;h2 id=&#34;遇到下列錯誤&#34;&gt;遇到下列錯誤：&lt;/h2&gt;
 &lt;p&gt;Your requirements could not be resolved to an installable set of packages.&lt;/p&gt;
 &lt;p&gt;Problem 1
 - laravel/framework[v7.29.0, &amp;hellip;, 7.x-dev] require league/flysystem ^1.1 -&amp;gt; satisfiable by league/flysystem[1.1.0, &amp;hellip;, 1.x-dev].
@@ -1536,13 +1528,13 @@ Open Terminal&lt;/p&gt;
 &lt;p&gt;To enable extensions, verify that they are enabled in your .ini files:
 - C:\php-8.0.6\php.ini
 You can also run &lt;code&gt;php --ini&lt;/code&gt; inside terminal to see which files are used by PHP in CLI mode.&lt;/p&gt;
-&lt;h3 id=&#34;you-must-do-the-following&#34;&gt;You must do the following:&lt;/h3&gt;
+&lt;h3 id=&#34;你必須操作以下&#34;&gt;你必須操作以下：&lt;/h3&gt;
 &lt;p&gt;First of all, stop the XAMPP/Wamp and then kindly remove the starting semicolon ( ; ) from your xampp\php\php.ini the following code.&lt;/p&gt;
 &lt;p&gt;;extension=fileinfo&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;encountered-the-following-problems&#34;&gt;encountered the following problems:&lt;/h2&gt;
+&lt;h2 id=&#34;遇到下列問題&#34;&gt;遇到下列問題：&lt;/h2&gt;
 &lt;p&gt;Undefined constant PDO::MYSQL_ATTR_LOCAL_INFILE&lt;/p&gt;
-&lt;h3 id=&#34;you-must-do-the-following-1&#34;&gt;You must do the following&lt;/h3&gt;
+&lt;h3 id=&#34;你必須操作下列&#34;&gt;你必須操作下列&lt;/h3&gt;
 &lt;p&gt;In your php.ini file, you should have the following line (uncommented):&lt;/p&gt;
 &lt;p&gt;extension=php_pdo_mysql.dll on Windows
 extension=php_pdo_mysql.so on Linux/Mac&lt;/p&gt;
@@ -1552,13 +1544,13 @@ extension=php_pdo_mysql.so on Linux/Mac&lt;/p&gt;
     &gt;https://blog.gtwang.org/linux/ubuntu-linux-laravel-nginx-mariadb-installation-tutorial/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;laravel-visual-studio-code-altshiftf-for-blade&#34;&gt;Laravel Visual Studio Code Alt+Shift+F for blade&lt;/h2&gt;
-&lt;p&gt;Need to install plugin&lt;/p&gt;
-&lt;p&gt;Laravel Blade Snippets and Beautify&lt;/p&gt;
-&lt;p&gt;MAC top column -&amp;gt; Preferences -&amp;gt; Settings (shortcut) control+option+command+ㄝ&lt;/p&gt;
-&lt;p&gt;Windows File-&amp;gt;Preferences-&amp;gt;Settings (shortcut) Ctrl+,&lt;/p&gt;
-&lt;p&gt;Search &amp;ldquo;beautify&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;click&amp;rdquo; Edit in settings:json&lt;/p&gt;
-&lt;p&gt;slide to the bottom
-Copy and paste this json to the last line of settings.json&lt;/p&gt;
+&lt;p&gt;需要安裝插件&lt;/p&gt;
+&lt;p&gt;Laravel Blade Snippets和Beautify&lt;/p&gt;
+&lt;p&gt;MAC 上方列-&amp;gt;喜好設定-&amp;gt;設定     (快捷鍵) control+option+command+ㄝ&lt;/p&gt;
+&lt;p&gt;Windows  文件-&amp;gt;首選項-&amp;gt;設定    (快捷鍵) Ctrl+,&lt;/p&gt;
+&lt;p&gt;Search &amp;ldquo;beautify&amp;rdquo; &amp;ndash;&amp;gt; ”點擊“ 在settings:json中編輯&lt;/p&gt;
+&lt;p&gt;滑到最下面
+把這段json複製粘貼到settings.json的最後一行即可&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -1614,31 +1606,31 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Mac OS environment variable settings</title>
-        <link>https://tsairongfu.github.io/p/mac-os-environment-variable-settings/</link>
+        <title>Mac OS 環境變數設定</title>
+        <link>https://tsairongfu.github.io/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/</link>
         <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/mac-os-environment-variable-settings/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/mac-os-environment-variable-settings/picture.jpg" alt="Featured image of post Mac OS environment variable settings" /&gt;&lt;h2 id=&#34;view-file-contents&#34;&gt;View file contents&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/picture.jpg" alt="Featured image of post Mac OS 環境變數設定" /&gt;&lt;h2 id=&#34;查看檔案內容&#34;&gt;查看檔案內容&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cat ~/.zshrc&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;if-the-file-does-not-exist-or-if-it-exists-enter-the-editing-state-directly&#34;&gt;If the file does not exist, or if it exists, enter the editing state directly&lt;/h2&gt;
+&lt;h2 id=&#34;如果檔案不存在或者存在直接進入編輯狀態&#34;&gt;如果檔案不存在，或者存在直接進入編輯狀態&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;nano ~/.zshrc&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;type-i-to-start-editing-the-file-add-the-following-to-the-file-and-save&#34;&gt;Type i to start editing the file, add the following to the file and save&lt;/h2&gt;
+&lt;h2 id=&#34;鍵入i開始編輯檔案在檔案中添加下列內容并保存&#34;&gt;鍵入i，開始編輯檔案，在檔案中添加下列內容并保存&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;source ~/.bash_profile&lt;/code&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;list-environment-variables&#34;&gt;List environment variables&lt;/h2&gt;
+&lt;h2 id=&#34;列出環境變數&#34;&gt;列出環境變數&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;printenv&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;list-paths-under-environment-variables&#34;&gt;List Paths under environment variables&lt;/h2&gt;
+&lt;h2 id=&#34;列出環境變數下的-path&#34;&gt;列出環境變數下的 Path&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;echo $PATH&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;open-bash-profile&#34;&gt;open bash profile&lt;/h2&gt;
+&lt;h2 id=&#34;打開-bash-profile&#34;&gt;打開 bash profile&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;nano ~/.bash_profile&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;add-path-to-path&#34;&gt;Add path to PATH&lt;/h2&gt;
+&lt;h2 id=&#34;新增路徑到-path&#34;&gt;新增路徑到 PATH&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export PATH=$PATH: path name
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export PATH=$PATH:路徑名稱
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
@@ -1647,10 +1639,10 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PATH=$PATH: path name
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PATH=$PATH:路徑名稱
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;execute-bash-profile&#34;&gt;Execute bash profile&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;執行-bash-profile&#34;&gt;執行 bash profile&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1662,12 +1654,12 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>A Several Linux Server Command</title>
-        <link>https://tsairongfu.github.io/p/a-several-linux-server-command/</link>
+        <title>一些Linux Server指令</title>
+        <link>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/</link>
         <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/a-several-linux-server-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/a-several-linux-server-command/picture.jpg" alt="Featured image of post A Several Linux Server Command" /&gt;&lt;h2 id=&#34;view-graphics-card-usage-command&#34;&gt;View graphics card usage command&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/picture.jpg" alt="Featured image of post 一些Linux Server指令" /&gt;&lt;h2 id=&#34;查看顯卡用量指令&#34;&gt;查看顯卡用量指令&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1677,7 +1669,7 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;nvidia-installation-command-ppa-install&#34;&gt;Nvidia installation command (PPA install&lt;/h2&gt;
+&lt;h2 id=&#34;nvidia-安裝指令-ppa安裝&#34;&gt;Nvidia 安裝指令 (PPA安裝&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1731,9 +1723,9 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;check-whether-to-start-hibernation&#34;&gt;Check whether to start hibernation&lt;/h2&gt;
+&lt;h2 id=&#34;查看是否啟動休眠&#34;&gt;查看是否啟動休眠&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;systemctl status sleep.target&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;disable-auto-hibernate&#34;&gt;disable auto hibernate&lt;/h2&gt;
+&lt;h2 id=&#34;關閉自動休眠&#34;&gt;關閉自動休眠&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1743,8 +1735,8 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;apache2-related&#34;&gt;apache2 related&lt;/h2&gt;
-&lt;p&gt;start up&lt;/p&gt;
+&lt;h2 id=&#34;apache2相關&#34;&gt;apache2相關&lt;/h2&gt;
+&lt;p&gt;啟動&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1753,7 +1745,7 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 start
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Restart&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;重新啟動&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1762,7 +1754,7 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 restart
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Out of service&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;停止服務&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1771,7 +1763,7 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 stop
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;View status&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;查看狀態&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1781,7 +1773,7 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;view-network-status&#34;&gt;View network status&lt;/h2&gt;
+&lt;h2 id=&#34;查看網路狀態&#34;&gt;查看網路狀態&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1791,7 +1783,7 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;change-time-zone&#34;&gt;change time zone&lt;/h2&gt;
+&lt;h2 id=&#34;更改時區&#34;&gt;更改時區&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

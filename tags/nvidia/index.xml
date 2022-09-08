@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>NVIDIA on Tsai の Antarctica</title>
+        <title>NVIDIA on Tsaiの南極洲</title>
         <link>https://tsairongfu.github.io/tags/nvidia/</link>
-        <description>Recent content in NVIDIA on Tsai の Antarctica</description>
+        <description>Recent content in NVIDIA on Tsaiの南極洲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Sun, 23 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/tags/nvidia/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Nvidia NX Make Darknet</title>
-        <link>https://tsairongfu.github.io/p/nvidia-nx-make-darknet/</link>
+        <title>Nvidia NX 編譯 Darknet</title>
+        <link>https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</link>
         <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/nvidia-nx-make-darknet/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/nvidia-nx-make-darknet/picture.jpg" alt="Featured image of post Nvidia NX Make Darknet" /&gt;&lt;h3 id=&#34;edit-makefile-nvcc-path-with-sudo-nano&#34;&gt;Edit Makefile NVCC path with sudo nano&lt;/h3&gt;
+        <guid>https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/picture.jpg" alt="Featured image of post Nvidia NX 編譯 Darknet" /&gt;&lt;h3 id=&#34;用sudo-nano-edit-makefile-nvcc-path&#34;&gt;用sudo nano edit Makefile NVCC path&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -47,24 +47,24 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;for-tx2-use-see-the-camera-open-command&#34;&gt;For TX2 use, see the camera open command&lt;/h3&gt;
+&lt;h3 id=&#34;tx2使用見相機開啟指令&#34;&gt;TX2使用見相機開啟指令&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 !nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&amp;#39;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>A Several Linux Server Command</title>
-        <link>https://tsairongfu.github.io/p/a-several-linux-server-command/</link>
+        <title>一些Linux Server指令</title>
+        <link>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/</link>
         <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/a-several-linux-server-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/a-several-linux-server-command/picture.jpg" alt="Featured image of post A Several Linux Server Command" /&gt;&lt;h2 id=&#34;view-graphics-card-usage-command&#34;&gt;View graphics card usage command&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/picture.jpg" alt="Featured image of post 一些Linux Server指令" /&gt;&lt;h2 id=&#34;查看顯卡用量指令&#34;&gt;查看顯卡用量指令&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -74,7 +74,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;nvidia-installation-command-ppa-install&#34;&gt;Nvidia installation command (PPA install&lt;/h2&gt;
+&lt;h2 id=&#34;nvidia-安裝指令-ppa安裝&#34;&gt;Nvidia 安裝指令 (PPA安裝&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -128,9 +128,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;check-whether-to-start-hibernation&#34;&gt;Check whether to start hibernation&lt;/h2&gt;
+&lt;h2 id=&#34;查看是否啟動休眠&#34;&gt;查看是否啟動休眠&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;systemctl status sleep.target&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;disable-auto-hibernate&#34;&gt;disable auto hibernate&lt;/h2&gt;
+&lt;h2 id=&#34;關閉自動休眠&#34;&gt;關閉自動休眠&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -140,8 +140,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;apache2-related&#34;&gt;apache2 related&lt;/h2&gt;
-&lt;p&gt;start up&lt;/p&gt;
+&lt;h2 id=&#34;apache2相關&#34;&gt;apache2相關&lt;/h2&gt;
+&lt;p&gt;啟動&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -150,7 +150,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 start
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Restart&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;重新啟動&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -159,7 +159,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 restart
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Out of service&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;停止服務&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -168,7 +168,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 stop
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;View status&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;查看狀態&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -178,7 +178,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;view-network-status&#34;&gt;View network status&lt;/h2&gt;
+&lt;h2 id=&#34;查看網路狀態&#34;&gt;查看網路狀態&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -188,7 +188,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;change-time-zone&#34;&gt;change time zone&lt;/h2&gt;
+&lt;h2 id=&#34;更改時區&#34;&gt;更改時區&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
