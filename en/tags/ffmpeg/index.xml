@@ -12,7 +12,7 @@
         <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/North%20America%20&%20Pelican%20Nebula.jpg" alt="Featured image of post A Several FFmpeg command" /&gt;&lt;h3 id=&#34;picture-to-gif&#34;&gt;picture to Gif&lt;/h3&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/picture.jpg" alt="Featured image of post A Several FFmpeg command" /&gt;&lt;h3 id=&#34;picture-to-gif&#34;&gt;picture to Gif&lt;/h3&gt;
 &lt;p&gt;Define custom palette
 The converted GIF has only three colors: white and two tints of blue, therefore, the default 256 color palette can be reduced to 16. The custom palette is created with the palettegen filter.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -208,7 +208,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
         <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/video-to-gif-use-ffmpeg/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/video-to-gif-use-ffmpeg/Sagittarius%20Star%20Cloud.jpg" alt="Featured image of post Video to Gif use FFmpeg" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/video-to-gif-use-ffmpeg/picture.jpg" alt="Featured image of post Video to Gif use FFmpeg" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;

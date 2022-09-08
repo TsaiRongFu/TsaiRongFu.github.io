@@ -12,7 +12,7 @@
         <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/The%20Omega%20Nebula.jpg" alt="Featured image of post Mac OS XAMPP 啟動錯誤" /&gt;&lt;p&gt;mysql打不開
+        <description>&lt;img src="https://tsairongfu.github.io/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/picture.jpg" alt="Featured image of post Mac OS XAMPP 啟動錯誤" /&gt;&lt;p&gt;mysql打不開
 出現此原因是因為sql服務被mac系統資源佔用&lt;/p&gt;
 &lt;p&gt;解決辦法
 打開Terminal&lt;/p&gt;

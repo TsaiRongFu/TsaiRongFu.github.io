@@ -12,7 +12,7 @@
         <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/The%20Omega%20Nebula.jpg" alt="Featured image of post Mac OS XAMPP can’t open" /&gt;&lt;p&gt;mysql cannot be opened
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/picture.jpg" alt="Featured image of post Mac OS XAMPP can’t open" /&gt;&lt;p&gt;mysql cannot be opened
 The reason for this is because the sql service is occupied by mac system resources&lt;/p&gt;
 &lt;p&gt;Solution
 Open Terminal&lt;/p&gt;
@@ -32,7 +32,7 @@ Open Terminal&lt;/p&gt;
         <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/mac-os-environment-variable-settings/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-environment-variable-settings/The%20Pleiades%20-%20M45.jpg" alt="Featured image of post Mac OS environment variable settings" /&gt;&lt;h2 id=&#34;view-file-contents&#34;&gt;View file contents&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-environment-variable-settings/picture.jpg" alt="Featured image of post Mac OS environment variable settings" /&gt;&lt;h2 id=&#34;view-file-contents&#34;&gt;View file contents&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cat ~/.zshrc&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;if-the-file-does-not-exist-or-if-it-exists-enter-the-editing-state-directly&#34;&gt;If the file does not exist, or if it exists, enter the editing state directly&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;nano ~/.zshrc&lt;/code&gt;&lt;/p&gt;

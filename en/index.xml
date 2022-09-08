@@ -12,7 +12,7 @@
         <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/North%20America%20&%20Pelican%20Nebula.jpg" alt="Featured image of post A Several FFmpeg command" /&gt;&lt;h3 id=&#34;picture-to-gif&#34;&gt;picture to Gif&lt;/h3&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/picture.jpg" alt="Featured image of post A Several FFmpeg command" /&gt;&lt;h3 id=&#34;picture-to-gif&#34;&gt;picture to Gif&lt;/h3&gt;
 &lt;p&gt;Define custom palette
 The converted GIF has only three colors: white and two tints of blue, therefore, the default 256 color palette can be reduced to 16. The custom palette is created with the palettegen filter.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -208,7 +208,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
         <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/youtube-dl-or-yt-dlp-download-facebook-video/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/youtube-dl-or-yt-dlp-download-facebook-video/Pickering%27s%20Triangle.jpg" alt="Featured image of post Youtube-dl or Yt-dlp Download Facebook Video" /&gt;&lt;h2 id=&#34;facebook-cookice---youtube-dl&#34;&gt;Facebook Cookice - Youtube-dl&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/youtube-dl-or-yt-dlp-download-facebook-video/picture.jpg" alt="Featured image of post Youtube-dl or Yt-dlp Download Facebook Video" /&gt;&lt;h2 id=&#34;facebook-cookice---youtube-dl&#34;&gt;Facebook Cookice - Youtube-dl&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -234,7 +234,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
         <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/postgresql-pgadmin-reset-password/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/postgresql-pgadmin-reset-password/The%20Lion%20in%20Cepheus%20%28SH2-132%29.jpg" alt="Featured image of post PostgreSQL pgAdmin reset password" /&gt;&lt;ol&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/postgresql-pgadmin-reset-password/picture.jpg" alt="Featured image of post PostgreSQL pgAdmin reset password" /&gt;&lt;ol&gt;
 &lt;li&gt;Change METHOD of all rows in your pg_hba.conf file from scram-sha-256 to trust&lt;/li&gt;
 &lt;li&gt;Add bin folder of Postgres installation to path, if you haven&amp;rsquo;t&lt;/li&gt;
 &lt;li&gt;Open command prompt and enter &lt;code&gt;psql -U postgres&lt;/code&gt; You won&amp;rsquo;t be asked for password here.&lt;/li&gt;
@@ -250,7 +250,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
         <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/software-automatic-security-detection-technology/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/software-automatic-security-detection-technology/Sh2-114%20Flying%20Dragon%20nebula.jpg" alt="Featured image of post Software automatic security detection technology" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuawn/Mediatek-Fuzzing-Workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/software-automatic-security-detection-technology/picture.jpg" alt="Featured image of post Software automatic security detection technology" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuawn/Mediatek-Fuzzing-Workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;yuawn/Mediatek-Fuzzing-Workshop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;fuzz-testing&#34;&gt;Fuzz Testing&lt;/h2&gt;
 &lt;ul&gt;
@@ -359,7 +359,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
         <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/windows-port-state-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/windows-port-state-command/Pleiades%20-%20Seven%20Sisters.jpg" alt="Featured image of post Windows Port state command" /&gt;&lt;h2 id=&#34;查找所有運行的端口&#34;&gt;查找所有運行的端口&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/windows-port-state-command/picture.jpg" alt="Featured image of post Windows Port state command" /&gt;&lt;h2 id=&#34;查找所有運行的端口&#34;&gt;查找所有運行的端口&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -412,7 +412,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
         <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/wifi-hacker/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/wifi-hacker/Sadr%20Region%20at%20150mm.jpg" alt="Featured image of post WiFi Hacker" /&gt;&lt;h2 id=&#34;environment-of-system&#34;&gt;Environment of System&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/wifi-hacker/picture.jpg" alt="Featured image of post WiFi Hacker" /&gt;&lt;h2 id=&#34;environment-of-system&#34;&gt;Environment of System&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Operating System: Kali Linux 2021.3&lt;/li&gt;
 &lt;li&gt;WiFi Adapters: ALFA AWUS036ACS&lt;/li&gt;
@@ -553,7 +553,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
         <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/linux-server-raid/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/linux-server-raid/The%20Tail%20of%20the%20Swan%20%E2%80%94%2091%20hours%20of%20integration.jpg" alt="Featured image of post Linux server Raid" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://askubuntu.com/questions/973632/unable-to-mount-raid1-md0-wrong-fs-type-bad-option-bad-superblock-on-dev-md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/linux-server-raid/picture.jpg" alt="Featured image of post Linux server Raid" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://askubuntu.com/questions/973632/unable-to-mount-raid1-md0-wrong-fs-type-bad-option-bad-superblock-on-dev-md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;askubuntu-973632&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Unable to Mount RAID1 md0 - wrong fs type, bad option, bad superblock on /dev/md0, missing codepage or helper program, or other error&lt;/p&gt;
 &lt;hr&gt;
@@ -655,7 +655,7 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
         <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/reporting-server-installation/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/reporting-server-installation/Sharpless%20140,%20LBN%20505,%20and%20other%20nebula%20in%20Cepheus.jpg" alt="Featured image of post Reporting Server installation" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/reporting-server-installation/picture.jpg" alt="Featured image of post Reporting Server installation" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
 &lt;p&gt;SQL Server network configuration TCP to open&lt;/p&gt;
 &lt;p&gt;Connection Test Open with Microsoft SQL Server Managerment Studio
 tcp:hostname/databasename,Port&lt;/p&gt;
@@ -741,7 +741,7 @@ Mount point: /home&lt;/li&gt;
         <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/The%20Bat%20Nebula.jpg" alt="Featured image of post Python selenium solves the problem that chrome://settings cannot be located" /&gt;&lt;h2 id=&#34;great-god-answers&#34;&gt;Great God answers:&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/picture.jpg" alt="Featured image of post Python selenium solves the problem that chrome://settings cannot be located" /&gt;&lt;h2 id=&#34;great-god-answers&#34;&gt;Great God answers:&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56763683/selenium-python-unable-to-clear-chrome-browser-cache&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;stackoverflow-56763683&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56380091/how-to-interact-with-the-elements-within-shadow-root-open-while-clearing-brow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -812,7 +812,7 @@ Mount point: /home&lt;/li&gt;
         <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/The%20North%20America%20Nebula.jpg" alt="Featured image of post Nginx將http流量導至https" /&gt;&lt;h2 id=&#34;edit-config&#34;&gt;Edit config&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/picture.jpg" alt="Featured image of post Nginx將http流量導至https" /&gt;&lt;h2 id=&#34;edit-config&#34;&gt;Edit config&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -829,7 +829,7 @@ Mount point: /home&lt;/li&gt;
         <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/windows-nginx-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/windows-nginx-command/Sadr%20and%20IC%201318%20-%20Butterfly%20Nebula%20in%20SHO%20Palette.jpg" alt="Featured image of post Windows Nginx Command" /&gt;&lt;p&gt;Start Nginx: &lt;strong&gt;&lt;code&gt;start nginx&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/windows-nginx-command/picture.jpg" alt="Featured image of post Windows Nginx Command" /&gt;&lt;p&gt;Start Nginx: &lt;strong&gt;&lt;code&gt;start nginx&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Check Nginx status: &lt;strong&gt;&lt;code&gt;tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Quickly stop Nginx: &lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Complete and orderly stop Nginx: &lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -847,7 +847,7 @@ Mount point: /home&lt;/li&gt;
         <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-of-iframe-switching/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-of-iframe-switching/The%20Bubble%20Nebula.jpg" alt="Featured image of post Python selenium solves the problem of iframe switching" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-of-iframe-switching/picture.jpg" alt="Featured image of post Python selenium solves the problem of iframe switching" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
@@ -881,7 +881,7 @@ Mount point: /home&lt;/li&gt;
         <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/nvidia-nx-make-darknet/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/nvidia-nx-make-darknet/The%20North%20America%20and%20Pelican%20Nebulae.jpg" alt="Featured image of post Nvidia NX Make Darknet" /&gt;&lt;h3 id=&#34;edit-makefile-nvcc-path-with-sudo-nano&#34;&gt;Edit Makefile NVCC path with sudo nano&lt;/h3&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/nvidia-nx-make-darknet/picture.jpg" alt="Featured image of post Nvidia NX Make Darknet" /&gt;&lt;h3 id=&#34;edit-makefile-nvcc-path-with-sudo-nano&#34;&gt;Edit Makefile NVCC path with sudo nano&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -933,7 +933,7 @@ Mount point: /home&lt;/li&gt;
         <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/a-several-linux-interesting-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-linux-interesting-command/NGC7000%20&%20IC5070%20&%20Deadpool%20%28HaRGB%29.jpg" alt="Featured image of post A Several Linux interesting command" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yaronn/blessed-contrib&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-linux-interesting-command/picture.jpg" alt="Featured image of post A Several Linux interesting command" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yaronn/blessed-contrib&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;yaronn/blessed-contrib&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1005,7 +1005,7 @@ Mount point: /home&lt;/li&gt;
         <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/video-to-gif-use-ffmpeg/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/video-to-gif-use-ffmpeg/Sagittarius%20Star%20Cloud.jpg" alt="Featured image of post Video to Gif use FFmpeg" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/video-to-gif-use-ffmpeg/picture.jpg" alt="Featured image of post Video to Gif use FFmpeg" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
@@ -1029,7 +1029,7 @@ Mount point: /home&lt;/li&gt;
         <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/github-short-url-use-git.io/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/github-short-url-use-git.io/Lobster%20Claw%20Nebula%20Sh2-157.jpg" alt="Featured image of post GitHub Short URL use git.io" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/github-short-url-use-git.io/picture.jpg" alt="Featured image of post GitHub Short URL use git.io" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
@@ -1074,7 +1074,7 @@ Location: &lt;a class=&#34;link&#34; href=&#34;https://google.com&#34;  target=&
         <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/communication-network-and-multimedia-applications/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/communication-network-and-multimedia-applications/NGC%207497%20and%20Integrated%20Flux%20Nebula.jpg" alt="Featured image of post Communication Network and Multimedia Applications" /&gt;&lt;h2 id=&#34;week-3-basic-multimedia-network-communication&#34;&gt;Week 3: Basic Multimedia Network Communication&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/communication-network-and-multimedia-applications/picture.jpg" alt="Featured image of post Communication Network and Multimedia Applications" /&gt;&lt;h2 id=&#34;week-3-basic-multimedia-network-communication&#34;&gt;Week 3: Basic Multimedia Network Communication&lt;/h2&gt;
 &lt;h3 id=&#34;homework1&#34;&gt;HomeWork1&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/en/p/communication-network-and-multimedia-applications/3sIUu0L.png&#34;
 	width=&#34;1022&#34;
@@ -1408,7 +1408,7 @@ Packet-level FEC is erasure codes, which are usually used in Transport or Applic
         <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/%E5%89%B5%E5%BB%BA-ssh-agent-%E5%AF%86%E9%91%B0/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/%E5%89%B5%E5%BB%BA-ssh-agent-%E5%AF%86%E9%91%B0/NGC%20281%20-%20Pacman%20Nebula.png" alt="Featured image of post 創建 ssh-agent 密鑰" /&gt;&lt;p&gt;創建 ssh-agent 密鑰&lt;/p&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/%E5%89%B5%E5%BB%BA-ssh-agent-%E5%AF%86%E9%91%B0/picture.jpg" alt="Featured image of post 創建 ssh-agent 密鑰" /&gt;&lt;p&gt;創建 ssh-agent 密鑰&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1437,7 +1437,7 @@ Packet-level FEC is erasure codes, which are usually used in Transport or Applic
         <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/The%20Omega%20Nebula.jpg" alt="Featured image of post Mac OS XAMPP can’t open" /&gt;&lt;p&gt;mysql cannot be opened
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/picture.jpg" alt="Featured image of post Mac OS XAMPP can’t open" /&gt;&lt;p&gt;mysql cannot be opened
 The reason for this is because the sql service is occupied by mac system resources&lt;/p&gt;
 &lt;p&gt;Solution
 Open Terminal&lt;/p&gt;
@@ -1457,7 +1457,7 @@ Open Terminal&lt;/p&gt;
         <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/a-several-laravel-tips/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-laravel-tips/North%20American%20&%20Pelican%20Nebulas%20in%20Cygnus%20-%20SHO.jpg" alt="Featured image of post A Several Laravel tips" /&gt;&lt;h2 id=&#34;there-was-an-error-in-opening-the-project&#34;&gt;There was an error in opening the project&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-laravel-tips/picture.jpg" alt="Featured image of post A Several Laravel tips" /&gt;&lt;h2 id=&#34;there-was-an-error-in-opening-the-project&#34;&gt;There was an error in opening the project&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;try &lt;code&gt;Composer update&lt;/code&gt; OR &lt;code&gt;Composer i&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1619,7 +1619,7 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
         <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/mac-os-environment-variable-settings/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-environment-variable-settings/The%20Pleiades%20-%20M45.jpg" alt="Featured image of post Mac OS environment variable settings" /&gt;&lt;h2 id=&#34;view-file-contents&#34;&gt;View file contents&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-environment-variable-settings/picture.jpg" alt="Featured image of post Mac OS environment variable settings" /&gt;&lt;h2 id=&#34;view-file-contents&#34;&gt;View file contents&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cat ~/.zshrc&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;if-the-file-does-not-exist-or-if-it-exists-enter-the-editing-state-directly&#34;&gt;If the file does not exist, or if it exists, enter the editing state directly&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;nano ~/.zshrc&lt;/code&gt;&lt;/p&gt;
@@ -1667,7 +1667,7 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
         <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/a-several-linux-server-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-linux-server-command/NGC7635%20Bubble%20Nebula.jpg" alt="Featured image of post A Several Linux Server Command" /&gt;&lt;h2 id=&#34;view-graphics-card-usage-command&#34;&gt;View graphics card usage command&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-linux-server-command/picture.jpg" alt="Featured image of post A Several Linux Server Command" /&gt;&lt;h2 id=&#34;view-graphics-card-usage-command&#34;&gt;View graphics card usage command&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -1809,6 +1809,400 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
         
         <guid>https://tsairongfu.github.io/en/archives/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>Markdown Syntax Guide</title>
+        <link>https://tsairongfu.github.io/en/p/markdown-syntax-guide/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+&lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;
+&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
+&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
+&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
+&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
+&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
+&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
+&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
+&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph&lt;/h2&gt;
+&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;
+&lt;p&gt;Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code&gt;footer&lt;/code&gt; or &lt;code&gt;cite&lt;/code&gt; element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p&gt;
+&lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;Blockquote without attribution&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;Blockquote with attribution&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;!-- raw HTML omitted --&gt;
+— &lt;!-- raw HTML omitted --&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Bob&lt;/td&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alice&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;Inline Markdown within tables&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Italics&lt;/th&gt;
+&lt;th&gt;Bold&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;th&gt;D&lt;/th&gt;
+&lt;th&gt;E&lt;/th&gt;
+&lt;th&gt;F&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+&lt;td&gt;Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td&gt;
+&lt;td&gt;Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td&gt;
+&lt;td&gt;Proin sit amet velit nec enim imperdiet vehicula.&lt;/td&gt;
+&lt;td&gt;Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td&gt;
+&lt;td&gt;Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;code-blocks&#34;&gt;Code Blocks&lt;/h2&gt;
+&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;Code block with backticks&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;code-block-indented-with-four-spaces&#34;&gt;Code block indented with four spaces&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;code-block-with-hugos-internal-highlight-shortcode&#34;&gt;Code block with Hugo&amp;rsquo;s internal highlight shortcode&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;diff-code-block&#34;&gt;Diff code block&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[dependencies.bevy]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git = &amp;#34;https://github.com/bevyengine/bevy&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rev = &amp;#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;- features = [&amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;+ features = [&amp;#34;jpeg&amp;#34;, &amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;list-types&#34;&gt;List Types&lt;/h2&gt;
+&lt;h4 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;Another item&lt;/li&gt;
+&lt;li&gt;And another item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nested-list&#34;&gt;Nested list&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fruit
+&lt;ul&gt;
+&lt;li&gt;Apple&lt;/li&gt;
+&lt;li&gt;Orange&lt;/li&gt;
+&lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dairy
+&lt;ul&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;li&gt;Cheese&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-elements--abbr-sub-sup-kbd-mark&#34;&gt;Other Elements — abbr, sub, sup, kbd, mark&lt;/h2&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;GIF&lt;!-- raw HTML omitted --&gt; is a bitmap image format.&lt;/p&gt;
+&lt;p&gt;H&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;O&lt;/p&gt;
+&lt;p&gt;X&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; + Y&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; = Z&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;CTRL&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;ALT&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;Delete&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; to end the session.&lt;/p&gt;
+&lt;p&gt;Most &lt;!-- raw HTML omitted --&gt;salamanders&lt;!-- raw HTML omitted --&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
+&lt;h2 id=&#34;hyperlinked-image&#34;&gt;Hyperlinked image&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://google.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Google&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=PAAkCSZUG1c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Rich Content</title>
+        <link>https://tsairongfu.github.io/en/p/rich-content/</link>
+        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/p/rich-content/</guid>
+        <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;YouTube Privacy Enhanced Shortcode&lt;/h2&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/ZJthWmvUzzc&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode&lt;/h2&gt;
+
+    &lt;style type=&#34;text/css&#34;&gt;
+      .twitter-tweet {
+        font: 14px/1.45 -apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#34;Helvetica Neue&#34;,sans-serif;
+        border-left: 4px solid #2b7bb9;
+        padding-left: 1.5em;
+        color: #555;
+      }
+      .twitter-tweet a {
+        color: #2b7bb9;
+        text-decoration: none;
+      }
+      blockquote.twitter-tweet a:hover,
+      blockquote.twitter-tweet a:focus {
+        text-decoration: underline;
+      }
+    &lt;/style&gt;
+  &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;Vimeo Simple Shortcode&lt;/h2&gt;
+
+
+
+
+
+
+&lt;style&gt;
+.__h_video {
+   position: relative;
+   padding-bottom: 56.23%;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000;
+}
+.__h_video img {
+   width: 100%;
+   height: auto;
+   color: #000;
+}
+.__h_video .play {
+   height: 72px;
+   width: 72px;
+   left: 50%;
+   top: 50%;
+   margin-left: -36px;
+   margin-top: -36px;
+   position: absolute;
+   cursor: pointer;
+}
+&lt;/style&gt;
+
+
+&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
+&lt;a href=&#34;https://vimeo.com/4.8912912e&amp;#43;07&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;
+
+
+&lt;img src=&#34;https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640&#34; srcset=&#34;https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 2x&#34; alt=&#34;Sing Jan Swing - Kinetic Type&#34;&gt;
+&lt;div class=&#34;play&#34;&gt;&lt;svg version=&#34;1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 61 61&#34;&gt;&lt;circle cx=&#34;30.5&#34; cy=&#34;30.5&#34; r=&#34;30.5&#34; opacity=&#34;.8&#34; fill=&#34;#000&#34;&gt;&lt;/circle&gt;&lt;path d=&#34;M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z&#34; fill=&#34;#fff&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;h2 id=&#34;bilibilibi-shortcode&#34;&gt;bilibilibi Shortcode&lt;/h2&gt;
+
+
+
+
+
+
+    
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=498363026&#34;
+            scrolling=&#34;no&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;gist-shortcode&#34;&gt;Gist Shortcode&lt;/h2&gt;
+&lt;script type=&#34;application/javascript&#34; src=&#34;https://gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;gitlab-snippets-shortcode&#34;&gt;Gitlab Snippets Shortcode&lt;/h2&gt;
+&lt;script
+    type=&#34;application/javascript&#34;
+    src=&#34;https://gitlab.com/-/snippets/2349278.js&#34;
+&gt;&lt;/script&gt;
+&lt;h2 id=&#34;quote-shortcode&#34;&gt;Quote Shortcode&lt;/h2&gt;
+&lt;p&gt;Stack adds a &lt;code&gt;quote&lt;/code&gt; shortcode.  For example:&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;A famous person, &lt;/span&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Book&#34;&gt;&lt;cite&gt;The book they wrote&lt;/cite&gt;&lt;/a&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Book&#34;&gt;&lt;cite&gt;Anonymous book&lt;/cite&gt;&lt;/a&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;cite&gt;Some book&lt;/cite&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;Somebody&lt;/span&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/span&gt;&lt;/blockquote&gt;</description>
+        </item>
+        <item>
+        <title>Math Typesetting</title>
+        <link>https://tsairongfu.github.io/en/p/math-typesetting/</link>
+        <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/p/math-typesetting/</guid>
+        <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
+&lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a partial under &lt;code&gt;/layouts/partials/math.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Within this partial reference the &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/autorender.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Auto-render Extension&lt;/a&gt; or host these scripts locally.&lt;/li&gt;
+&lt;li&gt;Include the partial in your templates like so:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; or .Params.math .Site.Params.math &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; partial &lt;span class=&#34;s2&#34;&gt;&amp;#34;math.html&amp;#34;&lt;/span&gt; . &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;To enable KaTex globally set the parameter &lt;code&gt;math&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in a project&amp;rsquo;s configuration&lt;/li&gt;
+&lt;li&gt;To enable KaTex on a per page basis include the parameter &lt;code&gt;math: true&lt;/code&gt; in content files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use the online reference of &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/supported.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Supported TeX Functions&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;Block math:
+$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$&lt;/p&gt;</description>
         </item>
         <item>
         <title>About</title>

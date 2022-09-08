@@ -1372,18 +1372,68 @@
   </url><url>
     <loc>https://tsairongfu.github.io/p/markdown-syntax-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/p/markdown-syntax-guide/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/p/markdown-syntax-guide/"
+                />
   </url><url>
     <loc>https://tsairongfu.github.io/tags/privacy/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/privacy/"
+                />
   </url><url>
     <loc>https://tsairongfu.github.io/p/rich-content/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/p/rich-content/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/p/rich-content/"
+                />
   </url><url>
     <loc>https://tsairongfu.github.io/tags/shortcodes/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/shortcodes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/shortcodes/"
+                />
   </url><url>
     <loc>https://tsairongfu.github.io/p/math-typesetting/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/p/math-typesetting/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/p/math-typesetting/"
+                />
   </url><url>
     <loc>https://tsairongfu.github.io/categories/apache/</loc>
     <xhtml:link

@@ -12,7 +12,7 @@
         <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/The%20North%20America%20Nebula.jpg" alt="Featured image of post Nginx將http流量導至https" /&gt;&lt;h2 id=&#34;edit-config&#34;&gt;Edit config&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/picture.jpg" alt="Featured image of post Nginx將http流量導至https" /&gt;&lt;h2 id=&#34;edit-config&#34;&gt;Edit config&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -29,7 +29,7 @@
         <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/windows-nginx-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/windows-nginx-command/Sadr%20and%20IC%201318%20-%20Butterfly%20Nebula%20in%20SHO%20Palette.jpg" alt="Featured image of post Windows Nginx Command" /&gt;&lt;p&gt;Start Nginx: &lt;strong&gt;&lt;code&gt;start nginx&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/windows-nginx-command/picture.jpg" alt="Featured image of post Windows Nginx Command" /&gt;&lt;p&gt;Start Nginx: &lt;strong&gt;&lt;code&gt;start nginx&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Check Nginx status: &lt;strong&gt;&lt;code&gt;tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Quickly stop Nginx: &lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Complete and orderly stop Nginx: &lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -47,7 +47,7 @@
         <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/a-several-laravel-tips/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-laravel-tips/North%20American%20&%20Pelican%20Nebulas%20in%20Cygnus%20-%20SHO.jpg" alt="Featured image of post A Several Laravel tips" /&gt;&lt;h2 id=&#34;there-was-an-error-in-opening-the-project&#34;&gt;There was an error in opening the project&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/a-several-laravel-tips/picture.jpg" alt="Featured image of post A Several Laravel tips" /&gt;&lt;h2 id=&#34;there-was-an-error-in-opening-the-project&#34;&gt;There was an error in opening the project&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;try &lt;code&gt;Composer update&lt;/code&gt; OR &lt;code&gt;Composer i&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
