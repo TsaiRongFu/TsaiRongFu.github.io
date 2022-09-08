@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Collaborative-Writing on TsaiのAntarctica</title>
+        <title>Collaborative Writing on Tsai の Antarctica</title>
         <link>https://tsairongfu.github.io/en/tags/collaborative-writing/</link>
-        <description>Recent content in Collaborative-Writing on TsaiのAntarctica</description>
+        <description>Recent content in Collaborative Writing on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sun, 23 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/tags/collaborative-writing/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Communication Network and Multimedia Applications (Collaborative-Writing)</title>
+        <lastBuildDate>Sat, 30 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/tags/collaborative-writing/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Communication Network and Multimedia Applications</title>
         <link>https://tsairongfu.github.io/en/p/communication-network-and-multimedia-applications/</link>
-        <pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/communication-network-and-multimedia-applications/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/communication-network-and-multimedia-applications/8uft56z3mkk91.jpg" alt="Featured image of post Communication Network and Multimedia Applications (Collaborative-Writing)" /&gt;&lt;h2 id=&#34;week-3-basic-multimedia-network-communication&#34;&gt;Week 3: Basic Multimedia Network Communication&lt;/h2&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/communication-network-and-multimedia-applications/NGC%207497%20and%20Integrated%20Flux%20Nebula.jpg" alt="Featured image of post Communication Network and Multimedia Applications" /&gt;&lt;h2 id=&#34;week-3-basic-multimedia-network-communication&#34;&gt;Week 3: Basic Multimedia Network Communication&lt;/h2&gt;
 &lt;h3 id=&#34;homework1&#34;&gt;HomeWork1&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/en/p/communication-network-and-multimedia-applications/3sIUu0L.png&#34;
 	width=&#34;1022&#34;
@@ -78,7 +78,7 @@ In terms of data transmission requirements, it will vary depending on the data&l
 	
 &gt;&lt;/p&gt;
 &lt;h4 id=&#34;what-are-the-advantages-of-streaming-in-multimedia-applications&#34;&gt;What are the advantages of streaming in multimedia applications?&lt;/h4&gt;
-&lt;p&gt;Streaming refers to compressing a series of images and sending them to the client stably and quickly. When using the protocol to open, you can save space without saving files on the client.&lt;/p&gt;
+&lt;p&gt;Streaming refers to compressing a series of images and sending them to the client stably and quickly. When the protocol is enabled, you can save space without saving files on the client.&lt;/p&gt;
 &lt;h4 id=&#34;please-explain-the-difference-between-unicast-and-multicast-broadband-usage&#34;&gt;Please explain the difference between unicast and multicast broadband usage&lt;/h4&gt;
 &lt;p&gt;Unicast technically requires that the MAC addresses of the NLB network interfaces of the two hosts of the two computers be exactly the same, so that the two hosts cannot connect to each other.&lt;/p&gt;
 &lt;p&gt;Multicast messages are delivered to a group of destination addresses at the same time. It uses a strategy that is most efficient because messages only need to be delivered once per network line, and messages are only replicated when lines fork.&lt;/p&gt;
@@ -337,7 +337,7 @@ Some errors can be fixed without relying on server resend.&lt;/p&gt;
 Consume additional bandwidth and resources.&lt;/p&gt;
 &lt;h4 id=&#34;please-explain-the-difference-between-packet-leavel-fec-and-byte-leavel-fec&#34;&gt;Please explain the difference between Packet-Leavel FEC and Byte Leavel FEC?&lt;/h4&gt;
 &lt;p&gt;ANS: Byte-level FEC is the correcting codes, usually used in the physical layer. In FEC(n, k), n is the block size, which means that it contains k message symbols and n-k parity symbols to provide error correction at the decoding end. One symbol corresponds to For a set of bit sequences (such as bytes), it is impossible to know which symbols have errors, so correcting codes can only repair (n-k)/2 symbol errors at most. The general correcting codes cannot resist the occurrence of a large number of error bursts, so they are usually transmitted with interleaving, in order to disperse errors and reduce the impact of bursts.
-Packet-level FEC is erasure codes, which are usually used in Transport or Application layer. In FEC(n, k), n is the block size, including k data packets and n-k parity packets, because we can know which ones are above the IP layer. There is an error in the packets, so we use erasure codes, that is, assuming that MH can correctly receive any k packets out of n packets, any missing data packets will be correctly reconstructed.&lt;/p&gt;
+Packet-level FEC is erasure codes, which are usually used in Transport or Application layer. In FEC(n, k), n is block size, including k data packets and n-k parity packets, because we can know which ones are above the IP layer. There is an error in the packets, so we use erasure codes, that is, assuming that MH can correctly receive any k packets out of n packets, any missing data packets will be correctly reconstructed.&lt;/p&gt;
 </description>
         </item>
         

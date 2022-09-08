@@ -1,135 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Hacker on TsaiのAntarctica</title>
+        <title>Hacker on Tsai の Antarctica</title>
         <link>https://tsairongfu.github.io/en/categories/hacker/</link>
-        <description>Recent content in Hacker on TsaiのAntarctica</description>
+        <description>Recent content in Hacker on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/categories/hacker/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Software automatic security detection technology</title>
-        <link>https://tsairongfu.github.io/en/p/software-automatic-security-detection-technology/</link>
-        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/p/software-automatic-security-detection-technology/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/software-automatic-security-detection-technology/The%20Helix%20Nebula%20%28NGC%207293%29.png" alt="Featured image of post Software automatic security detection technology" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuawn/Mediatek-Fuzzing-Workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;yuawn/Mediatek-Fuzzing-Workshop&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;fuzz-testing&#34;&gt;Fuzz Testing&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Black-box&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;binary only&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Grey-box&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;utilize some program information to guide fuzzing&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;White-box&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;get a full picture of program&lt;/li&gt;
-&lt;li&gt;e.g, sysbolic&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;coverage-gudided-fuzzing&#34;&gt;Coverage-Gudided Fuzzing&lt;/h2&gt;
-&lt;p&gt;seed pool -&amp;gt; selsect a seed -&amp;gt; mutation -&amp;gt; run with instrumented binary -&amp;gt; crash&lt;/p&gt;
-&lt;p&gt;Binary instrumentation&lt;/p&gt;
-&lt;p&gt;LLVM - ir change *&lt;/p&gt;
-&lt;h2 id=&#34;sanitizer&#34;&gt;Sanitizer&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://githum.com/google/sanitizers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://githum.com/google/sanitizers&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;ubdefined Behavior sanitizer&lt;/p&gt;
-&lt;p&gt;memorySanitizer&lt;/p&gt;
-&lt;p&gt;leak-checjer&lt;/p&gt;
-&lt;h2 id=&#34;sanitizer---asan&#34;&gt;Sanitizer - ASAN&lt;/h2&gt;
-&lt;p&gt;heap, stack, global-buffer overflow&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ALF
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/google/AFL&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/google/AFL&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;ALF++
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/AFLplusplus/AFLplusplus&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/AFLplusplus/AFLplusplus&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;libfuzzer
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://llvm.org/docs/LibFuzzer.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://llvm.org/docs/LibFuzzer.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;syzkaller
-&lt;ul&gt;
-&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/google/syzkaller&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://github.com/google/syzkaller&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;paper&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.comp.nus.edu.sg/~abhik/pdf/CCS16.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.comp.nus.edu.sg/~abhik/pdf/CCS16.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.usenix.org/conference/usenixsecurity19/presentation/lyu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.usenix.org/conference/usenixsecurity19/presentation/lyu&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.google.com/search?client=safari&amp;amp;rls=en&amp;amp;q=optiMin&amp;#43;IssTA&amp;#43;2021&amp;amp;ie=UTF-8&amp;amp;oe=UTF-8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.google.com/search?client=safari&amp;rls=en&amp;q=optiMin+IssTA+2021&amp;ie=UTF-8&amp;oe=UTF-8&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/41/Toward-Optimal-MC-DC-Test-Case-Generation&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/41/Toward-Optimal-MC-DC-Test-Case-Generation&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/1/Seed-Selection-for-Successful-Fuzzing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/1/Seed-Selection-for-Successful-Fuzzing&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.usenix.org/conference/usenixsecurity21/presentation/lee-gwangmu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.usenix.org/conference/usenixsecurity21/presentation/lee-gwangmu&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.usenix.org/conference/usenixsecurity20/presentation/osterlund&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.usenix.org/conference/usenixsecurity20/presentation/osterlund&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/1906.07327&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://arxiv.org/abs/1906.07327&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wcventure.github.io/FuzzingPaper/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://wcventure.github.io/FuzzingPaper/&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
+        <lastBuildDate>Mon, 18 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/categories/hacker/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>WiFi Hacker</title>
-        <link>https://tsairongfu.github.io/en/p/wifi-hack/</link>
-        <pubDate>Mon, 30 Aug 2021 00:00:00 +0000</pubDate>
+        <link>https://tsairongfu.github.io/en/p/wifi-hacker/</link>
+        <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/en/p/wifi-hack/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/wifi-hack/M33%20-%20Triangulum%20Galaxy%20from%20Bortle%203.jpg" alt="Featured image of post WiFi Hacker" /&gt;&lt;h2 id=&#34;hashcat&#34;&gt;hashcat&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/hashcat/hashcat&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Official Website&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;environment-of-system&#34;&gt;Environment of System&lt;/h2&gt;
+        <guid>https://tsairongfu.github.io/en/p/wifi-hacker/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/wifi-hacker/Sadr%20Region%20at%20150mm.jpg" alt="Featured image of post WiFi Hacker" /&gt;&lt;h2 id=&#34;environment-of-system&#34;&gt;Environment of System&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Operating System: Kali Linux 2021.3&lt;/li&gt;
 &lt;li&gt;WiFi Adapters: ALFA AWUS036ACS&lt;/li&gt;
-&lt;li&gt;Hardware： MacBook Pro 15(2020)&lt;/li&gt;
+&lt;li&gt;Hardware： MacBook Pro 15&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;install-dirve&#34;&gt;Install dirve&lt;/h2&gt;
@@ -137,26 +24,38 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt upgrade
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install realtek-rtl88xxau-dkms
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo reboot
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo reboot
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;
-&lt;h3 id=&#34;step1&#34;&gt;Step1&lt;/h3&gt;
-&lt;p&gt;check wifi adapters, &lt;strong&gt;must find wlan0&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;step1&#34;&gt;Step1&lt;/h2&gt;
+&lt;p&gt;check wifi adapters, &lt;em&gt;&lt;code&gt;must find wlan0&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -165,7 +64,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ifconfig
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;step2&#34;&gt;Step2&lt;/h3&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step2&#34;&gt;Step2&lt;/h2&gt;
 &lt;p&gt;Start up wifi adapter monitor mode&lt;/p&gt;
 &lt;p&gt;Open wifi adapter monitor mode&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -185,7 +84,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo airmon-ng stop wlan0
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;step3&#34;&gt;Step3&lt;/h3&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step3&#34;&gt;Step3&lt;/h2&gt;
 &lt;p&gt;Scanning wifi&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -195,7 +94,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo airodump-ng wlan0
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;step4&#34;&gt;Step4&lt;/h3&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step4&#34;&gt;Step4&lt;/h2&gt;
 &lt;p&gt;Get handshake package&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -205,7 +104,7 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo airodump-ng --bssid BSSID -c CH -w Save_packet_path wlan0
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;step5-non-essential&#34;&gt;Step5 (non-essential)&lt;/h3&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step5non-essential&#34;&gt;Step5(non-essential)&lt;/h2&gt;
 &lt;p&gt;This step is based on the premise that the handshake package cannot be obtained&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -215,8 +114,9 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo airepaly-ng -0 0 -a BSSID -c STATION wlan0
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;final-rrn-crack-password&#34;&gt;Final (Rrn crack password)&lt;/h2&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step6-rrn-crack-password&#34;&gt;Step6 Rrn crack password&lt;/h2&gt;
 &lt;h3 id=&#34;use-cpu&#34;&gt;Use CPU&lt;/h3&gt;
+&lt;p&gt;Rrn crack password&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

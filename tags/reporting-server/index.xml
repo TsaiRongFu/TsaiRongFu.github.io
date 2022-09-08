@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Reporting Server on Tsaiの南極洲</title>
+        <link>https://tsairongfu.github.io/tags/reporting-server/</link>
+        <description>Recent content in Reporting Server on Tsaiの南極洲</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Fri, 24 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/tags/reporting-server/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Reporting Server 安裝</title>
+        <link>https://tsairongfu.github.io/p/reporting-server-%E5%AE%89%E8%A3%9D/</link>
+        <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/p/reporting-server-%E5%AE%89%E8%A3%9D/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/reporting-server-%E5%AE%89%E8%A3%9D/Sharpless%20140,%20LBN%20505,%20and%20other%20nebula%20in%20Cepheus.jpg" alt="Featured image of post Reporting Server 安裝" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
+&lt;p&gt;SQL Server 網路組態 TCP要開啟&lt;/p&gt;
+&lt;p&gt;連線測試 使用Microsoft SQL Server Managerment Studio 開啟
+tcp:主機名稱/資料庫名稱,Port&lt;/p&gt;
+&lt;p&gt;SQL Server預設Port：（TCP）1433&lt;/p&gt;
+&lt;p&gt;防火牆記得要把port設定白名單&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;參考文件&#34;&gt;參考文件&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

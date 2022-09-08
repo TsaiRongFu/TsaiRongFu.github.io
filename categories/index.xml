@@ -6,18 +6,26 @@
         <description>Recent content in Categories on Tsaiの南極洲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sat, 20 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>FFmpeg</title>
         <link>https://tsairongfu.github.io/categories/ffmpeg/</link>
-        <pubDate>Sat, 20 Aug 2022 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/ffmpeg/</guid>
         <description></description>
         </item>
         <item>
-        <title>YouTube</title>
+        <title>Facebook</title>
+        <link>https://tsairongfu.github.io/categories/facebook/</link>
+        <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/categories/facebook/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Youtube</title>
         <link>https://tsairongfu.github.io/categories/youtube/</link>
-        <pubDate>Fri, 03 Jun 2022 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/youtube/</guid>
         <description></description>
@@ -25,47 +33,31 @@
         <item>
         <title>PostgreSQL</title>
         <link>https://tsairongfu.github.io/categories/postgresql/</link>
-        <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+        <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/postgresql/</guid>
         <description></description>
         </item>
         <item>
-        <title>Hacker</title>
-        <link>https://tsairongfu.github.io/categories/hacker/</link>
-        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/categories/hacker/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Windows</title>
         <link>https://tsairongfu.github.io/categories/windows/</link>
-        <pubDate>Sat, 18 Sep 2021 00:00:00 +0000</pubDate>
+        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/windows/</guid>
         <description></description>
         </item>
         <item>
-        <title>Composer</title>
-        <link>https://tsairongfu.github.io/categories/composer/</link>
-        <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+        <title>Hacker</title>
+        <link>https://tsairongfu.github.io/categories/hacker/</link>
+        <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/categories/composer/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Laravel</title>
-        <link>https://tsairongfu.github.io/categories/laravel/</link>
-        <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/categories/laravel/</guid>
+        <guid>https://tsairongfu.github.io/categories/hacker/</guid>
         <description></description>
         </item>
         <item>
         <title>Linux</title>
         <link>https://tsairongfu.github.io/categories/linux/</link>
-        <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/linux/</guid>
         <description></description>
@@ -73,7 +65,7 @@
         <item>
         <title>Chrome</title>
         <link>https://tsairongfu.github.io/categories/chrome/</link>
-        <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/chrome/</guid>
         <description></description>
@@ -81,7 +73,7 @@
         <item>
         <title>Python</title>
         <link>https://tsairongfu.github.io/categories/python/</link>
-        <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/python/</guid>
         <description></description>
@@ -89,63 +81,79 @@
         <item>
         <title>Selenium</title>
         <link>https://tsairongfu.github.io/categories/selenium/</link>
-        <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/selenium/</guid>
         <description></description>
         </item>
         <item>
-        <title>Visual Studio Code</title>
-        <link>https://tsairongfu.github.io/categories/visual-studio-code/</link>
-        <pubDate>Thu, 20 May 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/categories/visual-studio-code/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>GitHub</title>
-        <link>https://tsairongfu.github.io/categories/github/</link>
-        <pubDate>Sat, 27 Feb 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/categories/github/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>NVIDIA</title>
-        <link>https://tsairongfu.github.io/categories/nvidia/</link>
-        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/categories/nvidia/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Apple</title>
-        <link>https://tsairongfu.github.io/categories/apple/</link>
-        <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/categories/apple/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>MySQL</title>
-        <link>https://tsairongfu.github.io/categories/mysql/</link>
-        <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/categories/mysql/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>NGINX</title>
         <link>https://tsairongfu.github.io/categories/nginx/</link>
-        <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/nginx/</guid>
         <description></description>
         </item>
         <item>
+        <title>NVIDIA</title>
+        <link>https://tsairongfu.github.io/categories/nvidia/</link>
+        <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/categories/nvidia/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>GitHub</title>
+        <link>https://tsairongfu.github.io/categories/github/</link>
+        <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/categories/github/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Apple</title>
+        <link>https://tsairongfu.github.io/categories/apple/</link>
+        <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/categories/apple/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>XAMPP</title>
+        <link>https://tsairongfu.github.io/categories/xampp/</link>
+        <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/categories/xampp/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Composer</title>
+        <link>https://tsairongfu.github.io/categories/composer/</link>
+        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/categories/composer/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Laravel</title>
+        <link>https://tsairongfu.github.io/categories/laravel/</link>
+        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/categories/laravel/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Ubuntu</title>
+        <link>https://tsairongfu.github.io/categories/ubuntu/</link>
+        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/categories/ubuntu/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Apache</title>
         <link>https://tsairongfu.github.io/categories/apache/</link>
-        <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+        <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/categories/apache/</guid>
         <description></description>

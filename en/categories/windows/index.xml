@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Windows on TsaiのAntarctica</title>
+        <title>Windows on Tsai の Antarctica</title>
         <link>https://tsairongfu.github.io/en/categories/windows/</link>
-        <description>Recent content in Windows on TsaiのAntarctica</description>
+        <description>Recent content in Windows on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Wed, 12 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/categories/windows/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Reporting Server Install</title>
-        <link>https://tsairongfu.github.io/en/p/reporting-server-install/</link>
-        <pubDate>Wed, 12 Aug 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/p/reporting-server-install/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/reporting-server-install/Veil%20Nebula.jpg" alt="Featured image of post Reporting Server Install" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
-&lt;p&gt;SQL Server network configuration TCP to open&lt;/p&gt;
-&lt;p&gt;Connection Test Open with Microsoft SQL Server Managerment Studio
-tcp:hostname/databasename,Port&lt;/p&gt;
-&lt;p&gt;SQL Server Default Port: (TCP) 1433&lt;/p&gt;
-&lt;p&gt;The firewall remembers to whitelist the port&lt;/p&gt;
-&lt;h2 id=&#34;reference-document&#34;&gt;reference document&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Windows Port State Command</title>
+        <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/categories/windows/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Windows Port state command</title>
         <link>https://tsairongfu.github.io/en/p/windows-port-state-command/</link>
-        <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/windows-port-state-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/windows-port-state-command/Pleiades%20-%20Seven%20Sisters.jpg" alt="Featured image of post Windows Port State Command" /&gt;&lt;p&gt;Find all running ports&lt;/p&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/windows-port-state-command/Pleiades%20-%20Seven%20Sisters.jpg" alt="Featured image of post Windows Port state command" /&gt;&lt;h2 id=&#34;查找所有運行的端口&#34;&gt;查找所有運行的端口&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -51,7 +30,7 @@ tcp:hostname/databasename,Port&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -alp
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;View the PID of the occupied port&lt;/p&gt;
+&lt;/div&gt;&lt;h2 id=&#34;查看被佔用端口的pid&#34;&gt;查看被佔用端口的PID&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -60,7 +39,7 @@ tcp:hostname/databasename,Port&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -aon|findstr &amp;#34;80&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;View the process of the specified PID&lt;/p&gt;
+&lt;/div&gt;&lt;h2 id=&#34;查看指定pid的進程&#34;&gt;查看指定PID的進程&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -69,7 +48,7 @@ tcp:hostname/databasename,Port&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tasklist|findstr &amp;#34;80&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;End the process&lt;/p&gt;
+&lt;/div&gt;&lt;h2 id=&#34;結束流程&#34;&gt;結束流程&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -81,21 +60,43 @@ tcp:hostname/databasename,Port&lt;/p&gt;
 &lt;/div&gt;</description>
         </item>
         <item>
-        <title>Windiws NGINX Command</title>
-        <link>https://tsairongfu.github.io/en/p/windiws-nginx-command/</link>
-        <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+        <title>Reporting Server installation</title>
+        <link>https://tsairongfu.github.io/en/p/reporting-server-installation/</link>
+        <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/en/p/windiws-nginx-command/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/windiws-nginx-command/M33%20-%20Triangulum%20Galaxy.jpg" alt="Featured image of post Windiws NGINX Command" /&gt;&lt;p&gt;Start Nginx: &lt;strong&gt;&lt;code&gt;start nginx&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+        <guid>https://tsairongfu.github.io/en/p/reporting-server-installation/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/reporting-server-installation/Sharpless%20140,%20LBN%20505,%20and%20other%20nebula%20in%20Cepheus.jpg" alt="Featured image of post Reporting Server installation" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
+&lt;p&gt;SQL Server network configuration TCP to open&lt;/p&gt;
+&lt;p&gt;Connection Test Open with Microsoft SQL Server Managerment Studio
+tcp:hostname/databasename,Port&lt;/p&gt;
+&lt;p&gt;SQL Server Default Port: (TCP) 1433&lt;/p&gt;
+&lt;p&gt;The firewall remembers to whitelist the port&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;reference-document&#34;&gt;reference document&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Windows Nginx Command</title>
+        <link>https://tsairongfu.github.io/en/p/windows-nginx-command/</link>
+        <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/p/windows-nginx-command/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/windows-nginx-command/Sadr%20and%20IC%201318%20-%20Butterfly%20Nebula%20in%20SHO%20Palette.jpg" alt="Featured image of post Windows Nginx Command" /&gt;&lt;p&gt;Start Nginx: &lt;strong&gt;&lt;code&gt;start nginx&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Check Nginx status: &lt;strong&gt;&lt;code&gt;tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Quickly stop Nginx: &lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Complete and orderly stop Nginx: &lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Use tsakkill to shut down: &lt;strong&gt;&lt;code&gt;taskkill /f /t /im nginx.exe&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;fast shutdown: &lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;graceful shutdown: &lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes: &lt;strong&gt;&lt;code&gt;nginx -s reload&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;re-opening log files: &lt;strong&gt;&lt;code&gt;nginx -s reopen&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;fast shutdown：&lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;graceful shutdown：&lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes ：&lt;strong&gt;&lt;code&gt;nginx -s reload&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;re-opening log files：&lt;strong&gt;&lt;code&gt;nginx -s reopen&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
         </item>
         

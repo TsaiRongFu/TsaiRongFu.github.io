@@ -1,115 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>system on TsaiのAntarctica</title>
+        <title>System on Tsai の Antarctica</title>
         <link>https://tsairongfu.github.io/en/tags/system/</link>
-        <description>Recent content in system on TsaiのAntarctica</description>
+        <description>Recent content in System on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sat, 11 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/tags/system/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Linux server hard disk Raid installation</title>
-        <link>https://tsairongfu.github.io/en/p/linux-server-raid/</link>
-        <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+        <lastBuildDate>Fri, 20 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/tags/system/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Install Linux system hard disk space configuration</title>
+        <link>https://tsairongfu.github.io/en/p/install-linux-system-hard-disk-space-configuration/</link>
+        <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/en/p/linux-server-raid/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/linux-server-raid/Pickering%27s%20Triangle%20-%20HOO.png" alt="Featured image of post Linux server hard disk Raid installation" /&gt;&lt;h2 id=&#34;error&#34;&gt;Error&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://askubuntu.com/questions/973632/unable-to-mount-raid1-md0-wrong-fs-type-bad-option-bad-superblock-on-dev-md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Reference Article&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Unable to Mount RAID1 md0 - wrong fs type, bad option, bad superblock on /dev/md0, missing codepage or helper program, or other error&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;mount-the-volume&#34;&gt;mount the volume&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;sudo mount /home/Raid6&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;code&gt;sudo mount /dev/sdb* /path&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;view-disk-instructions&#34;&gt;View disk instructions&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;sudo blkid&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo fdisk -l&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo fdisk -l /dev/sd*&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;df&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;##Format the hard drive&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo mkfs.ext4 /dev/sd*&lt;/code&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;configure-boot-self-mounting&#34;&gt;Configure boot self-mounting&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;sudo nano /etc/fstab&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Write configuration file example&lt;/p&gt;
+        <guid>https://tsairongfu.github.io/en/p/install-linux-system-hard-disk-space-configuration/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/install-linux-system-hard-disk-space-configuration/Western%20Veil%20and%20Pickerings%20Triangular%20Wisp%20in%20Hubble%20Palette.jpg" alt="Featured image of post Install Linux system hard disk space configuration" /&gt;&lt;blockquote&gt;
+&lt;p&gt;/boot&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;UUID=e8d9acdd-4161-4efc-9ad1-7907e6a339a4 /path ext4 defaults 0 1&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;mount&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;sudo mount -a&lt;/code&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Linux system partition space configuration</title>
-        <link>https://tsairongfu.github.io/en/p/linux-system-space-size-configuration/</link>
-        <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/p/linux-system-space-size-configuration/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/linux-system-space-size-configuration/Moar%20M31.jpg" alt="Featured image of post Linux system partition space configuration" /&gt;&lt;h1 id=&#34;boot&#34;&gt;/boot&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
 &lt;ol&gt;
-&lt;li&gt;Select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the boot partition:&lt;/li&gt;
+&lt;li&gt;Select the free area and click the &amp;ldquo;+&amp;rdquo; sign to add a boot partition:
+Size: 400MB
+Type of new partition: primary partition
+The location of the new partition: the beginning of the space
+Used for: Ext4 journaling filesystem
+Mount point: /boot&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Size: 400MB&lt;/li&gt;
-&lt;li&gt;Type of new partition: primary partition&lt;/li&gt;
-&lt;li&gt;The location of the new partition: the starting location of the space&lt;/li&gt;
-&lt;li&gt;for: Ext4 journaling filesystem&lt;/li&gt;
-&lt;li&gt;Mount point: /boot&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;swap&#34;&gt;swap&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;swap&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Continue to select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the swap partition, and set it to 2 times the actual memory:&lt;/li&gt;
+&lt;li&gt;Continue to select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the swap partition, and set it to 2 times the actual memory:
+Size: 8192MB (4GB×2)
+Type of new partition: logical partition
+The location of the new partition: the beginning of the space
+Used for: swap space&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Size: 8192MB (4GB×2)&lt;/li&gt;
-&lt;li&gt;Type of new partition: logical partition&lt;/li&gt;
-&lt;li&gt;The location of the new partition: the starting location of the space&lt;/li&gt;
-&lt;li&gt;for: swap space&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
 &lt;hr&gt;
-&lt;h1 id=&#34;home&#34;&gt;/home&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Continue to select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the home partition:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Size: all the space left&lt;/li&gt;
-&lt;li&gt;Type of new partition: logical partition&lt;/li&gt;
-&lt;li&gt;The location of the new partition: the starting location of the space&lt;/li&gt;
-&lt;li&gt;for: Ext4 journaling filesystem&lt;/li&gt;
-&lt;li&gt;Mount point: /home&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id=&#34;heading&#34;&gt;/&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;/&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Continue to select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the root partition:&lt;/li&gt;
+&lt;li&gt;Continue to select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the root partition:
+Size: At least 10-20GB
+Type of new partition: logical partition
+The location of the new partition: the beginning of the space
+Used for: Ext4 journaling filesystem
+mount point: /&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Size: at least 10-20GB&lt;/li&gt;
-&lt;li&gt;Type of new partition: logical partition&lt;/li&gt;
-&lt;li&gt;The location of the new partition: the starting location of the space&lt;/li&gt;
-&lt;li&gt;for: Ext4 journaling filesystem&lt;/li&gt;
-&lt;li&gt;mount point: /&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;/home&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Continue to select the free area, click the &amp;ldquo;+&amp;rdquo; sign to add the home partition:
+Size: All remaining space
+Type of new partition: logical partition
+The location of the new partition: the beginning of the space
+Used for: Ext4 journaling filesystem
+Mount point: /home&lt;/li&gt;
+&lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;install-the-bootloader-device&#34;&gt;Install the bootloader device&lt;/h2&gt;
 &lt;ol&gt;
@@ -121,96 +69,6 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 </description>
-        </item>
-        <item>
-        <title>Mac OS environment variable settings</title>
-        <link>https://tsairongfu.github.io/en/p/mac-os-environment-variable-settings/</link>
-        <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/p/mac-os-environment-variable-settings/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-environment-variable-settings/The%20Lion%20in%20Cepheus%20%28SH2-132%29.jpg" alt="Featured image of post Mac OS environment variable settings" /&gt;&lt;h2 id=&#34;view-file-contents&#34;&gt;View file contents&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat ~/.zshrc
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;if-the-file-does-not-exist-or-if-it-exists-enter-the-editing-state-directly&#34;&gt;If the file does not exist, or if it exists, enter the editing state directly&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nano ~/.zshrc
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;type-i-to-start-editing-the-file-add-the-following-to-the-file-and-save&#34;&gt;Type i to start editing the file, add the following to the file and save&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;source ~/.bash_profile
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;list-environment-variables&#34;&gt;List environment variables&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;printenv
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;list-paths-under-environment-variables&#34;&gt;List Paths under environment variables&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;echo $PATH
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;open-bash-profile&#34;&gt;open bash profile&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nano ~/.bash_profile
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;add-path-to-path&#34;&gt;Add path to PATH&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export PATH=$PATH: path name
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PATH=$PATH: path name
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;execute-bash-profile&#34;&gt;Execute bash profile&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;source ~/.bash_profile
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
         </item>
         
     </channel>
