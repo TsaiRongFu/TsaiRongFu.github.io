@@ -1,0 +1,2193 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Tsaiの南極洲</title>
+        <link>https://tsairongfu.github.io/zh-tw/post/</link>
+        <description>Recent content in Posts on Tsaiの南極洲</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/zh-tw/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>一些FFmpeg指令</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/</link>
+        <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/picture.jpg" alt="Featured image of post 一些FFmpeg指令" /&gt;&lt;h3 id=&#34;picture-to-gif&#34;&gt;picture to Gif&lt;/h3&gt;
+&lt;p&gt;Define custom palette
+The converted GIF has only three colors: white and two tints of blue, therefore, the default 256 color palette can be reduced to 16. The custom palette is created with the palettegen filter.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i frames/200.png -vf palettegen=16 palette.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;After the palette was created it can be used in the GIF conversion.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i frames/%03d.png -i palette.png -filter_complex &amp;#34;fps=20,scale=720:-1:flags=lanczos[x];[x][1:v]paletteuse&amp;#34; logo.gif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;圖片壓縮&#34;&gt;圖片壓縮&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -q compress_level out_source
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;compress_level：壓縮等級為正整數，數值越大壓縮等級越高&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;約束比例壓縮&#34;&gt;約束比例壓縮&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf scale=width:height out_source
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;width為壓縮後的圖片寬度
+height為壓縮後的圖片高度
+當width或height其中有一個數值為-1時將保持原來圖片尺寸比例壓縮&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;圖片裁切&#34;&gt;圖片裁切&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf crop=width:height:from_x:from_y out_source
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;width是要裁剪出的圖片的寬度
+height是要裁剪出的圖片的高度
+from_x是裁剪的起始X軸的位置
+from_y是裁剪的起始Y軸的位置
+如果不指定from_x和from_y表示從原始圖片中心位置開始裁剪&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;添加水印圖片&#34;&gt;添加水印圖片&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf movie=logo_source,scale=logo_width:logo_height,lut=a=val*opacity_num[watermask];[in][watermask] overlay=from_x:from_y[out] -y  out_source
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;logo_source為水印圖片地址
+logo_width為水印圖片的寬度
+logo_height為水印圖片的高度
+opacity_num為水印圖片的透明度
+from_x為水印的起始X軸的位置
+from_y為水印的起始Y軸的位置&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;添加文字水印&#34;&gt;添加文字水印&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf drawtext=fontfile=font_ttf_path:fontcolor=font_color:fontsize=font_size:text=message_info:x=from_x:y=from_y  out_source
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;font_ttf_path為字體路徑，此項必須設置否則會出現字體無法找到的錯誤
+字體路徑要設置絕對路徑並且要注意路徑正反斜線轉義(例如C\:/Windows/Fonts/simhei.ttf)
+font_color為字體的顏色
+font_size為字體的大小 
+message_info為水印文字內容
+from_x為水印的起始X軸的位置
+from_y為水印的起始Y軸的位置
+如果水印內容是中文需要設置中文字體否則會文字顯示亂碼&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;圖片旋轉指定的角度&#34;&gt;圖片旋轉指定的角度&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf rotate=route_num*PI/180 -y  out_source
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;route_num是要旋轉的角度
+當route_num大於0的時候順時針旋轉,當route_num小於0的時候逆時針旋轉&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;圖片旋轉特殊簡便命令&#34;&gt;圖片旋轉特殊簡便命令&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf transpose=route_number -y out_source
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;route_number=0順時針旋轉90度再左右鏡像
+route_number=1順時針旋轉90度
+route_number=2逆時針旋轉90度
+route_number=3逆時針旋轉90度再左右鏡像&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;圖片左右鏡像&#34;&gt;圖片左右鏡像&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf hflip out_source
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;將圖片上下鏡像&#34;&gt;將圖片上下鏡像&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i image_source -vf vflip out_source
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;指定長度和寬度&#34;&gt;指定長度和寬度&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i input.jpg -vf scale=320:240 output_320x240.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;指定要按比例縮放的長度和高度&#34;&gt;指定要按比例縮放的長度和高度&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i input.jpg -vf scale=320:-1 output_320x240.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;縮放兩倍於以前&#34;&gt;縮放兩倍於以前&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i input.jpg -vf scale=iw*2:ih input_double_width.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;縮放到上一個的二分之一&#34;&gt;縮放到上一個的二分之一&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i input.jpg -vf “scale=iw*.5:ih*.5” input_half_size.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i input.jpg -vf “scale=iw/2:ih/2” input_half_size.png
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Youtube-dl or Yt-dlp 下載Facebook影片</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/youtube-dl-or-yt-dlp-%E4%B8%8B%E8%BC%89facebook%E5%BD%B1%E7%89%87/</link>
+        <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/youtube-dl-or-yt-dlp-%E4%B8%8B%E8%BC%89facebook%E5%BD%B1%E7%89%87/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/youtube-dl-or-yt-dlp-%E4%B8%8B%E8%BC%89facebook%E5%BD%B1%E7%89%87/picture.jpg" alt="Featured image of post Youtube-dl or Yt-dlp 下載Facebook影片" /&gt;&lt;h2 id=&#34;facebook-cookice---youtube-dl&#34;&gt;Facebook Cookice - Youtube-dl&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;youtube-dl -f bestvideo+bestaudio  --add-header &amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;facebook-cookice---yt-dlp&#34;&gt;Facebook Cookice - Yt-dlp&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;yt-dlp -f bestvideo+bestaudio  --add-header &amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>PostgreSQL pgAdmin重置密碼</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/</link>
+        <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/picture.jpg" alt="Featured image of post PostgreSQL pgAdmin重置密碼" /&gt;&lt;ol&gt;
+&lt;li&gt;將 pg_hba.conf 文件中所有行的 METHOD 從 scram-sha-256 更改為 trust&lt;/li&gt;
+&lt;li&gt;將 Postgres 安裝的 bin 文件夾添加到路徑中，如果沒有的話&lt;/li&gt;
+&lt;li&gt;打開命令提示符並輸入&lt;code&gt;psql -U postgres&lt;/code&gt; 這裡不會要求你輸入密碼。&lt;/li&gt;
+&lt;li&gt;輸入&lt;code&gt;\password postgres&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;選擇並確認您的密碼&lt;/li&gt;
+&lt;li&gt;將 pg_hba.conf 恢復為原始狀態&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>Windows port狀態指令</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/windows-port%E7%8B%80%E6%85%8B%E6%8C%87%E4%BB%A4/</link>
+        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/windows-port%E7%8B%80%E6%85%8B%E6%8C%87%E4%BB%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/windows-port%E7%8B%80%E6%85%8B%E6%8C%87%E4%BB%A4/picture.jpg" alt="Featured image of post Windows port狀態指令" /&gt;&lt;h2 id=&#34;find-all-running-ports&#34;&gt;Find all running ports&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -ano
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -alp
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;view-the-pid-of-the-occupied-port&#34;&gt;View the PID of the occupied port&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -aon|findstr &amp;#34;80&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;view-the-process-with-the-specified-pid&#34;&gt;View the process with the specified PID&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tasklist|findstr &amp;#34;80&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;end-the-process&#34;&gt;end the process&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;taskkill /T /F /PID 80
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>軟體自動化安全檢測技術</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E8%BB%9F%E9%AB%94%E8%87%AA%E5%8B%95%E5%8C%96%E5%AE%89%E5%85%A8%E6%AA%A2%E6%B8%AC%E6%8A%80%E8%A1%93/</link>
+        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E8%BB%9F%E9%AB%94%E8%87%AA%E5%8B%95%E5%8C%96%E5%AE%89%E5%85%A8%E6%AA%A2%E6%B8%AC%E6%8A%80%E8%A1%93/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E8%BB%9F%E9%AB%94%E8%87%AA%E5%8B%95%E5%8C%96%E5%AE%89%E5%85%A8%E6%AA%A2%E6%B8%AC%E6%8A%80%E8%A1%93/picture.jpg" alt="Featured image of post 軟體自動化安全檢測技術" /&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuawn/Mediatek-Fuzzing-Workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;yuawn/Mediatek-Fuzzing-Workshop&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;fuzz-testing&#34;&gt;Fuzz Testing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Black-box&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;binary only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Grey-box&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;utilize some program information to guide fuzzing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;White-box&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;get a full picture of program&lt;/li&gt;
+&lt;li&gt;e.g, sysbolic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;coverage-gudided-fuzzing&#34;&gt;Coverage-Gudided Fuzzing&lt;/h2&gt;
+&lt;p&gt;seed pool -&amp;gt; selsect a seed -&amp;gt; mutation -&amp;gt; run with instrumented binary -&amp;gt; crash&lt;/p&gt;
+&lt;p&gt;Binary instrumentation&lt;/p&gt;
+&lt;p&gt;LLVM - ir change *&lt;/p&gt;
+&lt;h2 id=&#34;sanitizer&#34;&gt;Sanitizer&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://githum.com/google/sanitizers&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://githum.com/google/sanitizers&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;ubdefined Behavior sanitizer&lt;/p&gt;
+&lt;p&gt;memorySanitizer&lt;/p&gt;
+&lt;p&gt;leak-checjer&lt;/p&gt;
+&lt;h2 id=&#34;sanitizer---asan&#34;&gt;Sanitizer - ASAN&lt;/h2&gt;
+&lt;p&gt;heap, stack, global-buffer overflow&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ALF
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/google/AFL&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/google/AFL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ALF++
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/AFLplusplus/AFLplusplus&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/AFLplusplus/AFLplusplus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;libfuzzer
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://llvm.org/docs/LibFuzzer.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://llvm.org/docs/LibFuzzer.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;syzkaller
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/google/syzkaller&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/google/syzkaller&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;paper&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.comp.nus.edu.sg/~abhik/pdf/CCS16.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.comp.nus.edu.sg/~abhik/pdf/CCS16.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.usenix.org/conference/usenixsecurity19/presentation/lyu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.usenix.org/conference/usenixsecurity19/presentation/lyu&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.google.com/search?client=safari&amp;amp;rls=en&amp;amp;q=optiMin&amp;#43;IssTA&amp;#43;2021&amp;amp;ie=UTF-8&amp;amp;oe=UTF-8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.google.com/search?client=safari&amp;rls=en&amp;q=optiMin+IssTA+2021&amp;ie=UTF-8&amp;oe=UTF-8&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/41/Toward-Optimal-MC-DC-Test-Case-Generation&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/41/Toward-Optimal-MC-DC-Test-Case-Generation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/1/Seed-Selection-for-Successful-Fuzzing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://conf.researchr.org/details/issta-2021/issta-2021-technical-papers/1/Seed-Selection-for-Successful-Fuzzing&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.usenix.org/conference/usenixsecurity21/presentation/lee-gwangmu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.usenix.org/conference/usenixsecurity21/presentation/lee-gwangmu&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.usenix.org/conference/usenixsecurity20/presentation/osterlund&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.usenix.org/conference/usenixsecurity20/presentation/osterlund&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://arxiv.org/abs/1906.07327&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://arxiv.org/abs/1906.07327&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wcventure.github.io/FuzzingPaper/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://wcventure.github.io/FuzzingPaper/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>WiFi 破解</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/wifi-%E7%A0%B4%E8%A7%A3/</link>
+        <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/wifi-%E7%A0%B4%E8%A7%A3/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/wifi-%E7%A0%B4%E8%A7%A3/picture.jpg" alt="Featured image of post WiFi 破解" /&gt;&lt;h2 id=&#34;environment-of-system&#34;&gt;Environment of System&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Operating System: Kali Linux 2021.3&lt;/li&gt;
+&lt;li&gt;WiFi Adapters: ALFA AWUS036ACS&lt;/li&gt;
+&lt;li&gt;Hardware： MacBook Pro 15&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;install-dirve&#34;&gt;Install dirve&lt;/h2&gt;
+&lt;p&gt;ALFA AWUS036ACS dirve&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install realtek-rtl88xxau-dkms
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo reboot
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;step1&#34;&gt;Step1&lt;/h2&gt;
+&lt;p&gt;check wifi adapters, &lt;em&gt;&lt;code&gt;must find wlan0&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ifconfig
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step2&#34;&gt;Step2&lt;/h2&gt;
+&lt;p&gt;Start up wifi adapter monitor mode&lt;/p&gt;
+&lt;p&gt;Open wifi adapter monitor mode&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo airmon-ng start wlan0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Stop wifi adapter monitor mode&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo airmon-ng stop wlan0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step3&#34;&gt;Step3&lt;/h2&gt;
+&lt;p&gt;Scanning wifi&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo airodump-ng wlan0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step4&#34;&gt;Step4&lt;/h2&gt;
+&lt;p&gt;Get handshake package&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo airodump-ng --bssid BSSID -c CH -w Save_packet_path wlan0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step5non-essential&#34;&gt;Step5(non-essential)&lt;/h2&gt;
+&lt;p&gt;This step is based on the premise that the handshake package cannot be obtained&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo airepaly-ng -0 0 -a BSSID -c STATION wlan0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;step6-rrn-crack-password&#34;&gt;Step6 Rrn crack password&lt;/h2&gt;
+&lt;h3 id=&#34;use-cpu&#34;&gt;Use CPU&lt;/h3&gt;
+&lt;p&gt;Rrn crack password&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo aircrack-ng -w dictionary.txt Save_packet_path
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;use-gpu&#34;&gt;Use GPU&lt;/h3&gt;
+&lt;p&gt;Fist change cap file to hccapx&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo aircrack-ng ./*.cap -j save_path/name.hccapx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Second run brute force&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hashcat -m 2500 ./name.hccapx ./dictionary.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Linux server Raid配置</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/linux-server-raid%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/linux-server-raid%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/linux-server-raid%E9%85%8D%E7%BD%AE/picture.jpg" alt="Featured image of post Linux server Raid配置" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://askubuntu.com/questions/973632/unable-to-mount-raid1-md0-wrong-fs-type-bad-option-bad-superblock-on-dev-md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;askubuntu-973632&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Unable to Mount RAID1 md0 - wrong fs type, bad option, bad superblock on /dev/md0, missing codepage or helper program, or other error&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;掛載磁區&#34;&gt;掛載磁區&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mount /home/Raid6
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mount /dev/sdb* /path
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;查看磁碟指令&#34;&gt;查看磁碟指令&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo blkid
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo fdisk -l
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo fdisk -l /dev/sd*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;df
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;格式化硬碟&#34;&gt;格式化硬碟&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mkfs.ext4 /dev/sd*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;配置開機自掛載&#34;&gt;配置開機自掛載&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo nano /etc/fstab
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;UUID=e8d9acdd-4161-4efc-9ad1-7907e6a339a4 /path ext4 defaults 0 1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;測試&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mount -a
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Reporting Server 安裝</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/reporting-server-%E5%AE%89%E8%A3%9D/</link>
+        <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/reporting-server-%E5%AE%89%E8%A3%9D/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/reporting-server-%E5%AE%89%E8%A3%9D/picture.jpg" alt="Featured image of post Reporting Server 安裝" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
+&lt;p&gt;SQL Server 網路組態 TCP要開啟&lt;/p&gt;
+&lt;p&gt;連線測試 使用Microsoft SQL Server Managerment Studio 開啟
+tcp:主機名稱/資料庫名稱,Port&lt;/p&gt;
+&lt;p&gt;SQL Server預設Port：（TCP）1433&lt;/p&gt;
+&lt;p&gt;防火牆記得要把port設定白名單&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;參考文件&#34;&gt;參考文件&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>安裝Linux系統硬碟空間配置</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg" alt="Featured image of post 安裝Linux系統硬碟空間配置" /&gt;&lt;blockquote&gt;
+&lt;p&gt;/boot
+1.選擇空閒區，點擊“+”號添加引導分區：
+大小：400MB
+新分區的類型：主分區
+新分區的位置：空間起始位置
+用於：Ext4日誌文件系統
+掛載點：/boot&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;swap
+2.繼續選擇空閒區，點擊“+”號添加交換分區，設置為實際內存的2倍：
+大小：8192MB(4GB×2)
+新分區的類型：邏輯分區
+新分區的位置：空間起始位置
+用於：交換空間&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;/
+3.繼續選擇空閒區，點擊“+”號添加root分區：
+大小：至少10-20GB
+新分區的類型：邏輯分區
+新分區的位置：空間起始位置
+用於：Ext4日誌文件系統
+掛載點：/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;/home
+4.繼續選擇空閒區，點擊“+”號添加home分區：
+大小：餘下所有的空間
+新分區的類型：邏輯分區
+新分區的位置：空間起始位置
+用於：Ext4日誌文件系統
+掛載點：/home&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;安裝啟動引導器的設備&#34;&gt;安裝啟動引導器的設備&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;如果要用Ubuntu的引導器代替Windows的引導器，就選 /dev/sda。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果要保留Windows的引導器，就選 /boot分區。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>Python selenium 解決 chrome://settings 無法定位問題</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/python-selenium-%E8%A7%A3%E6%B1%BA-chrome-settings-%E7%84%A1%E6%B3%95%E5%AE%9A%E4%BD%8D%E5%95%8F%E9%A1%8C/</link>
+        <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/python-selenium-%E8%A7%A3%E6%B1%BA-chrome-settings-%E7%84%A1%E6%B3%95%E5%AE%9A%E4%BD%8D%E5%95%8F%E9%A1%8C/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/python-selenium-%E8%A7%A3%E6%B1%BA-chrome-settings-%E7%84%A1%E6%B3%95%E5%AE%9A%E4%BD%8D%E5%95%8F%E9%A1%8C/picture.jpg" alt="Featured image of post Python selenium 解決 chrome://settings 無法定位問題" /&gt;&lt;h2 id=&#34;大神解答&#34;&gt;大神解答：&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56763683/selenium-python-unable-to-clear-chrome-browser-cache&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stackoverflow-56763683&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56380091/how-to-interact-with-the-elements-within-shadow-root-open-while-clearing-brow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stackoverflow-56380091&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;實作範例&#34;&gt;實作範例&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;清除瀏覽紀錄按鈕&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-section &amp;gt; settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-clear-browsing-data-dialog&amp;#39;).shadowRoot.querySelector(&amp;#39;#clearBrowsingDataDialog&amp;#39;).querySelector(&amp;#39;#clearBrowsingDataConfirm&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;新增聲音按鈕&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;#addSite&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;新增聲音按鈕&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;add-site-dialog&amp;#39;).shadowRoot.querySelector(&amp;#39;#site&amp;#39;).shadowRoot.querySelector(&amp;#39;#input&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;新增聲音確認新增按鈕&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;add-site-dialog&amp;#39;).shadowRoot.querySelector(&amp;#39;#add&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;python&#34;&gt;Python：&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;clearButton = browser.execute_script(&amp;#34;return document.querySelector(&amp;#39;settings-ui&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-main&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-basic-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-privacy-page&amp;#39;).shadowRoot.querySelector(&amp;#39;settings-animated-pages &amp;gt; settings-subpage &amp;gt; category-setting-exceptions&amp;#39;).shadowRoot.querySelector(&amp;#39;site-list&amp;#39;).shadowRoot.querySelector(&amp;#39;#addSite&amp;#39;)&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;#click on the clear button now
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;clearButton.click()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Nginx將http流量導至https</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/</link>
+        <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/nginx%E5%B0%87http%E6%B5%81%E9%87%8F%E5%B0%8E%E8%87%B3https/picture.jpg" alt="Featured image of post Nginx將http流量導至https" /&gt;&lt;h2 id=&#34;修改-config&#34;&gt;修改 config&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;error_page  497 https://XXXXX$request_uri;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Windows Nginx Command</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/windows-nginx-command/</link>
+        <pubDate>Mon, 28 Jun 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/windows-nginx-command/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/windows-nginx-command/picture.jpg" alt="Featured image of post Windows Nginx Command" /&gt;&lt;p&gt;啟動 Nginx：&lt;strong&gt;&lt;code&gt;啟動 nginx&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;檢查 Nginx 狀態：&lt;strong&gt;&lt;code&gt;tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;快速停止Nginx：&lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;完整有序的停止Nginx：&lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;使用tsakkill關閉：&lt;strong&gt;&lt;code&gt;taskkill /f /t /im nginx.exe&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;快速關機：&lt;strong&gt;&lt;code&gt;nginx -s stop&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;優雅關機：&lt;strong&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;更改配置，使用新配置啟動新工作進程，正常關閉舊工作進程：&lt;strong&gt;&lt;code&gt;nginx -s reload&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;重新打開日誌文件：&lt;strong&gt;&lt;code&gt;nginx -s reboot&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Python selenium 解決 iframe 切換問題</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/python-selenium-%E8%A7%A3%E6%B1%BA-iframe-%E5%88%87%E6%8F%9B%E5%95%8F%E9%A1%8C/</link>
+        <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/python-selenium-%E8%A7%A3%E6%B1%BA-iframe-%E5%88%87%E6%8F%9B%E5%95%8F%E9%A1%8C/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/python-selenium-%E8%A7%A3%E6%B1%BA-iframe-%E5%88%87%E6%8F%9B%E5%95%8F%E9%A1%8C/picture.jpg" alt="Featured image of post Python selenium 解決 iframe 切換問題" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iframe = browser.find_element_by_xpath(&amp;#39;//iframe[contains(@name, &amp;#34;m2k&amp;#34;)]&amp;#39;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;進入iframe&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;browser.switch_to_frame(iframe1)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;退出iframe&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;browser.switch_to_default_content()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Nvidia NX 編譯 Darknet</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</link>
+        <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/picture.jpg" alt="Featured image of post Nvidia NX 編譯 Darknet" /&gt;&lt;h3 id=&#34;用sudo-nano-edit-makefile-nvcc-path&#34;&gt;用sudo nano edit Makefile NVCC path&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NVCC = /usr/local/cuda/bin/nvcc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export PATH=/usr/local/cuda10.2/bin${PATH:+:${PATH}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export LD_LIBRARY_PATH=/usr/local/cuda10.2/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export $LD_LIBRARY_PATH
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export $PATH
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./darknet detector demo ../clown_derection/cfg/obj.data ../clown_derection/cfg/yolov4-tiny-obj-test.cfg ../clown_derection/cfg/weights/yolov4-tiny-obj_7000.weights
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;tx2使用見相機開啟指令&#34;&gt;TX2使用見相機開啟指令&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>一些Linux有趣的命令</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/</link>
+        <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/picture.jpg" alt="Featured image of post 一些Linux有趣的命令" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yaronn/blessed-contrib&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;yaronn/blessed-contrib&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/yaronn/blessed-contrib.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cd blessed-contrib
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;npm install
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;node ./examples/dashboard.js
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhuanlan.zhihu.com/p/69421576&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;zhihu.com&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get install figlet$sudo apt-get install toilet
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;figlet Hellow !
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;toilet I love you
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;toilet -f mono12 -F gay Hellow
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/will8211/unimatrix&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;will8211/unimatrix&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-v&#34; data-lang=&#34;v&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//github.com/will8211/unimatrix.git
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;  &lt;span class=&#34;nv&#34;&gt;no&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;module&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;named&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;_curses&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;windows&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;curses&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;指令Example&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;unimatrix -c white -n -s 96 -u &amp;#39;01&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>使用FFmpeg將影片轉換成動圖</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/</link>
+        <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/picture.jpg" alt="Featured image of post 使用FFmpeg將影片轉換成動圖" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -i input.flv -ss 00:00:00.000 -pix_fmt rgb24 -r 10 -s 320x240 -t 00:00:10.000 output.gif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ffmpeg -ss 30 -t 3 -i input.mp4 -vf &amp;#34;fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&amp;#34; -loop 0 output.gif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>使用 git.io 縮網址</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E4%BD%BF%E7%94%A8-git.io-%E7%B8%AE%E7%B6%B2%E5%9D%80/</link>
+        <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E4%BD%BF%E7%94%A8-git.io-%E7%B8%AE%E7%B6%B2%E5%9D%80/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E4%BD%BF%E7%94%A8-git.io-%E7%B8%AE%E7%B6%B2%E5%9D%80/picture.jpg" alt="Featured image of post 使用 git.io 縮網址" /&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -i https://git.io -F &amp;#34;url=&amp;lt;想縮短的網址&amp;gt;&amp;#34; -F &amp;#34;code=&amp;lt;自訂短網址名稱&amp;gt;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -i https://git.io -F &amp;#34;url=https://google.com&amp;#34; -F &amp;#34;code=Google&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HTTP/1.1 201 Created
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&amp;hellip;
+Location: &lt;a class=&#34;link&#34; href=&#34;https://git.io/Google&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://git.io/Google&lt;/a&gt;
+&amp;hellip;&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -i https://git.io/Google
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;HTTP/1.1 302 Found&lt;/p&gt;
+&lt;p&gt;&amp;hellip;
+Location: &lt;a class=&#34;link&#34; href=&#34;https://google.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://google.com&lt;/a&gt;
+&amp;hellip;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>通訊網路與多媒體應用</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/</link>
+        <pubDate>Sat, 30 Jan 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/picture.jpg" alt="Featured image of post 通訊網路與多媒體應用" /&gt;&lt;h2 id=&#34;第3週基礎多媒體網路通訊&#34;&gt;第3週：基礎多媒體網路通訊&lt;/h2&gt;
+&lt;h3 id=&#34;homework1&#34;&gt;HomeWork1&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/3sIUu0L.png&#34;
+	width=&#34;1022&#34;
+	height=&#34;627&#34;
+	srcset=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/3sIUu0L_hu7ada9fbe35a80907a517c28cceb3fefa_431610_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/3sIUu0L_hu7ada9fbe35a80907a517c28cceb3fefa_431610_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;391px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;多媒體有什麼特性&#34;&gt;多媒體有什麼特性？&lt;/h4&gt;
+&lt;p&gt;媒體技術具有的特性包括：多樣性、集成性、交互性
+在資料傳輸需求上，會因資料不同而相異&lt;/p&gt;
+&lt;h4 id=&#34;在傳輸多媒體時有什麼特別的需求&#34;&gt;在傳輸多媒體時有什麼特別的需求？&lt;/h4&gt;
+&lt;p&gt;需要利用網路傳輸，為了避免資料傳輸量過大造成負擔以及提高電腦儲存量，需要進行資料壓縮，且不同形式的多媒體（圖片、影片、聲音）也擁有各種不同的協議。&lt;/p&gt;
+&lt;h4 id=&#34;請舉列周圍環境中可以稱之為多媒體通訊的資訊服務與設備&#34;&gt;請舉列周圍環境中，可以稱之為多媒體通訊的資訊服務與設備：&lt;/h4&gt;
+&lt;p&gt;我認為現在普遍最常用的就是超商的ibon機器，進行列印、繳費、儲值、購票等都十分方便。再來應該就是目前隨身攜帶的智慧型手機，裡面可以進行各種不同的資訊服務功能。&lt;/p&gt;
+&lt;h4 id=&#34;任選一種多媒體通訊的應用搜集相關資料並說明其發展現況及未來趨勢&#34;&gt;任選一種多媒體通訊的應用，搜集相關資料，並說明其發展現況及未來趨勢&lt;/h4&gt;
+&lt;p&gt;無線感測網路的應用:舉例來說，像是RFID、ZigBee的發展現況是應用在無線嵌入式（感測）網路或物流供應鏈管理系統上，未來趨勢以業者來說會更加去針對將收集到的資料在供應鏈管理系統中的處理與分佈、以及與資料安全相關的技術開發、感測訊號的辨識和篩選、與後端資料庫伺服器的溝通等等的技術去做精進。&lt;/p&gt;
+&lt;h4 id=&#34;視訊會議系統對於遠距教學會有什麼樣的影響列舉視訊會議系統其他可能的用途&#34;&gt;視訊會議系統對於遠距教學，會有什麼樣的影響？列舉視訊會議系統其他可能的用途：&lt;/h4&gt;
+&lt;p&gt;我認為視訊會議系統對於遠距教學的影響，一定是正向的。它使得教師能夠更便於管理學生動態，也擁有完整的留言板、視訊功能，能夠一定程度地將實體上課的模式移植到線上遠距教學。&lt;/p&gt;
+&lt;p&gt;視訊會議的其他用途，我認為現在網路的進步，已經不像過去要團聚，必須耗費大量時間去移動，雖然會缺少一部分實際見面的感覺，但像目前疫情嚴峻的時期，它一定程度的減緩了人與人之間極需見面的社交需求，達到安定人心的作用。&lt;/p&gt;
+&lt;h4 id=&#34;試由網路上找尋和多媒體通訊相關的標準&#34;&gt;試由網路上找尋和多媒體通訊相關的標準。&lt;/h4&gt;
+&lt;p&gt;常見的多媒體標準壓縮技術:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;JPEG&lt;/li&gt;
+&lt;li&gt;MPEG-1&lt;/li&gt;
+&lt;li&gt;MPEG-2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;電腦使用的無線網路標準:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一代，以IEEE 802.11原始標準為準，工作頻段為2.4GHz&lt;/li&gt;
+&lt;li&gt;第二代，以IEEE 802.11b為準，工作頻段為2.4GHz&lt;/li&gt;
+&lt;li&gt;第三代，以IEEE 802.11a為準，工作頻段為5GHz&lt;/li&gt;
+&lt;li&gt;第四代，以IEEE 802.11n為準，世代名稱為「Wi-Fi 4」，信道寬度20MHz、40MHz，工作頻段為2.4GHz和5GHz&lt;/li&gt;
+&lt;li&gt;第五代，以IEEE 802.11ac為準，世代名稱為「Wi-Fi 5」，信道寬度20MHz、40MHz、80MHz、80+ 80MHz、160MHz，工作頻段為5GHz&lt;/li&gt;
+&lt;li&gt;第六代，以IEEE 802.11ax為準，世代名稱為「Wi-Fi 6」，信道寬度20MHz、40MHz、80MHz、80+ 80MHz、160MHz，工作頻段為2.4GHz和5GHz&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;短距離傳輸所設計的無線通訊標準:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;bluetooth&lt;/li&gt;
+&lt;li&gt;ZigBee&lt;/li&gt;
+&lt;li&gt;RFID&lt;/li&gt;
+&lt;li&gt;IrDA&lt;/li&gt;
+&lt;li&gt;UWB&lt;/li&gt;
+&lt;li&gt;WiMedia&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;homework2&#34;&gt;HomeWork2&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/mzCoHSu.png&#34;
+	width=&#34;1073&#34;
+	height=&#34;634&#34;
+	srcset=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/mzCoHSu_hu3ff50a51e7ea31c95fbaaee1be057a09_406660_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/mzCoHSu_hu3ff50a51e7ea31c95fbaaee1be057a09_406660_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;169&#34;
+		data-flex-basis=&#34;406px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;試說明串流在多媒體的應用中有什麼樣的優點&#34;&gt;試說明串流在多媒體的應用中有什麼樣的優點？&lt;/h4&gt;
+&lt;p&gt;串流指的是將一連串影像壓縮，穩定快速的傳送到用戶端，利用協議開啟時，可以不用在用戶端留存檔案，節省空間。&lt;/p&gt;
+&lt;h4 id=&#34;請說明單點播送與群播網路寬頻上的運用有什麼樣的差異&#34;&gt;請說明單點播送與群播網路寬頻上的運用有什麼樣的差異&lt;/h4&gt;
+&lt;p&gt;單點播送在技術上，需要將兩台電腦的兩台主機 NLB 網路介面的 MAC 位址變成完全一樣，以至於讓兩台主機彼此無法互相連線。&lt;/p&gt;
+&lt;p&gt;群播信息同時傳遞給一組目的地址。它使用策略是最高效的，因為消息在每條網絡線路上只需傳遞一次，而且只有在線路分叉的時候，消息才會被複製。&lt;/p&gt;
+&lt;h4 id=&#34;群播的協定中為什麼需要路由的機制&#34;&gt;群播的協定中為什麼需要路由的機制？&lt;/h4&gt;
+&lt;p&gt;群播使用的IP位址有特定的格式，所以一旦網路節點發現封包中有群播的位址，就會採用群播的處理方式，主要的問題是路由(routing)，支援群播的路由器透過IGMP提供的資訊來建立路由，群播路由的方法很多，包括PIM(Protocol Independent Multicast)、DVMRP(Distance-Vector Multicast Routing Protocol)、CBT(Core-Based Tree)與MOSPF(Multicast Open Shortest Path First)。群播路由還要考慮到用戶的分布狀況，所以有所謂的dense mode與sparse mode的情形，用戶所在的網域也是技術上考慮的因素之一&lt;/p&gt;
+&lt;h4 id=&#34;請說明服務品質的協定與串流服務之間有何關聯&#34;&gt;請說明服務品質的協定與串流服務之間有何關聯？&lt;/h4&gt;
+&lt;p&gt;為了能保證服務品質(QoS)，有幾個協定特別針對QoS的要求發展出來，其中RSVP可以在網路邊界(edge)預約資源、MPLS可以控制流量、DiffServ可以指定封包的優先順序。不過，萬一往來網路超載，這些協定還是起不了作用。&lt;/p&gt;
+&lt;h4 id=&#34;是說明串流播放與下載播放的差別&#34;&gt;是說明串流播放與下載播放的差別？&lt;/h4&gt;
+&lt;p&gt;串流可以試想為邊播放邊下載，它主要不同於下載播放為下載播放需要將檔案下載到電腦再進行播放，此特性使得檔案得以留存，但也會造成儲存空間的損耗。
+串流的話，由於邊播放邊下載，因此不需要完全加載完畢才能觀看影片，也不會在本地端電腦將檔案留存，僅作為暫存形式存在。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第4週視訊編碼與錯誤修復技術&#34;&gt;第4週：視訊編碼與錯誤修復技術&lt;/h2&gt;
+&lt;h3 id=&#34;homework3&#34;&gt;HomeWork3&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/gdjSOqG.png&#34;
+	width=&#34;1009&#34;
+	height=&#34;676&#34;
+	srcset=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/gdjSOqG_hubf960300ce07de4080f8a37cb954950e_248100_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/gdjSOqG_hubf960300ce07de4080f8a37cb954950e_248100_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;149&#34;
+		data-flex-basis=&#34;358px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;試著比較原始視訊內容與編碼過後視訊內容的差異&#34;&gt;試著比較原始視訊內容與編碼過後視訊內容的差異?&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;編碼的轉換過程中，會有視訊失真的產生。&lt;/li&gt;
+&lt;li&gt;編碼後整體的位元總數減少。&lt;/li&gt;
+&lt;li&gt;空間域轉換成頻率域。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;為什麼要做視訊編碼&#34;&gt;為什麼要做視訊編碼?&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;原始視訊內容與編碼過後視訊內容的差異，絕大多數的應用無法處理如此龐大的資料量。&lt;/li&gt;
+&lt;li&gt;原始的視訊內容儲存起來需要很大的儲存空間。所以必須編碼減少儲存空間負擔。&lt;/li&gt;
+&lt;li&gt;網路的傳輸能力有限，所以必須編碼減少儲存傳輸負擔。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;請比較ip與b-frame之間的差異與特性&#34;&gt;請比較I、P與B frame之間的差異與特性。&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;I Frame 必須要存在的Frame，資料量最大，不需要去參考其他的畫面，沒有I Frame則無法重組GOP。&lt;/li&gt;
+&lt;li&gt;P Frame 資料量次中，必須參考I Frame，從鄰近解出來的I Frame所加上差異部分的畫面。&lt;/li&gt;
+&lt;li&gt;B Frame 資料量最小，畫質最差，必須參考I Frame與P Frame，然後加上差異部分的畫面。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;何謂spatial與temporal-redundancy&#34;&gt;何謂Spatial與Temporal Redundancy?&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Temporal：在視訊資料中，相鄰的影格（frame）與影格之間通常有很強的關連性，這樣的關連性即為時間上的冗餘資訊。時間的冗餘部分，基本上只是稍微的移動而已，但是實際上的視訊大同小異。&lt;/li&gt;
+&lt;li&gt;Spatial：在同一張影格之中，相鄰的像素之間通常有很強的關連性，這樣的關連性即為空間上的冗餘資訊。因為視訊中的每一個點與點之間，常常都是有相關性的，例如：一台車子的視訊，車子裡面的點與點之間，相對的點的顏色都是類似的。&lt;/li&gt;
+&lt;li&gt;Statistical:統計上的冗餘資訊指的是欲編碼的符號（symbol）的機率分布是不均勻（non-uniform）的。&lt;/li&gt;
+&lt;li&gt;perceptual:感知上的冗餘資訊是指在人在觀看視訊時，人眼無法察覺的資訊。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;編碼主要由哪三個步驟所組成並解釋說明&#34;&gt;『編碼』主要由哪三個步驟所組成?並解釋說明。&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;表示法(Representation)：濃縮成幾個重要訊息的參數。&lt;/li&gt;
+&lt;li&gt;量化(Quantization)：離散參數。&lt;/li&gt;
+&lt;li&gt;編碼(Binary encoding)：利用非等量化參數統計。&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;第5週視訊編碼與錯誤修復技術&#34;&gt;第5週：視訊編碼與錯誤修復技術&lt;/h2&gt;
+&lt;h3 id=&#34;homework4&#34;&gt;HomeWork4&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/LLCB2gL.png&#34;
+	width=&#34;883&#34;
+	height=&#34;557&#34;
+	srcset=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/LLCB2gL_hu09a7f8de2c128c864d2cb2704e190e82_72040_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/LLCB2gL_hu09a7f8de2c128c864d2cb2704e190e82_72040_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;380px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;視訊編碼為什麼會廣泛在網路視訊串流普遍使用&#34;&gt;視訊編碼為什麼會廣泛在網路視訊串流普遍使用?&lt;/h4&gt;
+&lt;p&gt;可高效率視訊壓縮可以為應用來來巨大的改變，解決了檔案大小跟網路速度不成比的差距讓影片圖片都可以快速的傳播，多了很多應用的空間，以至於人們現在隨時隨地都能掌握即時影音資訊&lt;/p&gt;
+&lt;p&gt;應證了古人所說的一句話：秀才不出們便知天下事。&lt;/p&gt;
+&lt;h4 id=&#34;說明解釋h263的階層式架構&#34;&gt;說明解釋H.263的階層式架構。&lt;/h4&gt;
+&lt;p&gt;H.263以一種階層式的結構組成，由上而下依序分為Picture、Group of blocks(GOB)、Macroblock(MB)、Block四層&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Picture Layer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Group of blocks(GOB) Layer：主要是條列狀結構的Macroblock所組成，組成一組一組的GOB。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Macroblock Layer：一個Macroblock所涵蓋的區域是16 * 16 pixels，而一個Macroblock是由6個Block組成的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Block Layer：一個Block包含了 8 * 8 個pixels。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/GHk9lMW.jpg&#34;
+	width=&#34;600&#34;
+	height=&#34;353&#34;
+	srcset=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/GHk9lMW_hu3f2a162f79977b683e0ecdc2ed2ead55_16648_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/GHk9lMW_hu3f2a162f79977b683e0ecdc2ed2ead55_16648_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;169&#34;
+		data-flex-basis=&#34;407px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;試著比較h261與h263的差異&#34;&gt;試著比較H.261與H.263的差異。&lt;/h4&gt;
+&lt;p&gt;H.261的應用：用於面對面的可視電話和視頻會議。&lt;/p&gt;
+&lt;p&gt;H.263的應用：H.263最初設計為基於H.324的系統進行傳輸（即基於公共交換電話網和其它基於電路交換的
+網絡進行視頻會議和視頻電話）。&lt;/p&gt;
+&lt;p&gt;H.261的概述：H.261是1990年ITU-T制定的一個視頻編碼標準，屬於視頻編解碼器。&lt;/p&gt;
+&lt;p&gt;H.263的概述：H.263是由ITU-T制定的視頻會議用的低碼率視頻編碼標準，屬於視頻編解碼器。&lt;/p&gt;
+&lt;p&gt;H.261的特點：H.261在實時編碼時比MPEG所佔用的CPU運算量少得多，此算法為了優化帶寬佔用量，引進了在圖像質量與運動幅度之間的平衡折中機制，也就是說，劇烈運動的圖像比相對靜止的圖像質量要差。&lt;/p&gt;
+&lt;p&gt;H.263的特點：H.263的運動補償使用半像素精度，而H.261則用全像素精度和環路濾波；數據流層次結構的某些部分在H.263中是可選的，使得編解碼可以配置成更低的數據率或更好的糾錯能力；H.263包含四個可協商的選項以改善性能；H.263採用無限制的運動向量以及基於語法的算術編碼。&lt;/p&gt;
+&lt;p&gt;H.263的Motion compensation的精準度可以達到半個像點(Half-pixel accuracy)；
+這種方式與 MPEG 使用的方式互相類似，主要是因為人類眼睛視覺的特性，讓我們
+可以利用這種方法將位移估計的準確度提高。所以可以利用影像在時間上的相
+關性來把影像作更多壓縮。相較於H.261卻只有整數個像點((Integer-pixel accuracy)
+可重疊式區塊位移補償(Overlapped block motion compensation, OBMC)：利用移位估計找出最相似的Block之後，傳統的方法就直接把這些Block覆蓋上去，再加上估計的誤差值就形成了目前的影像。
+但是相對的在H.263中，所有目前的Block都會是三個Block的加權平均值再加上誤差值，然而裡面的三個Block都會有相鄰的關係。所以在Block的大小從原本的16x16變成8x8。所以會讓壓縮過後的影像品質更好，而且還能保值較佳的壓縮比例。&lt;/p&gt;
+&lt;h4 id=&#34;h263相較於h261&#34;&gt;H.263相較於H.261&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;減少了許多成本&lt;/li&gt;
+&lt;li&gt;支援了更多的視訊格式&lt;/li&gt;
+&lt;li&gt;提供Overlapped block motion compensation (OBMC)。&lt;/li&gt;
+&lt;li&gt;利用新的Arithmetic coding&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;h264svc視訊品質分成三種可調方式&#34;&gt;H.264/SVC視訊品質分成三種可調方式：&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;SNR scalability&lt;/li&gt;
+&lt;li&gt;Temporal scalability&lt;/li&gt;
+&lt;li&gt;Spatial scalability&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;比較h264svc與avc的差異&#34;&gt;比較H.264/SVC與AVC的差異&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;傳統視訊協議 (H.264/AVC)&lt;/th&gt;
+&lt;th&gt;Vidyo視訊協議 (H.264/SVC)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;視訊會議可以容忍的網路丟包率&lt;/td&gt;
+&lt;td&gt;&amp;lt; 2 – 3 %&lt;/td&gt;
+&lt;td&gt;&amp;lt;20%&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;對網路的要求&lt;/td&gt;
+&lt;td&gt;專線&lt;/td&gt;
+&lt;td&gt;共享線路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;視訊會議延遲&lt;/td&gt;
+&lt;td&gt;400毫秒&lt;/td&gt;
+&lt;td&gt;&amp;lt; 200毫秒&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;視訊會議效果&lt;/td&gt;
+&lt;td&gt;非實時互動&lt;/td&gt;
+&lt;td&gt;實時互動&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;HD 會議室型終端的開銷&lt;/td&gt;
+&lt;td&gt;昂貴&lt;/td&gt;
+&lt;td&gt;普及型&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;AVC實際上是H.264協議的別名。但自從H.264協議中增加了SVC的部分之後，人們習慣將不包含 SVC 的 H.264協議那一部分稱為AVC，而將 SVC 這一部分單獨稱為SVC。
+H.264 SVC（H.264可分級編碼）作為H.264標準的一個擴充套件最初由JVT在2004年開始制定，並於2007年7月獲得ITU批准。H.264 SVC以H.264 AVC視訊編解碼器標準為基礎，利用了AVC編解碼器的各種高效演算法工具，在編碼產生的編碼視訊時間上（幀率）、空間上（解析度）可擴充套件，並且是在視訊質 量方面可擴充套件的，可產生不同幀速率、解析度或質量等級的解碼視訊。可進行視訊品質的調整。視訊編碼品質較佳。可使用單一或多個bit stream。網路適應性較佳。
+AVC在網路傳輸品質較差時，並無法即時撥放視訊視訊，相對的SVC可以用較低的視訊品質進行播放的動作，雖然無法提供高品質的視訊，但是提升了視訊串流的流暢性。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;第8週視訊編碼與錯誤修復技術&#34;&gt;第8週：視訊編碼與錯誤修復技術&lt;/h2&gt;
+&lt;h3 id=&#34;homework5&#34;&gt;HomeWork5&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/qvSfZ3L.png&#34;
+	width=&#34;762&#34;
+	height=&#34;556&#34;
+	srcset=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/qvSfZ3L_hu00a0dd7ade069720994f5cd482ac49b5_72388_480x0_resize_box_3.png 480w, https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/qvSfZ3L_hu00a0dd7ade069720994f5cd482ac49b5_72388_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;137&#34;
+		data-flex-basis=&#34;328px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;網路視訊串流中arq與fec兩種錯誤回覆機制哪種比較合適&#34;&gt;網路視訊串流中，ARQ與FEC兩種錯誤回覆機制哪種比較合適？&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;必須使用FEC，因為當發現錯誤時，使用ARQ機制原始資料已不再可用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;請說明arq的運作方式&#34;&gt;請說明ARQ的運作方式&lt;/h4&gt;
+&lt;p&gt;ANS：當Server與Client端要傳送資料的時候，如果訊息在傳輸的過程當中發生了錯誤，接收端會回覆傳送端，而常見的方法有以下三種：
+Stop-and-wait Automatic Repeat Request:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;發送端每傳送一筆資料封包就先暫時停下來，待其收到接收端(Receiver)傳回的ACK/NACK，或者在特定時間後尚未收到ACK/NACK時才決定傳新資料/重傳。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/q1N0Z1u.jpg&#34;
+	width=&#34;500&#34;
+	height=&#34;240&#34;
+	srcset=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/q1N0Z1u_hud25a4271c4de0ab8bdca6bdb972a3931_25374_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/q1N0Z1u_hud25a4271c4de0ab8bdca6bdb972a3931_25374_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;208&#34;
+		data-flex-basis=&#34;500px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Go-back N Automatic Repeat Request:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;發送端持續不斷地傳送資料封包，若收到ACK時不改變其動作，但收到NACK時會跳回錯誤的資料封包再依序重傳一次。接收端在回傳NACK後便捨棄接下來收到的封包，待前一次傳錯的資料正確解碼(接收)後，才開始繼續依序儲存資料封包。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/YSNb2lh.jpg&#34;
+	width=&#34;500&#34;
+	height=&#34;246&#34;
+	srcset=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/YSNb2lh_hud25a4271c4de0ab8bdca6bdb972a3931_35336_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/YSNb2lh_hud25a4271c4de0ab8bdca6bdb972a3931_35336_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;203&#34;
+		data-flex-basis=&#34;487px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Select Repeat Automatic Repeat Request:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;做法與Go-back-N ARQ相似，但收到NACK時僅重傳錯誤的那份資料封包，而非重新依序重傳，另外，接收端在回傳NACK後並非捨棄接下來收到的封包而是存在緩衝器(Buffer)，待資料全部接收(正確解碼)完成後再重新依序排列。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/jEDXjhF.jpg&#34;
+	width=&#34;500&#34;
+	height=&#34;269&#34;
+	srcset=&#34;https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/jEDXjhF_hud25a4271c4de0ab8bdca6bdb972a3931_38992_480x0_resize_q75_box.jpg 480w, https://tsairongfu.github.io/zh-tw/p/%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E8%88%87%E5%A4%9A%E5%AA%92%E9%AB%94%E6%87%89%E7%94%A8/jEDXjhF_hud25a4271c4de0ab8bdca6bdb972a3931_38992_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;446px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;請說明fec的運作方式&#34;&gt;請說明FEC的運作方式？&lt;/h4&gt;
+&lt;p&gt;ANS：基本的FEC傳送運作，Server欲傳送k bytes資料時，它會先經由FEC encoder進行編碼動作，產生(n-k)=h bytes連同原始資料k bytes一起傳送出去，並且允許發生h bytes的loss或error，當傳輸的過程中若發生錯誤時，client端可已經由FEC decoder利用所接收到的k bytes進行資料解碼，如果錯誤發生的範圍在h bytes錯誤內，就可將錯誤的資料修復回來，並重新建構原始的資料。&lt;/p&gt;
+&lt;h4 id=&#34;試著比較arq與fec兩種錯誤回覆機制的差異&#34;&gt;試著比較ARQ與FEC兩種錯誤回覆機制的差異？&lt;/h4&gt;
+&lt;p&gt;ANS：Automatic Repeat-reQuest
+做法：
+當資料遺失時，則要求重新傳送未收到的資料。
+優點：
+只需重送遺失的資料。
+缺點：
+時效性與大量遺失頻寬消耗。
+Forward Error Correction
+做法：
+加上些許額外的資訊，當接收端接收的資料不完整時，可以透過額外的資訊來修復與還原。&lt;/p&gt;
+&lt;p&gt;優點：
+不需要仰賴server重送即可逕行修復部分錯誤。&lt;/p&gt;
+&lt;p&gt;缺點：
+耗費額外的頻寬與資源。&lt;/p&gt;
+&lt;h4 id=&#34;請解釋packet-leavel-fec與byte-leavel-fec的差異&#34;&gt;請解釋Packet-Leavel FEC與Byte Leavel FEC的差異？&lt;/h4&gt;
+&lt;p&gt;ANS：Byte-level FEC為correcting codes，通常使用在physical layer，FEC(n, k)中n為block size，表示包含k個message symbols與n-k個parity symbols提供解碼端進行錯誤的修正，一個symbol對應一組bit sequence(如byte)，因無法知道到底有哪些symbols發生了error，所以correcting codes最多只能修復(n-k)/2個symbol錯誤。一般的correcting codes無法抵抗大量error burst的發生，所以通常會搭配interleaving的方式傳送，為的就是要將錯誤分散而減少burst所造成的影響。
+Packet-level FEC為erasure codes，通常使用在Transport或Application layer，FEC(n, k)中n為block size，包含k個data packets與n-k個parity packets，因為在IP層以上我們可以知道到底有哪些packets發生了error，所以我們採用erasure codes，也就是假設MH可以正確的接收到n個packets中的任何k個packets，任何遺失的data packets將可以正確的被重建回來。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>創建 ssh-agent 密鑰</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E5%89%B5%E5%BB%BA-ssh-agent-%E5%AF%86%E9%91%B0/</link>
+        <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E5%89%B5%E5%BB%BA-ssh-agent-%E5%AF%86%E9%91%B0/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E5%89%B5%E5%BB%BA-ssh-agent-%E5%AF%86%E9%91%B0/picture.jpg" alt="Featured image of post 創建 ssh-agent 密鑰" /&gt;&lt;p&gt;Create ssh-agent key&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -t rsa -b 4096 -C &amp;#34;your_email@example.com&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;key path&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat ~/.ssh/id_rsa.pub
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;Post it on your github&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Mac OS XAMPP 啟動錯誤</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</link>
+        <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/picture.jpg" alt="Featured image of post Mac OS XAMPP 啟動錯誤" /&gt;&lt;p&gt;mysql打不開
+出現此原因是因為sql服務被mac系統資源佔用&lt;/p&gt;
+&lt;p&gt;解決辦法
+打開Terminal&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo killall mysqld
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>一些關於Laravel的小提示</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/</link>
+        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/picture.jpg" alt="Featured image of post 一些關於Laravel的小提示" /&gt;&lt;h2 id=&#34;專案打開出現錯誤&#34;&gt;專案打開出現錯誤&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;嘗試 &lt;code&gt;Composer update&lt;/code&gt; OR &lt;code&gt;Composer i&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;composer-版本更新&#34;&gt;Composer 版本更新&lt;/h2&gt;
+&lt;p&gt;更新至 2.0 只要執行以下命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer self-update --2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;使用-composer-self-update---rollback-返回到-11010-版本&#34;&gt;使用 composer self-update &amp;ndash;rollback 返回到 1.10.10 版本&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer self-update --1 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;網頁顯示debug模式&#34;&gt;網頁顯示Debug模式&lt;/h2&gt;
+&lt;p&gt;laravel/config/app.php&lt;/p&gt;
+&lt;p&gt;&amp;lsquo;debug&amp;rsquo; =&amp;gt; (bool) env(&amp;lsquo;APP_DEBUG&amp;rsquo;, false),&lt;/p&gt;
+&lt;p&gt;-&amp;gt;&lt;/p&gt;
+&lt;p&gt;&amp;lsquo;debug&amp;rsquo; =&amp;gt; (bool) env(&amp;lsquo;APP_DEBUG&amp;rsquo;, true),&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;要裝xml套件&#34;&gt;要裝XML套件&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer require mtownsend/response-xml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;要安裝sql-server-reporting-servers-套件&#34;&gt;要安裝SQl Server Reporting Servers 套件&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer require chartblocks/php-ssrs
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;遇到fatal-error-class-soapclient-not-found&#34;&gt;遇到Fatal error: Class &amp;lsquo;SoapClient&amp;rsquo; not found&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;到C:/xampp/php中php.ini&lt;/li&gt;
+&lt;li&gt;extension=soap前面的;移除掉即可&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;遇到in-providerrepositoryphp-line-208-class-elibyytcpdfserviceprovider-not-found&#34;&gt;遇到In ProviderRepository.php line 208: Class &amp;lsquo;Elibyy\TCPDF\ServiceProvider&amp;rsquo; not found&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;composer require elibyy/tcpdf-laravel
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;postgresql&#34;&gt;PostgreSQL&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://tonyfrenzy.medium.com/using-postgresql-with-laravel-c4c320ca7f34&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://tonyfrenzy.medium.com/using-postgresql-with-laravel-c4c320ca7f34&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;遇到下列錯誤&#34;&gt;遇到下列錯誤：&lt;/h2&gt;
+&lt;p&gt;Your requirements could not be resolved to an installable set of packages.&lt;/p&gt;
+&lt;p&gt;Problem 1
+- laravel/framework[v7.29.0, &amp;hellip;, 7.x-dev] require league/flysystem ^1.1 -&amp;gt; satisfiable by league/flysystem[1.1.0, &amp;hellip;, 1.x-dev].
+- Root composer.json requires laravel/framework ^7.29 -&amp;gt; satisfiable by laravel/framework[v7.29.0, &amp;hellip;, 7.x-dev].&lt;/p&gt;
+&lt;p&gt;To enable extensions, verify that they are enabled in your .ini files:
+- C:\php-8.0.6\php.ini
+You can also run &lt;code&gt;php --ini&lt;/code&gt; inside terminal to see which files are used by PHP in CLI mode.&lt;/p&gt;
+&lt;h3 id=&#34;你必須操作以下&#34;&gt;你必須操作以下：&lt;/h3&gt;
+&lt;p&gt;First of all, stop the XAMPP/Wamp and then kindly remove the starting semicolon ( ; ) from your xampp\php\php.ini the following code.&lt;/p&gt;
+&lt;p&gt;;extension=fileinfo&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;遇到下列問題&#34;&gt;遇到下列問題：&lt;/h2&gt;
+&lt;p&gt;Undefined constant PDO::MYSQL_ATTR_LOCAL_INFILE&lt;/p&gt;
+&lt;h3 id=&#34;你必須操作下列&#34;&gt;你必須操作下列&lt;/h3&gt;
+&lt;p&gt;In your php.ini file, you should have the following line (uncommented):&lt;/p&gt;
+&lt;p&gt;extension=php_pdo_mysql.dll on Windows
+extension=php_pdo_mysql.so on Linux/Mac&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;laravel-nginx-ubuntu-server&#34;&gt;laravel nginx ubuntu server&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.gtwang.org/linux/ubuntu-linux-laravel-nginx-mariadb-installation-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://blog.gtwang.org/linux/ubuntu-linux-laravel-nginx-mariadb-installation-tutorial/&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;laravel-visual-studio-code-altshiftf-for-blade&#34;&gt;Laravel Visual Studio Code Alt+Shift+F for blade&lt;/h2&gt;
+&lt;p&gt;需要安裝插件&lt;/p&gt;
+&lt;p&gt;Laravel Blade Snippets和Beautify&lt;/p&gt;
+&lt;p&gt;MAC 上方列-&amp;gt;喜好設定-&amp;gt;設定     (快捷鍵) control+option+command+ㄝ&lt;/p&gt;
+&lt;p&gt;Windows  文件-&amp;gt;首選項-&amp;gt;設定    (快捷鍵) Ctrl+,&lt;/p&gt;
+&lt;p&gt;Search &amp;ldquo;beautify&amp;rdquo; &amp;ndash;&amp;gt; ”點擊“ 在settings:json中編輯&lt;/p&gt;
+&lt;p&gt;滑到最下面
+把這段json複製粘貼到settings.json的最後一行即可&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;beautify.language&amp;#34;:{
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;js&amp;#34;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;type&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &amp;#34;javascript&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &amp;#34;json&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &amp;#34;jsonc&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;filename&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &amp;#34;.jshintrc&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &amp;#34;.jsbeautifyrc&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        },
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;css&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;css&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;less&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;scss&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        ],
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;#34;html&amp;#34;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;htm&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;html&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &amp;#34;blade&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        ]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Mac OS 環境變數設定</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/</link>
+        <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/picture.jpg" alt="Featured image of post Mac OS 環境變數設定" /&gt;&lt;h2 id=&#34;查看檔案內容&#34;&gt;查看檔案內容&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;cat ~/.zshrc&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;如果檔案不存在或者存在直接進入編輯狀態&#34;&gt;如果檔案不存在，或者存在直接進入編輯狀態&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;nano ~/.zshrc&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;鍵入i開始編輯檔案在檔案中添加下列內容并保存&#34;&gt;鍵入i，開始編輯檔案，在檔案中添加下列內容并保存&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;source ~/.bash_profile&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;列出環境變數&#34;&gt;列出環境變數&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;printenv&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;列出環境變數下的-path&#34;&gt;列出環境變數下的 Path&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;echo $PATH&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;打開-bash-profile&#34;&gt;打開 bash profile&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;nano ~/.bash_profile&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;新增路徑到-path&#34;&gt;新增路徑到 PATH&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;export PATH=$PATH:路徑名稱
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PATH=$PATH:路徑名稱
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;執行-bash-profile&#34;&gt;執行 bash profile&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;source ~/.bash_profile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>一些Linux Server指令</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/</link>
+        <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/picture.jpg" alt="Featured image of post 一些Linux Server指令" /&gt;&lt;h2 id=&#34;查看顯卡用量指令&#34;&gt;查看顯卡用量指令&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;watch -n 0.5 nvidia-smi
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;nvidia-安裝指令-ppa安裝&#34;&gt;Nvidia 安裝指令 (PPA安裝&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get purge nvidia* delete
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt search nvidia-driver
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo add-apt-repository ppa:graphics-drivers/ppa
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ubuntu-drivers devices
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ubuntu-drivers autoinstall
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt install nvidia-driver-470
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo shutdown -r now
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get upgrade
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nvidia-smi
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;watch -n 0.5 nvidia-smi
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;查看是否啟動休眠&#34;&gt;查看是否啟動休眠&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;systemctl status sleep.target&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;關閉自動休眠&#34;&gt;關閉自動休眠&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;apache2相關&#34;&gt;apache2相關&lt;/h2&gt;
+&lt;p&gt;啟動&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 start
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;重新啟動&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 restart
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;停止服務&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 stop
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看狀態&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo service apache2 status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;查看網路狀態&#34;&gt;查看網路狀態&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo lsof -i -n -P
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;更改時區&#34;&gt;更改時區&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo timedatectl set-timezone Asia/Taipei
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Markdown Syntax Guide</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/markdown-syntax-guide/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/zh-tw/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+&lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;
+&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
+&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
+&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
+&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
+&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
+&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
+&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
+&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph&lt;/h2&gt;
+&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;
+&lt;p&gt;Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code&gt;footer&lt;/code&gt; or &lt;code&gt;cite&lt;/code&gt; element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p&gt;
+&lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;Blockquote without attribution&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;Blockquote with attribution&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;!-- raw HTML omitted --&gt;
+— &lt;!-- raw HTML omitted --&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Bob&lt;/td&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alice&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;Inline Markdown within tables&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Italics&lt;/th&gt;
+&lt;th&gt;Bold&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;th&gt;D&lt;/th&gt;
+&lt;th&gt;E&lt;/th&gt;
+&lt;th&gt;F&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+&lt;td&gt;Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td&gt;
+&lt;td&gt;Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td&gt;
+&lt;td&gt;Proin sit amet velit nec enim imperdiet vehicula.&lt;/td&gt;
+&lt;td&gt;Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td&gt;
+&lt;td&gt;Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;code-blocks&#34;&gt;Code Blocks&lt;/h2&gt;
+&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;Code block with backticks&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;code-block-indented-with-four-spaces&#34;&gt;Code block indented with four spaces&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;code-block-with-hugos-internal-highlight-shortcode&#34;&gt;Code block with Hugo&amp;rsquo;s internal highlight shortcode&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;diff-code-block&#34;&gt;Diff code block&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[dependencies.bevy]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git = &amp;#34;https://github.com/bevyengine/bevy&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rev = &amp;#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;- features = [&amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;+ features = [&amp;#34;jpeg&amp;#34;, &amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;list-types&#34;&gt;List Types&lt;/h2&gt;
+&lt;h4 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;Another item&lt;/li&gt;
+&lt;li&gt;And another item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nested-list&#34;&gt;Nested list&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fruit
+&lt;ul&gt;
+&lt;li&gt;Apple&lt;/li&gt;
+&lt;li&gt;Orange&lt;/li&gt;
+&lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dairy
+&lt;ul&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;li&gt;Cheese&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-elements--abbr-sub-sup-kbd-mark&#34;&gt;Other Elements — abbr, sub, sup, kbd, mark&lt;/h2&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;GIF&lt;!-- raw HTML omitted --&gt; is a bitmap image format.&lt;/p&gt;
+&lt;p&gt;H&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;O&lt;/p&gt;
+&lt;p&gt;X&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; + Y&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; = Z&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;CTRL&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;ALT&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;Delete&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; to end the session.&lt;/p&gt;
+&lt;p&gt;Most &lt;!-- raw HTML omitted --&gt;salamanders&lt;!-- raw HTML omitted --&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
+&lt;h2 id=&#34;hyperlinked-image&#34;&gt;Hyperlinked image&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://google.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Google&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=PAAkCSZUG1c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
+        <title>Rich Content</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/rich-content/</link>
+        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/rich-content/</guid>
+        <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;YouTube Privacy Enhanced Shortcode&lt;/h2&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/ZJthWmvUzzc&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode&lt;/h2&gt;
+
+    &lt;style type=&#34;text/css&#34;&gt;
+      .twitter-tweet {
+        font: 14px/1.45 -apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#34;Helvetica Neue&#34;,sans-serif;
+        border-left: 4px solid #2b7bb9;
+        padding-left: 1.5em;
+        color: #555;
+      }
+      .twitter-tweet a {
+        color: #2b7bb9;
+        text-decoration: none;
+      }
+      blockquote.twitter-tweet a:hover,
+      blockquote.twitter-tweet a:focus {
+        text-decoration: underline;
+      }
+    &lt;/style&gt;
+  &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;!-- raw HTML omitted --&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;Vimeo Simple Shortcode&lt;/h2&gt;
+
+
+
+
+
+
+&lt;style&gt;
+.__h_video {
+   position: relative;
+   padding-bottom: 56.23%;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000;
+}
+.__h_video img {
+   width: 100%;
+   height: auto;
+   color: #000;
+}
+.__h_video .play {
+   height: 72px;
+   width: 72px;
+   left: 50%;
+   top: 50%;
+   margin-left: -36px;
+   margin-top: -36px;
+   position: absolute;
+   cursor: pointer;
+}
+&lt;/style&gt;
+
+
+&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
+&lt;a href=&#34;https://vimeo.com/4.8912912e&amp;#43;07&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;
+
+
+&lt;img src=&#34;https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640&#34; srcset=&#34;https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 2x&#34; alt=&#34;Sing Jan Swing - Kinetic Type&#34;&gt;
+&lt;div class=&#34;play&#34;&gt;&lt;svg version=&#34;1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 61 61&#34;&gt;&lt;circle cx=&#34;30.5&#34; cy=&#34;30.5&#34; r=&#34;30.5&#34; opacity=&#34;.8&#34; fill=&#34;#000&#34;&gt;&lt;/circle&gt;&lt;path d=&#34;M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z&#34; fill=&#34;#fff&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;h2 id=&#34;bilibilibi-shortcode&#34;&gt;bilibilibi Shortcode&lt;/h2&gt;
+
+
+
+
+
+
+    
+
+
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;aid=498363026&#34;
+            scrolling=&#34;no&#34;
+            frameborder=&#34;no&#34;
+            framespacing=&#34;0&#34;
+            allowfullscreen=&#34;true&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;gist-shortcode&#34;&gt;Gist Shortcode&lt;/h2&gt;
+&lt;script type=&#34;application/javascript&#34; src=&#34;https://gist.github.com/spf13/7896402.js&#34;&gt;&lt;/script&gt;
+
+&lt;h2 id=&#34;gitlab-snippets-shortcode&#34;&gt;Gitlab Snippets Shortcode&lt;/h2&gt;
+&lt;script
+    type=&#34;application/javascript&#34;
+    src=&#34;https://gitlab.com/-/snippets/2349278.js&#34;
+&gt;&lt;/script&gt;
+&lt;h2 id=&#34;quote-shortcode&#34;&gt;Quote Shortcode&lt;/h2&gt;
+&lt;p&gt;Stack adds a &lt;code&gt;quote&lt;/code&gt; shortcode.  For example:&lt;/p&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;A famous person, &lt;/span&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Book&#34;&gt;&lt;cite&gt;The book they wrote&lt;/cite&gt;&lt;/a&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Book&#34;&gt;&lt;cite&gt;Anonymous book&lt;/cite&gt;&lt;/a&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;cite&gt;Some book&lt;/cite&gt;&lt;/span&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;span class=&#34;cite&#34;&gt;&lt;span&gt;― &lt;/span&gt;&lt;span&gt;Somebody&lt;/span&gt;&lt;cite&gt;&lt;/cite&gt;&lt;/span&gt;&lt;/blockquote&gt;</description>
+        </item>
+        <item>
+        <title>Math Typesetting</title>
+        <link>https://tsairongfu.github.io/zh-tw/p/math-typesetting/</link>
+        <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/zh-tw/p/math-typesetting/</guid>
+        <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
+&lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a partial under &lt;code&gt;/layouts/partials/math.html&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Within this partial reference the &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/autorender.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Auto-render Extension&lt;/a&gt; or host these scripts locally.&lt;/li&gt;
+&lt;li&gt;Include the partial in your templates like so:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; or .Params.math .Site.Params.math &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; partial &lt;span class=&#34;s2&#34;&gt;&amp;#34;math.html&amp;#34;&lt;/span&gt; . &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;To enable KaTex globally set the parameter &lt;code&gt;math&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in a project&amp;rsquo;s configuration&lt;/li&gt;
+&lt;li&gt;To enable KaTex on a per page basis include the parameter &lt;code&gt;math: true&lt;/code&gt; in content files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use the online reference of &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/supported.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Supported TeX Functions&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;Block math:
+$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

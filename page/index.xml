@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Pages on Tsaiの南極洲</title>
+        <title>Pages on Tsai の Antarctica</title>
         <link>https://tsairongfu.github.io/page/</link>
-        <description>Recent content in Pages on Tsaiの南極洲</description>
+        <description>Recent content in Pages on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>文章</title>
-        <link>https://tsairongfu.github.io/%E6%96%87%E7%AB%A0/</link>
+        <title>Archives</title>
+        <link>https://tsairongfu.github.io/archives/</link>
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/%E6%96%87%E7%AB%A0/</guid>
+        <guid>https://tsairongfu.github.io/archives/</guid>
         <description></description>
         </item>
         <item>
-        <title>連結</title>
-        <link>https://tsairongfu.github.io/%E9%80%A3%E7%B5%90/</link>
+        <title>About</title>
+        <link>https://tsairongfu.github.io/about/</link>
+        <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/about/</guid>
+        <description>&lt;p&gt;我很懶我有空再修改&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Links</title>
+        <link>https://tsairongfu.github.io/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/%E9%80%A3%E7%B5%90/</guid>
+        <guid>https://tsairongfu.github.io/links/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -42,21 +51,12 @@
 </description>
         </item>
         <item>
-        <title>搜尋</title>
-        <link>https://tsairongfu.github.io/%E6%90%9C%E5%B0%8B/</link>
+        <title>Search</title>
+        <link>https://tsairongfu.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/%E6%90%9C%E5%B0%8B/</guid>
+        <guid>https://tsairongfu.github.io/search/</guid>
         <description></description>
-        </item>
-        <item>
-        <title>關於</title>
-        <link>https://tsairongfu.github.io/%E9%97%9C%E6%96%BC/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/%E9%97%9C%E6%96%BC/</guid>
-        <description>&lt;p&gt;我很懶我有空再修改&lt;/p&gt;
-</description>
         </item>
         
     </channel>

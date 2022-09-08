@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Tags on Tsaiの南極洲</title>
+        <title>Tags on Tsai の Antarctica</title>
         <link>https://tsairongfu.github.io/tags/</link>
-        <description>Recent content in Tags on Tsaiの南極洲</description>
+        <description>Recent content in Tags on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -68,6 +68,14 @@
         <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/tags/password/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>pgAdmin</title>
+        <link>https://tsairongfu.github.io/tags/pgadmin/</link>
+        <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/tags/pgadmin/</guid>
         <description></description>
         </item>
         <item>
@@ -156,14 +164,6 @@
         <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/tags/wifi/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Commadn</title>
-        <link>https://tsairongfu.github.io/tags/commadn/</link>
-        <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/tags/commadn/</guid>
         <description></description>
         </item>
         <item>
@@ -444,6 +444,14 @@
         <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/tags/ubuntu/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Visual Studio Code</title>
+        <link>https://tsairongfu.github.io/tags/visual-studio-code/</link>
+        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/tags/visual-studio-code/</guid>
         <description></description>
         </item>
         <item>

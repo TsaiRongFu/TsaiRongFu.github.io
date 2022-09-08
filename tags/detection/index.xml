@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Detection on Tsaiの南極洲</title>
+        <title>Detection on Tsai の Antarctica</title>
         <link>https://tsairongfu.github.io/tags/detection/</link>
-        <description>Recent content in Detection on Tsaiの南極洲</description>
+        <description>Recent content in Detection on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
         <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/tags/detection/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>軟體自動化安全檢測技術</title>
-        <link>https://tsairongfu.github.io/p/%E8%BB%9F%E9%AB%94%E8%87%AA%E5%8B%95%E5%8C%96%E5%AE%89%E5%85%A8%E6%AA%A2%E6%B8%AC%E6%8A%80%E8%A1%93/</link>
+        <title>Software automatic security detection technology</title>
+        <link>https://tsairongfu.github.io/p/software-automatic-security-detection-technology/</link>
         <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/p/%E8%BB%9F%E9%AB%94%E8%87%AA%E5%8B%95%E5%8C%96%E5%AE%89%E5%85%A8%E6%AA%A2%E6%B8%AC%E6%8A%80%E8%A1%93/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/%E8%BB%9F%E9%AB%94%E8%87%AA%E5%8B%95%E5%8C%96%E5%AE%89%E5%85%A8%E6%AA%A2%E6%B8%AC%E6%8A%80%E8%A1%93/picture.jpg" alt="Featured image of post 軟體自動化安全檢測技術" /&gt;&lt;hr&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuawn/Mediatek-Fuzzing-Workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://tsairongfu.github.io/p/software-automatic-security-detection-technology/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/software-automatic-security-detection-technology/picture.jpg" alt="Featured image of post Software automatic security detection technology" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/yuawn/Mediatek-Fuzzing-Workshop&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;yuawn/Mediatek-Fuzzing-Workshop&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;fuzz-testing&#34;&gt;Fuzz Testing&lt;/h2&gt;
 &lt;ul&gt;

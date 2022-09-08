@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='啟動 Nginx：啟動 nginx
-檢查 Nginx 狀態：tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;
-快速停止Nginx：nginx -s stop
-完整有序的停止Nginx：nginx -s quit
-使用tsakkill關閉：taskkill /f /t /im nginx.exe
-快速關機：nginx -s stop
-優雅關機：nginx -s quit
-更改配置，使用新配置啟動新工作進程，正常關閉舊工作進程：nginx -s reload
-重新打開日誌文件：nginx -s reboot'><title>Windows Nginx Command</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Start Nginx: start nginx
+Check Nginx status: tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;
+Quickly stop Nginx: nginx -s stop
+Complete and orderly stop Nginx: nginx -s quit
+Use tsakkill to shut down: taskkill /f /t /im nginx.exe
+fast shutdown：nginx -s stop
+graceful shutdown：nginx -s quit
+changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes ：nginx -s reload
+re-opening log files：nginx -s reopen'><title>Windows Nginx Command</title>
 
 <link rel='canonical' href='https://tsairongfu.github.io/p/windows-nginx-command/'>
 
 <link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='Windows Nginx Command'>
-<meta property='og:description' content='啟動 Nginx：啟動 nginx
-檢查 Nginx 狀態：tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;
-快速停止Nginx：nginx -s stop
-完整有序的停止Nginx：nginx -s quit
-使用tsakkill關閉：taskkill /f /t /im nginx.exe
-快速關機：nginx -s stop
-優雅關機：nginx -s quit
-更改配置，使用新配置啟動新工作進程，正常關閉舊工作進程：nginx -s reload
-重新打開日誌文件：nginx -s reboot'>
+<meta property='og:description' content='Start Nginx: start nginx
+Check Nginx status: tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;
+Quickly stop Nginx: nginx -s stop
+Complete and orderly stop Nginx: nginx -s quit
+Use tsakkill to shut down: taskkill /f /t /im nginx.exe
+fast shutdown：nginx -s stop
+graceful shutdown：nginx -s quit
+changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes ：nginx -s reload
+re-opening log files：nginx -s reopen'>
 <meta property='og:url' content='https://tsairongfu.github.io/p/windows-nginx-command/'>
-<meta property='og:site_name' content='Tsaiの南極洲'>
+<meta property='og:site_name' content='Tsai の Antarctica'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Windows' /><meta property='article:tag' content='Nginx' /><meta property='article:tag' content='Command' /><meta property='article:tag' content='Terminal' /><meta property='article:published_time' content='2021-06-28T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-06-28T00:00:00&#43;00:00'/><meta property='og:image' content='https://tsairongfu.github.io/p/windows-nginx-command/picture.jpg' />
 <meta name="twitter:title" content="Windows Nginx Command">
-<meta name="twitter:description" content="啟動 Nginx：啟動 nginx
-檢查 Nginx 狀態：tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;
-快速停止Nginx：nginx -s stop
-完整有序的停止Nginx：nginx -s quit
-使用tsakkill關閉：taskkill /f /t /im nginx.exe
-快速關機：nginx -s stop
-優雅關機：nginx -s quit
-更改配置，使用新配置啟動新工作進程，正常關閉舊工作進程：nginx -s reload
-重新打開日誌文件：nginx -s reboot"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Start Nginx: start nginx
+Check Nginx status: tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;
+Quickly stop Nginx: nginx -s stop
+Complete and orderly stop Nginx: nginx -s quit
+Use tsakkill to shut down: taskkill /f /t /im nginx.exe
+fast shutdown：nginx -s stop
+graceful shutdown：nginx -s quit
+changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes ：nginx -s reload
+re-opening log files：nginx -s reopen"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://tsairongfu.github.io/p/windows-nginx-command/picture.jpg' />
     <link rel="shortcut icon" href="/images/TW-Penguin.png" />
 
@@ -66,7 +66,7 @@
     })();
 </script>
 <div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切換選單">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -82,8 +82,8 @@
                     
                     
                         
-                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box.gif" width="300"
-                            height="313" class="site-logo" loading="lazy" alt="Avatar">
+                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box.gif" width="1200"
+                            height="1250" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
                 </a>
@@ -93,7 +93,7 @@
         
         
         <div class="site-meta">
-            <h1 class="site-name"><a href="/">Tsaiの南極洲</a></h1>
+            <h1 class="site-name"><a href="/">Tsai の Antarctica</a></h1>
             <h2 class="site-description">No Pain No Gain</h2>
         </div>
     </header><ol class="social-menu">
@@ -264,14 +264,14 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
 
                 
-                <span>主頁</span>
+                <span>Home</span>
             </a>
         </li>
         
         
 
         <li >
-            <a href='/%E6%96%87%E7%AB%A0/' >
+            <a href='/archives/' >
                 
                 
                 
@@ -279,14 +279,14 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
   <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2Zm6 2.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7Zm3.5.878c1.482-1.42 4.795 1.392 0 4.622-4.795-3.23-1.482-6.043 0-4.622ZM2 5.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"></path>
 </svg>
                 
-                <span>文章</span>
+                <span>Archives</span>
             </a>
         </li>
         
         
 
         <li >
-            <a href='/%E9%97%9C%E6%96%BC/' >
+            <a href='/about/' >
                 
                 
                 
@@ -299,14 +299,14 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
 
                 
-                <span>關於</span>
+                <span>About</span>
             </a>
         </li>
         
         
 
         <li >
-            <a href='/%E6%90%9C%E5%B0%8B/' >
+            <a href='/search/' >
                 
                 
                 
@@ -319,14 +319,14 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
 
                 
-                <span>搜尋</span>
+                <span>Search</span>
             </a>
         </li>
         
         
 
         <li >
-            <a href='/%E9%80%A3%E7%B5%90/' >
+            <a href='/links/' >
                 
                 
                 
@@ -339,7 +339,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
 
                 
-                <span>連結</span>
+                <span>Links</span>
             </a>
         </li>
         
@@ -359,9 +359,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         
-                            <option value="https://tsairongfu.github.io/" selected>繁體中文</option>
+                            <option value="https://tsairongfu.github.io/zh-tw/" >繁體中文</option>
                         
-                            <option value="https://tsairongfu.github.io/en/" >English</option>
+                            <option value="https://tsairongfu.github.io/" selected>English</option>
                         
                     </select>
                 </li>
@@ -385,7 +385,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
 
 
-                    <span>夜晚模式</span>
+                    <span>Dark Mode</span>
                 </li>
             
         </div>
@@ -458,7 +458,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
 
                 <time class="article-time--reading">
-                    閱讀時間: 1 分鐘
+                    1 minute read
                 </time>
             </div>
         
@@ -480,7 +480,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
             <div>
                 
-                    <a href="https://tsairongfu.github.io/en/p/windows-nginx-command/" class="link">English</a>
+                    <a href="https://tsairongfu.github.io/zh-tw/p/windows-nginx-command/" class="link">繁體中文</a>
                 
             </div>
         </footer>
@@ -491,16 +491,16 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     <section class="article-content">
     
     
-    <p>啟動 Nginx：<strong><code>啟動 nginx</code></strong></p>
-<p>檢查 Nginx 狀態：<strong><code>tasklist /fi &quot;imagename eq nginx.exe&quot;</code></strong></p>
-<p>快速停止Nginx：<strong><code>nginx -s stop</code></strong></p>
-<p>完整有序的停止Nginx：<strong><code>nginx -s quit</code></strong></p>
-<p>使用tsakkill關閉：<strong><code>taskkill /f /t /im nginx.exe</code></strong></p>
+    <p>Start Nginx: <strong><code>start nginx</code></strong></p>
+<p>Check Nginx status: <strong><code>tasklist /fi &quot;imagename eq nginx.exe&quot;</code></strong></p>
+<p>Quickly stop Nginx: <strong><code>nginx -s stop</code></strong></p>
+<p>Complete and orderly stop Nginx: <strong><code>nginx -s quit</code></strong></p>
+<p>Use tsakkill to shut down: <strong><code>taskkill /f /t /im nginx.exe</code></strong></p>
 <hr>
-<p>快速關機：<strong><code>nginx -s stop</code></strong></p>
-<p>優雅關機：<strong><code>nginx -s quit</code></strong></p>
-<p>更改配置，使用新配置啟動新工作進程，正常關閉舊工作進程：<strong><code>nginx -s reload</code></strong></p>
-<p>重新打開日誌文件：<strong><code>nginx -s reboot</code></strong></p>
+<p>fast shutdown：<strong><code>nginx -s stop</code></strong></p>
+<p>graceful shutdown：<strong><code>nginx -s quit</code></strong></p>
+<p>changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes ：<strong><code>nginx -s reload</code></strong></p>
+<p>re-opening log files：<strong><code>nginx -s reopen</code></strong></p>
 
 </section>
 
@@ -543,29 +543,29 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     
 
 <aside class="related-content--wrapper">
-    <h2 class="section-title">相關文章</h2>
+    <h2 class="section-title">Related content</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
             
                 
 <article class="has-image">
-    <a href="/p/windows-port%E7%8B%80%E6%85%8B%E6%8C%87%E4%BB%A4/">
+    <a href="/p/windows-port-state-command/">
         
         
             <div class="article-image">
-                <img src="/p/windows-port%E7%8B%80%E6%85%8B%E6%8C%87%E4%BB%A4/picture.497fb22300515031e5123bedf88127c1_hu799afabd979f4c47aeec07191c470a93_523318_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/windows-port-state-command/picture.497fb22300515031e5123bedf88127c1_hu799afabd979f4c47aeec07191c470a93_523318_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post Windows port狀態指令"
-                        data-key="windows-port狀態指令" 
+                        alt="Featured image of post Windows Port state command"
+                        data-key="windows-port-state-command" 
                         data-hash="md5-SX&#43;yIwBRUDHlEjvt&#43;IEnwQ==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Windows port狀態指令</h2>
+            <h2 class="article-title">Windows Port state command</h2>
         </div>
     </a>
 </article>
@@ -573,23 +573,23 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
             
                 
 <article class="has-image">
-    <a href="/p/reporting-server-%E5%AE%89%E8%A3%9D/">
+    <a href="/p/reporting-server-installation/">
         
         
             <div class="article-image">
-                <img src="/p/reporting-server-%E5%AE%89%E8%A3%9D/picture.f2437eaca9760cdbfa8d98b0b122b501_hu0b0c3f7880cfda5308722c81095d37fd_379666_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/reporting-server-installation/picture.f2437eaca9760cdbfa8d98b0b122b501_hu0b0c3f7880cfda5308722c81095d37fd_379666_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post Reporting Server 安裝"
-                        data-key="reporting-server-安裝" 
+                        alt="Featured image of post Reporting Server installation"
+                        data-key="reporting-server-installation" 
                         data-hash="md5-8kN&#43;rKl2DNv6jZiwsSK1AQ==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Reporting Server 安裝</h2>
+            <h2 class="article-title">Reporting Server installation</h2>
         </div>
     </a>
 </article>
@@ -621,23 +621,23 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
             
                 
 <article class="has-image">
-    <a href="/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/">
+    <a href="/p/a-several-ffmpeg-command/">
         
         
             <div class="article-image">
-                <img src="/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/picture.ad9c50163164bef1e96890467208c1a3_hu8dbb0901d2519ea7003879321732bcd5_782996_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/a-several-ffmpeg-command/picture.ad9c50163164bef1e96890467208c1a3_hu8dbb0901d2519ea7003879321732bcd5_782996_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post 一些FFmpeg指令"
-                        data-key="一些FFmpeg指令" 
+                        alt="Featured image of post A Several FFmpeg command"
+                        data-key="a-several-ffmpeg-command" 
                         data-hash="md5-rZxQFjFkvvHpaJBGcgjBow==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">一些FFmpeg指令</h2>
+            <h2 class="article-title">A Several FFmpeg command</h2>
         </div>
     </a>
 </article>
@@ -645,23 +645,23 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
             
                 
 <article class="has-image">
-    <a href="/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/">
+    <a href="/p/a-several-linux-interesting-command/">
         
         
             <div class="article-image">
-                <img src="/p/%E4%B8%80%E4%BA%9Blinux%E6%9C%89%E8%B6%A3%E7%9A%84%E5%91%BD%E4%BB%A4/picture.168417cce3258d4434ab7bb40953b7bb_hua47ebcf390252262e5e2b6d13ea463b9_495265_250x150_fill_q75_box_smart1.jpg" 
+                <img src="/p/a-several-linux-interesting-command/picture.168417cce3258d4434ab7bb40953b7bb_hua47ebcf390252262e5e2b6d13ea463b9_495265_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post 一些Linux有趣的命令"
-                        data-key="一些Linux有趣的命令" 
+                        alt="Featured image of post A Several Linux interesting command"
+                        data-key="a-several-linux-interesting-command" 
                         data-hash="md5-FoQXzOMljUQ0q3u0CVO3uw==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">一些Linux有趣的命令</h2>
+            <h2 class="article-title">A Several Linux interesting command</h2>
         </div>
     </a>
 </article>
@@ -722,7 +722,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
             2020 - 
         
-        2022 Tsaiの南極洲
+        2022 Tsai の Antarctica
     </section>
     
     <section class="powerby">
