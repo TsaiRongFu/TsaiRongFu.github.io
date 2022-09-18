@@ -22,7 +22,7 @@ You can also run php --ini in a terminal to see which files are used by PHP in C
 Laravel 專案運行 php artisan serve 出現 &amp;ldquo;Your requirements could not be resolved to an installable set of packages&amp;rdquo; 1 composer install --ignore-platform-reqs or
 1 composer update --ignore-platform-reqs Composer 版本更新 更新至 2."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/picture.jpg' />
-    <link rel="shortcut icon" href="/TsaiRongFu-Hugo/images/TW-Penguin.png" />
+    <link rel="shortcut icon" href="/images/TW-Penguin.png" />
 
     </head>
     <body class="
@@ -604,6 +604,9 @@ You can also run <code>php --ini</code> inside terminal to see which files are u
 extension=php_pdo_mysql.so on Linux/Mac</p>
 <hr>
 <h2 id="laravel-安裝login-laravelui">laravel 安裝login laravel/ui</h2>
+<blockquote>
+<p>取得ui安裝包</p>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -612,7 +615,10 @@ extension=php_pdo_mysql.so on Linux/Mac</p>
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">composer require laravel/ui
 </span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
+</div><blockquote>
+<p>安裝基本框架</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -636,7 +642,10 @@ extension=php_pdo_mysql.so on Linux/Mac</p>
 </span></span><span class="line"><span class="cl">php artisan ui react
 </span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
+</div><blockquote>
+<p>安裝登入&amp;註冊框架</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -684,6 +693,24 @@ extension=php_pdo_mysql.so on Linux/Mac</p>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">npm run build
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最後進行資料庫遷移</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">php artisan migrate
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>run server</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">php artisan serve
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
