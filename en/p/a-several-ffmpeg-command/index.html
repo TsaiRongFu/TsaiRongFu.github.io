@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-tw" dir="ltr">
+<html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='picture to Gif Define custom palette The converted GIF has only three colors: white and two tints of blue, therefore, the default 256 color palette can be reduced to 16. The custom palette is created with the palettegen filter.
 1 ffmpeg -i frames/200.png -vf palettegen=16 palette.png After the palette was created it can be used in the GIF conversion.
-1 ffmpeg -i frames/%03d.png -i palette.png -filter_complex &amp;#34;fps=20,scale=720:-1:flags=lanczos[x];[x][1:v]paletteuse&amp;#34; logo.gif Image Compression 1 ffmpeg -i image_source -q compress_level out_source compress_level: The compression level is a positive integer, the larger the value, the higher the compression level'><title>A Several FFmpeg command</title>
+1 ffmpeg -i frames/%03d.png -i palette.png -filter_complex &amp;#34;fps=20,scale=720:-1:flags=lanczos[x];[x][1:v]paletteuse&amp;#34; logo.gif Image Compression 1 ffmpeg -i image_source -q compress_level out_source compress_level: The compression level is a positive integer, the larger the value, the higher the compression level'>
+<title>A Several FFmpeg command</title>
 
 <link rel='canonical' href='https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/'>
 
-<link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='A Several FFmpeg command'>
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='A Several FFmpeg command'>
 <meta property='og:description' content='picture to Gif Define custom palette The converted GIF has only three colors: white and two tints of blue, therefore, the default 256 color palette can be reduced to 16. The custom palette is created with the palettegen filter.
 1 ffmpeg -i frames/200.png -vf palettegen=16 palette.png After the palette was created it can be used in the GIF conversion.
 1 ffmpeg -i frames/%03d.png -i palette.png -filter_complex &amp;#34;fps=20,scale=720:-1:flags=lanczos[x];[x][1:v]paletteuse&amp;#34; logo.gif Image Compression 1 ffmpeg -i image_source -q compress_level out_source compress_level: The compression level is a positive integer, the larger the value, the higher the compression level'>
@@ -29,7 +30,7 @@
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -64,7 +65,7 @@
                     
                     
                         
-                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box.gif" width="300"
+                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box_1.gif" width="300"
                             height="313" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -85,6 +86,7 @@
                         href='https://github.com/TsaiRongFu'
                         target="_blank"
                         title="1.GitHub"
+                        rel="me"
                     >
                         
                         
@@ -104,6 +106,7 @@
                         href='https://twitter.com/peng_mao'
                         target="_blank"
                         title="2.Twitter"
+                        rel="me"
                     >
                         
                         
@@ -123,6 +126,7 @@
                         href='mailto:q0975040879@gmail.com'
                         target="_blank"
                         title="3.Mail"
+                        rel="me"
                     >
                         
                         
@@ -194,6 +198,7 @@
                         href='https://stackoverflow.com/users/16074805/penguinegg?tab=profile'
                         target="_blank"
                         title="4.Stack Overflow"
+                        rel="me"
                     >
                         
                         
@@ -213,6 +218,7 @@
                         href='https://line.me/ti/p/yea9T2X2QZ'
                         target="_blank"
                         title="5.Line"
+                        rel="me"
                     >
                         
                         
@@ -230,7 +236,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
         
         
-
         <li >
             <a href='/en/' >
                 
@@ -251,7 +256,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/archives/' >
                 
@@ -266,7 +270,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/about/' >
                 
@@ -286,7 +289,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/search/' >
                 
@@ -306,7 +308,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/links/' >
                 
@@ -373,7 +374,58 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </div>
     </ol>
 </aside>
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#picture-to-gif">picture to Gif</a></li>
+        <li><a href="#image-compression">Image Compression</a></li>
+        <li><a href="#constrained-proportional-compression">Constrained proportional compression</a></li>
+        <li><a href="#image-crop">Image crop</a></li>
+        <li><a href="#add-watermark-image">Add watermark image</a></li>
+        <li><a href="#add-text-watermark">Add text watermark</a></li>
+        <li><a href="#rotate-the-picture-by-the-specified-angle">Rotate the picture by the specified angle</a></li>
+        <li><a href="#image-rotation-special-and-convenient-commands">Image rotation special and convenient commands</a></li>
+        <li><a href="#mirror-image-left-and-right">Mirror image left and right</a></li>
+        <li><a href="#mirror-the-picture-up-and-down">Mirror the picture up and down</a></li>
+        <li><a href="#specify-length-and-width">Specify length and width</a></li>
+        <li><a href="#specify-the-length-and-height-to-scale-proportionally">Specify the length and height to scale proportionally</a></li>
+        <li><a href="#scale-twice-as-before">Scale twice as before</a></li>
+        <li><a href="#scale-to-one-half-of-the-previous">Scale to one-half of the previous</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
@@ -408,6 +460,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
     </div>
 
+    
+    
+    
     
     <footer class="article-time">
         
@@ -464,6 +519,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </footer>
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -874,12 +930,14 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
     <section class="copyright">
         &copy; 
         
-        2022 Tsai の Antarctica
+            2022 - 
+        
+        2023 Tsai の Antarctica
     </section>
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -963,56 +1021,6 @@ route_number=3 Rotate 90 degrees counterclockwise and then mirror left and right
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Table of contents</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li>
-      <ol>
-        <li><a href="#picture-to-gif">picture to Gif</a></li>
-        <li><a href="#image-compression">Image Compression</a></li>
-        <li><a href="#constrained-proportional-compression">Constrained proportional compression</a></li>
-        <li><a href="#image-crop">Image crop</a></li>
-        <li><a href="#add-watermark-image">Add watermark image</a></li>
-        <li><a href="#add-text-watermark">Add text watermark</a></li>
-        <li><a href="#rotate-the-picture-by-the-specified-angle">Rotate the picture by the specified angle</a></li>
-        <li><a href="#image-rotation-special-and-convenient-commands">Image rotation special and convenient commands</a></li>
-        <li><a href="#mirror-image-left-and-right">Mirror image left and right</a></li>
-        <li><a href="#mirror-the-picture-up-and-down">Mirror the picture up and down</a></li>
-        <li><a href="#specify-length-and-width">Specify length and width</a></li>
-        <li><a href="#specify-the-length-and-height-to-scale-proportionally">Specify the length and height to scale proportionally</a></li>
-        <li><a href="#scale-twice-as-before">Scale twice as before</a></li>
-        <li><a href="#scale-to-one-half-of-the-previous">Scale to one-half of the previous</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"

@@ -5,7 +5,7 @@
         <link>https://tsairongfu.github.io/en/</link>
         <description>Recent content on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-tw</language>
+        <language>en</language>
         <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>A Several FFmpeg command</title>
         <link>https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/</link>
@@ -2201,7 +2201,7 @@ Copy and paste this json to the last line of settings.json&lt;/p&gt;
 
 &lt;p&gt;Block math:
 $$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$&lt;/p&gt;</description>
         </item>
         <item>

@@ -104,7 +104,7 @@ from_y為水印的起始Y軸的位置&lt;/p&gt;
 &lt;p&gt;font_ttf_path為字體路徑，此項必須設置否則會出現字體無法找到的錯誤
 字體路徑要設置絕對路徑並且要注意路徑正反斜線轉義(例如C\:/Windows/Fonts/simhei.ttf)
 font_color為字體的顏色
-font_size為字體的大小 
+font_size為字體的大小
 message_info為水印文字內容
 from_x為水印的起始X軸的位置
 from_y為水印的起始Y軸的位置
@@ -2330,7 +2330,7 @@ extension=php_pdo_mysql.so on Linux/Mac&lt;/p&gt;
 
 &lt;p&gt;Block math:
 $$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
 $$&lt;/p&gt;</description>
         </item>
         <item>

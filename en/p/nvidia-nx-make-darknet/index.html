@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-tw" dir="ltr">
+<html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Edit Makefile NVCC path with sudo nano 1 2 3 4 5 6 7 8 9 NVCC = /usr/local/cuda/bin/nvcc export PATH=/usr/local/cuda10.2/bin${PATH:&#43;:${PATH}} export LD_LIBRARY_PATH=/usr/local/cuda10.2/lib64\${LD_LIBRARY_PATH:&#43;:${LD_LIBRARY_PATH}} export $LD_LIBRARY_PATH export $PATH 1 ./darknet detector demo ../clown_derection/cfg/obj.data ../clown_derection/cfg/yolov4-tiny-obj-test.cfg ../clown_derection/cfg/weights/yolov4-tiny-obj_7000.weights For TX2 use, see the camera open command 1 &amp;#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 !nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&amp;#39; '><title>Nvidia NX Make Darknet</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Edit Makefile NVCC path with sudo nano 1 2 3 4 5 6 7 8 9 NVCC = /usr/local/cuda/bin/nvcc export PATH=/usr/local/cuda10.2/bin${PATH:&#43;:${PATH}} export LD_LIBRARY_PATH=/usr/local/cuda10.2/lib64\${LD_LIBRARY_PATH:&#43;:${LD_LIBRARY_PATH}} export $LD_LIBRARY_PATH export $PATH 1 ./darknet detector demo ../clown_derection/cfg/obj.data ../clown_derection/cfg/yolov4-tiny-obj-test.cfg ../clown_derection/cfg/weights/yolov4-tiny-obj_7000.weights For TX2 use, see the camera open command 1 &amp;#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 !nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&amp;#39; '>
+<title>Nvidia NX Make Darknet</title>
 
 <link rel='canonical' href='https://tsairongfu.github.io/en/p/nvidia-nx-make-darknet/'>
 
-<link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='Nvidia NX Make Darknet'>
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='Nvidia NX Make Darknet'>
 <meta property='og:description' content='Edit Makefile NVCC path with sudo nano 1 2 3 4 5 6 7 8 9 NVCC = /usr/local/cuda/bin/nvcc export PATH=/usr/local/cuda10.2/bin${PATH:&#43;:${PATH}} export LD_LIBRARY_PATH=/usr/local/cuda10.2/lib64\${LD_LIBRARY_PATH:&#43;:${LD_LIBRARY_PATH}} export $LD_LIBRARY_PATH export $PATH 1 ./darknet detector demo ../clown_derection/cfg/obj.data ../clown_derection/cfg/yolov4-tiny-obj-test.cfg ../clown_derection/cfg/weights/yolov4-tiny-obj_7000.weights For TX2 use, see the camera open command 1 &amp;#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 !nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&amp;#39; '>
 <meta property='og:url' content='https://tsairongfu.github.io/en/p/nvidia-nx-make-darknet/'>
 <meta property='og:site_name' content='Tsai の Antarctica'>
@@ -23,7 +24,7 @@
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -58,7 +59,7 @@
                     
                     
                         
-                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box.gif" width="300"
+                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box_1.gif" width="300"
                             height="313" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -79,6 +80,7 @@
                         href='https://github.com/TsaiRongFu'
                         target="_blank"
                         title="1.GitHub"
+                        rel="me"
                     >
                         
                         
@@ -98,6 +100,7 @@
                         href='https://twitter.com/peng_mao'
                         target="_blank"
                         title="2.Twitter"
+                        rel="me"
                     >
                         
                         
@@ -117,6 +120,7 @@
                         href='mailto:q0975040879@gmail.com'
                         target="_blank"
                         title="3.Mail"
+                        rel="me"
                     >
                         
                         
@@ -188,6 +192,7 @@
                         href='https://stackoverflow.com/users/16074805/penguinegg?tab=profile'
                         target="_blank"
                         title="4.Stack Overflow"
+                        rel="me"
                     >
                         
                         
@@ -207,6 +212,7 @@
                         href='https://line.me/ti/p/yea9T2X2QZ'
                         target="_blank"
                         title="5.Line"
+                        rel="me"
                     >
                         
                         
@@ -224,7 +230,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
         
         
-
         <li >
             <a href='/en/' >
                 
@@ -245,7 +250,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/archives/' >
                 
@@ -260,7 +264,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/about/' >
                 
@@ -280,7 +283,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/search/' >
                 
@@ -300,7 +302,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/links/' >
                 
@@ -367,7 +368,46 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </div>
     </ol>
 </aside>
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#edit-makefile-nvcc-path-with-sudo-nano">Edit Makefile NVCC path with sudo nano</a></li>
+        <li><a href="#for-tx2-use-see-the-camera-open-command">For TX2 use, see the camera open command</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
@@ -402,6 +442,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
     </div>
 
+    
+    
+    
     
     <footer class="article-time">
         
@@ -458,6 +501,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </footer>
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -630,12 +674,14 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     <section class="copyright">
         &copy; 
         
-        2022 Tsai の Antarctica
+            2022 - 
+        
+        2023 Tsai の Antarctica
     </section>
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -719,44 +765,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Table of contents</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li>
-      <ol>
-        <li><a href="#edit-makefile-nvcc-path-with-sudo-nano">Edit Makefile NVCC path with sudo nano</a></li>
-        <li><a href="#for-tx2-use-see-the-camera-open-command">For TX2 use, see the camera open command</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"

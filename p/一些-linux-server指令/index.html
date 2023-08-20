@@ -2,11 +2,12 @@
 <html lang="zh-tw" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='查看顯卡用量指令 1 watch -n 0.5 nvidia-smi Nvidia 安裝指令 (PPA安裝 1 sudo apt-get purge nvidia* delete 1 apt search nvidia-driver 1 2 3 4 5 sudo add-apt-repository ppa:graphics-drivers/ppa sudo ubuntu-drivers devices sudo ubuntu-drivers autoinstall sudo apt install nvidia-driver-470 sudo shutdown -r now 1 2 sudo apt-get upgrade sudo apt-get update 1 2 nvidia-smi watch -n 0.5 nvidia-smi 查看是否啟動休眠 systemctl status sleep.target
-關閉自動休眠 1 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target apache2相關 啟動'><title>一些Linux Server指令</title>
+關閉自動休眠 1 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target apache2相關 啟動'>
+<title>一些Linux Server指令</title>
 
 <link rel='canonical' href='https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/'>
 
-<link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='一些Linux Server指令'>
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='一些Linux Server指令'>
 <meta property='og:description' content='查看顯卡用量指令 1 watch -n 0.5 nvidia-smi Nvidia 安裝指令 (PPA安裝 1 sudo apt-get purge nvidia* delete 1 apt search nvidia-driver 1 2 3 4 5 sudo add-apt-repository ppa:graphics-drivers/ppa sudo ubuntu-drivers devices sudo ubuntu-drivers autoinstall sudo apt install nvidia-driver-470 sudo shutdown -r now 1 2 sudo apt-get upgrade sudo apt-get update 1 2 nvidia-smi watch -n 0.5 nvidia-smi 查看是否啟動休眠 systemctl status sleep.target
 關閉自動休眠 1 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target apache2相關 啟動'>
 <meta property='og:url' content='https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9B-linux-server%E6%8C%87%E4%BB%A4/'>
@@ -26,7 +27,7 @@
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -61,7 +62,7 @@
                     
                     
                         
-                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box.gif" width="300"
+                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box_1.gif" width="300"
                             height="313" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -82,6 +83,7 @@
                         href='https://github.com/TsaiRongFu'
                         target="_blank"
                         title="1.GitHub"
+                        rel="me"
                     >
                         
                         
@@ -101,6 +103,7 @@
                         href='https://twitter.com/peng_mao'
                         target="_blank"
                         title="2.Twitter"
+                        rel="me"
                     >
                         
                         
@@ -120,6 +123,7 @@
                         href='mailto:q0975040879@gmail.com'
                         target="_blank"
                         title="3.Mail"
+                        rel="me"
                     >
                         
                         
@@ -191,6 +195,7 @@
                         href='https://stackoverflow.com/users/16074805/penguinegg?tab=profile'
                         target="_blank"
                         title="4.Stack Overflow"
+                        rel="me"
                     >
                         
                         
@@ -210,6 +215,7 @@
                         href='https://line.me/ti/p/yea9T2X2QZ'
                         target="_blank"
                         title="5.Line"
+                        rel="me"
                     >
                         
                         
@@ -227,7 +233,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
         
         
-
         <li >
             <a href='/' >
                 
@@ -248,7 +253,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/%E6%96%87%E7%AB%A0/' >
                 
@@ -263,7 +267,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/%E9%97%9C%E6%96%BC/' >
                 
@@ -283,7 +286,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/%E6%90%9C%E5%B0%8B/' >
                 
@@ -303,7 +305,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/%E9%80%A3%E7%B5%90/' >
                 
@@ -370,7 +371,47 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </div>
     </ol>
 </aside>
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目錄</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#查看顯卡用量指令">查看顯卡用量指令</a></li>
+    <li><a href="#nvidia-安裝指令-ppa安裝">Nvidia 安裝指令 (PPA安裝</a></li>
+    <li><a href="#查看是否啟動休眠">查看是否啟動休眠</a></li>
+    <li><a href="#關閉自動休眠">關閉自動休眠</a></li>
+    <li><a href="#apache2相關">apache2相關</a></li>
+    <li><a href="#查看網路狀態">查看網路狀態</a></li>
+    <li><a href="#更改時區">更改時區</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
@@ -413,6 +454,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
     </div>
 
+    
+    
+    
     
     <footer class="article-time">
         
@@ -469,6 +513,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </footer>
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -830,12 +875,14 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     <section class="copyright">
         &copy; 
         
-        2022 Tsaiの南極洲
+            2022 - 
+        
+        2023 Tsaiの南極洲
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 建立 <br />
+        主題 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 設計
     </section>
 </footer>
 
@@ -919,45 +966,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">目錄</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#查看顯卡用量指令">查看顯卡用量指令</a></li>
-    <li><a href="#nvidia-安裝指令-ppa安裝">Nvidia 安裝指令 (PPA安裝</a></li>
-    <li><a href="#查看是否啟動休眠">查看是否啟動休眠</a></li>
-    <li><a href="#關閉自動休眠">關閉自動休眠</a></li>
-    <li><a href="#apache2相關">apache2相關</a></li>
-    <li><a href="#查看網路狀態">查看網路狀態</a></li>
-    <li><a href="#更改時區">更改時區</a></li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"

@@ -8,11 +8,12 @@ SQL Server預設Port：（TCP）1433
 防火牆記得要把port設定白名單
 參考文件 http://dog0416.blogspot.com/2020/07/sql-server-reporting-service-20172019.html
 https://blog.alantsai.net/posts/2017/11/sql-troubleshooting-guide-mssql-connection-problem
-https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15'><title>Reporting Server 安裝</title>
+https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access?view=sql-server-ver15'>
+<title>Reporting Server 安裝</title>
 
 <link rel='canonical' href='https://tsairongfu.github.io/p/reporting-server-%E5%AE%89%E8%A3%9D/'>
 
-<link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='Reporting Server 安裝'>
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='Reporting Server 安裝'>
 <meta property='og:description' content='SQL Server Configuration Manager
 SQL Server 網路組態 TCP要開啟
 連線測試 使用Microsoft SQL Server Managerment Studio 開啟 tcp:主機名稱/資料庫名稱,Port
@@ -44,7 +45,7 @@ https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -79,7 +80,7 @@ https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure
                     
                     
                         
-                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box.gif" width="300"
+                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box_1.gif" width="300"
                             height="313" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -100,6 +101,7 @@ https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure
                         href='https://github.com/TsaiRongFu'
                         target="_blank"
                         title="1.GitHub"
+                        rel="me"
                     >
                         
                         
@@ -119,6 +121,7 @@ https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure
                         href='https://twitter.com/peng_mao'
                         target="_blank"
                         title="2.Twitter"
+                        rel="me"
                     >
                         
                         
@@ -138,6 +141,7 @@ https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure
                         href='mailto:q0975040879@gmail.com'
                         target="_blank"
                         title="3.Mail"
+                        rel="me"
                     >
                         
                         
@@ -209,6 +213,7 @@ https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure
                         href='https://stackoverflow.com/users/16074805/penguinegg?tab=profile'
                         target="_blank"
                         title="4.Stack Overflow"
+                        rel="me"
                     >
                         
                         
@@ -228,6 +233,7 @@ https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/configure
                         href='https://line.me/ti/p/yea9T2X2QZ'
                         target="_blank"
                         title="5.Line"
+                        rel="me"
                     >
                         
                         
@@ -245,7 +251,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
         
         
-
         <li >
             <a href='/' >
                 
@@ -266,7 +271,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/%E6%96%87%E7%AB%A0/' >
                 
@@ -281,7 +285,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/%E9%97%9C%E6%96%BC/' >
                 
@@ -301,7 +304,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/%E6%90%9C%E5%B0%8B/' >
                 
@@ -321,7 +323,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/%E9%80%A3%E7%B5%90/' >
                 
@@ -388,7 +389,45 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </div>
     </ol>
 </aside>
-<main class="main full-width">
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目錄</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#參考文件">參考文件</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
@@ -423,6 +462,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
     </div>
 
+    
+    
+    
     
     <footer class="article-time">
         
@@ -479,6 +521,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </footer>
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -643,12 +686,14 @@ tcp:主機名稱/資料庫名稱,Port</p>
     <section class="copyright">
         &copy; 
         
-        2022 Tsaiの南極洲
+            2022 - 
+        
+        2023 Tsaiの南極洲
     </section>
     
     <section class="powerby">
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 建立 <br />
+        主題 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 設計
     </section>
 </footer>
 
@@ -732,43 +777,6 @@ tcp:主機名稱/資料庫名稱,Port</p>
             >
 
             </main>
-    <aside class="sidebar right-sidebar sticky">
-        
-            
-                
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">目錄</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li>
-      <ol>
-        <li><a href="#參考文件">參考文件</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
-            
-        
-    </aside>
-
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"

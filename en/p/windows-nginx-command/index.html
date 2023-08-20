@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-tw" dir="ltr">
+<html lang="en" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Start Nginx: start nginx
 Check Nginx status: tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;
@@ -9,11 +9,12 @@ Use tsakkill to shut down: taskkill /f /t /im nginx.exe
 fast shutdown：nginx -s stop
 graceful shutdown：nginx -s quit
 changing configuration, starting new worker processes with a new configuration, graceful shutdown of old worker processes ：nginx -s reload
-re-opening log files：nginx -s reopen'><title>Windows Nginx Command</title>
+re-opening log files：nginx -s reopen'>
+<title>Windows Nginx Command</title>
 
 <link rel='canonical' href='https://tsairongfu.github.io/en/p/windows-nginx-command/'>
 
-<link rel="stylesheet" href="/scss/style.min.5a8e892f6fa14515e9065eee1f5d2e05302606ec7f11750b2fb95198f9cdcbfd.css"><meta property='og:title' content='Windows Nginx Command'>
+<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css"><meta property='og:title' content='Windows Nginx Command'>
 <meta property='og:description' content='Start Nginx: start nginx
 Check Nginx status: tasklist /fi &amp;quot;imagename eq nginx.exe&amp;quot;
 Quickly stop Nginx: nginx -s stop
@@ -47,7 +48,7 @@ re-opening log files：nginx -s reopen"><meta name="twitter:card" content="summa
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -82,7 +83,7 @@ re-opening log files：nginx -s reopen"><meta name="twitter:card" content="summa
                     
                     
                         
-                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box.gif" width="300"
+                        <img src="/img/Hacker%20Penguin_huf8b29c73232c22cedd2ba1084305c5e4_78612_300x0_resize_box_1.gif" width="300"
                             height="313" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -103,6 +104,7 @@ re-opening log files：nginx -s reopen"><meta name="twitter:card" content="summa
                         href='https://github.com/TsaiRongFu'
                         target="_blank"
                         title="1.GitHub"
+                        rel="me"
                     >
                         
                         
@@ -122,6 +124,7 @@ re-opening log files：nginx -s reopen"><meta name="twitter:card" content="summa
                         href='https://twitter.com/peng_mao'
                         target="_blank"
                         title="2.Twitter"
+                        rel="me"
                     >
                         
                         
@@ -141,6 +144,7 @@ re-opening log files：nginx -s reopen"><meta name="twitter:card" content="summa
                         href='mailto:q0975040879@gmail.com'
                         target="_blank"
                         title="3.Mail"
+                        rel="me"
                     >
                         
                         
@@ -212,6 +216,7 @@ re-opening log files：nginx -s reopen"><meta name="twitter:card" content="summa
                         href='https://stackoverflow.com/users/16074805/penguinegg?tab=profile'
                         target="_blank"
                         title="4.Stack Overflow"
+                        rel="me"
                     >
                         
                         
@@ -231,6 +236,7 @@ re-opening log files：nginx -s reopen"><meta name="twitter:card" content="summa
                         href='https://line.me/ti/p/yea9T2X2QZ'
                         target="_blank"
                         title="5.Line"
+                        rel="me"
                     >
                         
                         
@@ -248,7 +254,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
         
         
-
         <li >
             <a href='/en/' >
                 
@@ -269,7 +274,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/archives/' >
                 
@@ -284,7 +288,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/about/' >
                 
@@ -304,7 +307,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/search/' >
                 
@@ -324,7 +326,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </li>
         
         
-
         <li >
             <a href='/en/links/' >
                 
@@ -391,7 +392,10 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </div>
     </ol>
 </aside>
-<main class="main full-width">
+
+    
+
+            <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
@@ -430,6 +434,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
     </div>
 
+    
+    
+    
     
     <footer class="article-time">
         
@@ -486,6 +493,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         </footer>
     
 </div>
+
 </header>
 
     <section class="article-content">
@@ -720,12 +728,14 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     <section class="copyright">
         &copy; 
         
-        2022 Tsai の Antarctica
+            2022 - 
+        
+        2023 Tsai の Antarctica
     </section>
     
     <section class="powerby">
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -809,8 +819,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
             >
 
             </main>
-    
-
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
