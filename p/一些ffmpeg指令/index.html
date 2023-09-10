@@ -8,9 +8,9 @@
 
 <link rel='canonical' href='https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/'>
 
-<link rel="stylesheet" href="/scss/style.min.5be32ca3f6e1a997c75795c4359147cc6d4fbd34948c0acd51e31d237033978a.css">
+<link rel="stylesheet" href="/scss/style.min.85e822a6327dc34d11ac818b02d5dfdcf1226f5707614285bfec735e544b2f4f.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" src="https://tsairongfu.github.io/js/Click.js"></script><meta property='og:title' content='一些FFmpeg指令'>
+    <script type="text/javascript" src="https://tsairongfu.github.io/js/animation.js"></script><meta property='og:title' content='一些FFmpeg指令'>
 <meta property='og:description' content='picture to Gif Define custom palette The converted GIF has only three colors: white and two tints of blue, therefore, the default 256 color palette can be reduced to 16. The custom palette is created with the palettegen filter.
 1 ffmpeg -i frames/200.png -vf palettegen=16 palette.png After the palette was created it can be used in the GIF conversion.
 1 ffmpeg -i frames/%03d.png -i palette.png -filter_complex &amp;#34;fps=20,scale=720:-1:flags=lanczos[x];[x][1:v]paletteuse&amp;#34; logo.gif 圖片壓縮 1 ffmpeg -i image_source -q compress_level out_source compress_level：壓縮等級為正整數，數值越大壓縮等級越高'>
@@ -374,10 +374,32 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
                 </li>
             
 
+            <li id="snowflake-left-toggle" class="snowflake-animation-toggle" style="display: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>雪花模式</span>
+            </li>
+
+            <li id="snowflake-right-toggle" class="snowflake-animation-toggle" style="display: flex;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>雪花模式</span>
+            </li>
         </div>
     </ol>
 </aside>
-
     <aside class="sidebar right-sidebar sticky">
         
             
