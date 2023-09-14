@@ -6,7 +6,111 @@
         <description>Recent content in Posts on Tsaiの南極洲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Flutter安裝、環境</title>
+        <link>https://tsairongfu.github.io/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/</link>
+        <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/picture.jpg" alt="Featured image of post Flutter安裝、環境" /&gt;&lt;h1 id=&#34;安裝-flutter&#34;&gt;安裝 Flutter&lt;/h1&gt;
+&lt;h3 id=&#34;1-flutterhttpsdocsflutterdevget-startedinstall-download&#34;&gt;1. &lt;a class=&#34;link&#34; href=&#34;https://docs.flutter.dev/get-started/install&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Flutter&lt;/a&gt; download&lt;/h3&gt;
+&lt;h3 id=&#34;2-設置環境變數&#34;&gt;2. 設置環境變數&lt;/h3&gt;
+&lt;h3 id=&#34;3-command-執行&#34;&gt;3. command 執行&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:\&amp;gt;where flutter dart
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  C:\dev\src\flutter\bin\flutter
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  C:\dev\src\flutter\bin\flutter.bat
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  C:\dev\src\flutter\bin\dart
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  C:\dev\src\flutter\bin\dart.bat
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  C:\dev\src\dart-sdk\bin\dart.exe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;如果你使用-powershell-執行&#34;&gt;如果你使用 PowerShell, 執行&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;where.exe flutter dart
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;4-command-執行&#34;&gt;4. command 執行&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;C:&amp;gt;flutter doctor
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Doctor summary (to see all details, run flutter doctor -v):
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [✓] Flutter (Channel stable, 3.13.3, on Microsoft Windows [version 10.0.22621.2134])
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [✓] Windows Version (Installed version of Windows is version 10 or higher)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [✓] Android toolchain - develop for Android devices (Android SDK version 34.0.0)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [✓] Chrome - develop for the web
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [✓] Visual Studio - develop Windows apps (Visual Studio Community 2022 17.7.3)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [✓] Android Studio (version 2022.3)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [✓] VS Code (version 1.82.1)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [✓] Connected device (3 available)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    [✓] Network resources
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;• No issues found!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;如果您沒有安裝-visual-studio請前往-visual-studiohttpsvisualstudiomicrosoftcomdownloads-下載並安裝桌面開發與-c&#34;&gt;如果您沒有安裝 Visual Studio，請前往 &lt;a class=&#34;link&#34; href=&#34;https://visualstudio.microsoft.com/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Visual Studio&lt;/a&gt; 下載並安裝桌面開發與 C++。&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/Desktop%20development%20with%20C&amp;#43;&amp;#43;.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Desktop development with C&amp;#43;&amp;#43;&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;如果您尚未安裝-android-sdk請前往-android-studiohttpsgooglxxqghq-下載並安裝-android-studio-giraffe&#34;&gt;如果您尚未安裝 Android SDK，請前往 &lt;a class=&#34;link&#34; href=&#34;https://goo.gl/XxQghQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Android Studio&lt;/a&gt; 下載並安裝 Android Studio Giraffe。&lt;/h3&gt;
+&lt;h3 id=&#34;如果您已經安裝了-android-sdk-但仍然遇到錯誤請前往-android-sdk-sdk-工具並選中下載-android-sdk-命令行工具的選項&#34;&gt;如果您已經安裝了 Android SDK 但仍然遇到錯誤，請前往 Android SDK SDK 工具，並選中下載 Android SDK 命令行工具的選項。&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/flutter-Error.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tsairongfu.github.io/Android%20sdk%20command%20tool.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>一些FFmpeg指令</title>
         <link>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/</link>
         <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tsairongfu.github.io/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,21 @@
                 href="https://tsairongfu.github.io/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/tags/android/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/android/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/android/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/categories/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +42,7 @@
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/categories/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,6 +52,84 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://tsairongfu.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/tags/flutter/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/flutter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/flutter/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/categories/flutter/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/flutter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/flutter/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/p/flutter-install-environment/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/post/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/post/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/tags/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/tags/windows/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/windows/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/tags/command/</loc>
@@ -78,32 +169,6 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://tsairongfu.github.io/categories/ffmpeg/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/post/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/post/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/tags/</loc>
-    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/tags/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/tags/terminal/</loc>
@@ -364,19 +429,6 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://tsairongfu.github.io/tags/technology/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/tags/windows/</loc>
-    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/tags/windows/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/categories/windows/</loc>
@@ -1505,6 +1557,18 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://tsairongfu.github.io/categories/ffmpeg/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/categories/flutter/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/flutter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/flutter/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/categories/github/</loc>
