@@ -949,45 +949,55 @@ Packet-level FEC為erasure codes，通常使用在Transport或Application layer�
      
     
         
-    <script src="https://utteranc.es/client.js" 
-        repo="TsaiRongFu/Hugo-Comment-System"
-        issue-term="pathname"
-        
-        crossorigin="anonymous"
-        async
-        >
-</script>
-
-<style>
-    .utterances {
-        max-width: unset;
-    }
-</style>
-
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="TsaiRongFu/Hugo-Comment-System"
+    data-repo-id="R_kgDOH7TfwA"
+    data-category="General"
+    data-category-id="DIC_kwDOH7TfwM4CSEhX"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="false"
+    data-lang="en"
+    crossorigin="anonymous"
+    async
+></script>
 <script>
-    function setUtterancesTheme(theme) {
-        let utterances = document.querySelector('.utterances iframe');
-        if (utterances) {
-            utterances.contentWindow.postMessage(
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
                 {
-                    type: 'set-theme',
-                    theme: `github-${theme}`
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
                 },
-                'https://utteranc.es'
+                "https://giscus.app"
             );
         }
     }
 
-    addEventListener('message', event => {
-        if (event.origin !== 'https://utteranc.es') return;
-        setUtterancesTheme(document.documentElement.dataset.scheme)
-    });
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
 
-    window.addEventListener('onColorSchemeChange', (e) => {
-        setUtterancesTheme(e.detail)
-    })
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('false');
+            } else {
+                setGiscusTheme('true');
+            }
+        }
+    })();
 </script>
-
 
     
 
