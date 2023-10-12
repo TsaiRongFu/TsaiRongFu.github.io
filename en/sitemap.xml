@@ -1626,6 +1626,18 @@
                 href="https://tsairongfu.github.io/en/categories/laravel/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/leetcode/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/leetcode/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/leetcode/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/links/</loc>
     <xhtml:link
                 rel="alternate"
