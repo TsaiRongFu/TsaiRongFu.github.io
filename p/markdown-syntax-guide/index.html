@@ -601,8 +601,8 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 </blockquote>
 <h4 id="blockquote-with-attribution">Blockquote with attribution</h4>
 <blockquote>
-<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<!-- raw HTML omitted -->
-— <!-- raw HTML omitted -->Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
+<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.<br>
+— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
 </blockquote>
 <h2 id="tables">Tables</h2>
 <p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
@@ -777,11 +777,11 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 </li>
 </ul>
 <h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
-<p><!-- raw HTML omitted -->GIF<!-- raw HTML omitted --> is a bitmap image format.</p>
-<p>H<!-- raw HTML omitted -->2<!-- raw HTML omitted -->O</p>
-<p>X<!-- raw HTML omitted -->n<!-- raw HTML omitted --> + Y<!-- raw HTML omitted -->n<!-- raw HTML omitted --> = Z<!-- raw HTML omitted -->n<!-- raw HTML omitted --></p>
-<p>Press <!-- raw HTML omitted --><!-- raw HTML omitted -->CTRL<!-- raw HTML omitted -->+<!-- raw HTML omitted -->ALT<!-- raw HTML omitted -->+<!-- raw HTML omitted -->Delete<!-- raw HTML omitted --><!-- raw HTML omitted --> to end the session.</p>
-<p>Most <!-- raw HTML omitted -->salamanders<!-- raw HTML omitted --> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+<p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>
+<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
 <h2 id="hyperlinked-image">Hyperlinked image</h2>
 <p><a class="link" href="https://google.com"  target="_blank" rel="noopener"
     ><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
@@ -899,8 +899,50 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 建立 <br />
         主題 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 設計
     </section>
-</footer>
+    <!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+    <style>
+        #player.aplayer {
+            position: fixed !important;
+            bottom: 10px !important;
+            right: 10px !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="music">
+        <div id="player"></div>
+    </div>
+    <script>
+        var ap = new APlayer({
+            container: document.getElementById('player'),
+            autoplay: true,
+            fixed: true,
+            loop: 'all',
+            order: 'random',
+            listMaxHeight: 90,
+            listFolded: false,
+            mutex: true,
+            volume: 0.5,
+            music: [
+                { name: '戀人', artist: '美秀集團', url: 'https://drive.google.com/uc?export=download&id=1DEROqbdFUc8YGBU4DHRFA660BMEeluaa', cover: 'https://lh3.googleusercontent.com/drive-viewer/AK7aPaB2FdBjHbtQ_8OcjbO0E5dypetpO1IXgOctbVibatO6m_XqICqdfviwefN4wuwumFRnIRBFxDJvspAZR8y1pn997giSqw=w707-h913' },
+                { name: '我要你愛', artist: '美秀集團', url: 'https://drive.google.com/uc?export=download&id=1HUv_j-REz6g20jIlMLxi_EU38o6mmwK6', cover: 'https://lh3.googleusercontent.com/drive-viewer/AK7aPaAQS_Kvm9gmPC-XCh7zLgcGM9vI2Nct0ck5472SWZmKX_snKrTLywDEkWqp8A969qqx-ZVRmG-TnbONlaM3lm08Rtfm=w473-h913' },
+                { name: '小老婆', artist: '美秀集團', url: 'https://drive.google.com/uc?export=download&id=1pA4Hzd51g-7IdVnh2wFe71Ofp819B8AQ', cover: 'https://lh3.googleusercontent.com/drive-viewer/AK7aPaAnObY40FF7yJbeIy57FJfPrRg-M2gy6qWlg5YgRT0pJeGIwzYBwzCzf9wko8eStzXjcSi2Z57Lh7rxRoi8Few7JQytMw=w473-h913' },
+                { name: '捲菸', artist: '美秀集團', url: 'https://drive.google.com/uc?export=download&id=1dihiqkZNRxHL0Ih-qtewU2_f9y-dC5cM', cover: 'https://lh3.googleusercontent.com/drive-viewer/AK7aPaDqmmnVxmjZtE3iaLNATBYyHs6W_Kh511ou8u9LmiIJAsjt8zZ8wqO04fV637BtV_DM9d2cSTyO8uXjzLIesMsl_-AjVQ=w473-h913' },
+                { name: 'ロリ神レクイエム', artist: 'しぐれうい',  url: 'https://drive.google.com/uc?export=download&id=1M1IQQjNywmQ9qHapG0P5hBv0ECKTVL3z', cover: 'https://lh3.googleusercontent.com/drive-viewer/AK7aPaAXYzVMEbluM6m_fH563-4VAloGpycEVHRPUviQS0q4puoz_iNLfOJvo1IY5ShfTq2RpFV686n8kEb6H8_daz29WcIrsQ=w475-h913' }
+            ]
+        });
+    </script>
+</body>
+</html>
 
+</footer>
 
     
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
