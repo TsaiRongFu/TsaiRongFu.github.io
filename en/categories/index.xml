@@ -7,172 +7,180 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Flutter</title>
-        <link>https://tsairongfu.github.io/en/categories/flutter/</link>
-        <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
+        <title>Apache</title>
+        <link>https://tsairongfu.github.io/en/categories/apache/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/en/categories/flutter/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>FFmpeg</title>
-        <link>https://tsairongfu.github.io/en/categories/ffmpeg/</link>
-        <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/ffmpeg/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Facebook</title>
-        <link>https://tsairongfu.github.io/en/categories/facebook/</link>
-        <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/facebook/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Youtube</title>
-        <link>https://tsairongfu.github.io/en/categories/youtube/</link>
-        <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/youtube/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>PostgreSQL</title>
-        <link>https://tsairongfu.github.io/en/categories/postgresql/</link>
-        <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/postgresql/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Windows</title>
-        <link>https://tsairongfu.github.io/en/categories/windows/</link>
-        <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/windows/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Hacker</title>
-        <link>https://tsairongfu.github.io/en/categories/hacker/</link>
-        <pubDate>Mon, 18 Oct 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/hacker/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Linux</title>
-        <link>https://tsairongfu.github.io/en/categories/linux/</link>
-        <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/linux/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Chrome</title>
-        <link>https://tsairongfu.github.io/en/categories/chrome/</link>
-        <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/chrome/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Python</title>
-        <link>https://tsairongfu.github.io/en/categories/python/</link>
-        <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/python/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Selenium</title>
-        <link>https://tsairongfu.github.io/en/categories/selenium/</link>
-        <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/selenium/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>NGINX</title>
-        <link>https://tsairongfu.github.io/en/categories/nginx/</link>
-        <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/nginx/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>NVIDIA</title>
-        <link>https://tsairongfu.github.io/en/categories/nvidia/</link>
-        <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/nvidia/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>GitHub</title>
-        <link>https://tsairongfu.github.io/en/categories/github/</link>
-        <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/categories/github/</guid>
-        <description></description>
+        <guid>https://tsairongfu.github.io/en/categories/apache/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/apache/Apache.png" alt="Featured image of post Apache" /&gt;</description>
         </item>
         <item>
         <title>Apple</title>
         <link>https://tsairongfu.github.io/en/categories/apple/</link>
-        <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/categories/apple/</guid>
-        <description></description>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/apple/Apple.png" alt="Featured image of post Apple" /&gt;</description>
         </item>
         <item>
-        <title>XAMPP</title>
-        <link>https://tsairongfu.github.io/en/categories/xampp/</link>
-        <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+        <title>Chrome</title>
+        <link>https://tsairongfu.github.io/en/categories/chrome/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/en/categories/xampp/</guid>
-        <description></description>
+        <guid>https://tsairongfu.github.io/en/categories/chrome/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/chrome/Chrome.png" alt="Featured image of post Chrome" /&gt;</description>
         </item>
         <item>
         <title>Composer</title>
         <link>https://tsairongfu.github.io/en/categories/composer/</link>
-        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/categories/composer/</guid>
-        <description></description>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/composer/Composer.png" alt="Featured image of post Composer" /&gt;</description>
+        </item>
+        <item>
+        <title>Facebook</title>
+        <link>https://tsairongfu.github.io/en/categories/facebook/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/facebook/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/facebook/Facebook.png" alt="Featured image of post Facebook" /&gt;</description>
+        </item>
+        <item>
+        <title>FFmpeg</title>
+        <link>https://tsairongfu.github.io/en/categories/ffmpeg/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/ffmpeg/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/ffmpeg/FFmpeg.png" alt="Featured image of post FFmpeg" /&gt;</description>
+        </item>
+        <item>
+        <title>Flutter</title>
+        <link>https://tsairongfu.github.io/en/categories/flutter/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/flutter/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/flutter/Flutter.png" alt="Featured image of post Flutter" /&gt;</description>
+        </item>
+        <item>
+        <title>GitHub</title>
+        <link>https://tsairongfu.github.io/en/categories/github/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/github/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/github/GitHub.png" alt="Featured image of post GitHub" /&gt;</description>
+        </item>
+        <item>
+        <title>Hacker</title>
+        <link>https://tsairongfu.github.io/en/categories/hacker/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/hacker/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/hacker/Hacker.png" alt="Featured image of post Hacker" /&gt;</description>
         </item>
         <item>
         <title>Laravel</title>
         <link>https://tsairongfu.github.io/en/categories/laravel/</link>
-        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/categories/laravel/</guid>
-        <description></description>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/laravel/Laravel.png" alt="Featured image of post Laravel" /&gt;</description>
+        </item>
+        <item>
+        <title>LeetCode</title>
+        <link>https://tsairongfu.github.io/en/categories/leetcode/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/leetcode/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/leetcode/LeetCode.png" alt="Featured image of post LeetCode" /&gt;</description>
+        </item>
+        <item>
+        <title>Linux</title>
+        <link>https://tsairongfu.github.io/en/categories/linux/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/linux/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/linux/Linux.png" alt="Featured image of post Linux" /&gt;</description>
+        </item>
+        <item>
+        <title>Nginx</title>
+        <link>https://tsairongfu.github.io/en/categories/nginx/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/nginx/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/nginx/Nginx.png" alt="Featured image of post Nginx" /&gt;</description>
+        </item>
+        <item>
+        <title>Nvidia</title>
+        <link>https://tsairongfu.github.io/en/categories/nvidia/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/nvidia/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/nvidia/Nvidia.png" alt="Featured image of post Nvidia" /&gt;</description>
+        </item>
+        <item>
+        <title>PostgreSQL</title>
+        <link>https://tsairongfu.github.io/en/categories/postgresql/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/postgresql/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/postgresql/PostgreSQL.png" alt="Featured image of post PostgreSQL" /&gt;</description>
+        </item>
+        <item>
+        <title>Python</title>
+        <link>https://tsairongfu.github.io/en/categories/python/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/python/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/python/Python.png" alt="Featured image of post Python" /&gt;</description>
+        </item>
+        <item>
+        <title>Selenium</title>
+        <link>https://tsairongfu.github.io/en/categories/selenium/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/selenium/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/selenium/Selenium.png" alt="Featured image of post Selenium" /&gt;</description>
         </item>
         <item>
         <title>Ubuntu</title>
         <link>https://tsairongfu.github.io/en/categories/ubuntu/</link>
-        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/categories/ubuntu/</guid>
-        <description></description>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/ubuntu/Ubuntu.png" alt="Featured image of post Ubuntu" /&gt;</description>
         </item>
         <item>
         <title>Visual Studio Code</title>
         <link>https://tsairongfu.github.io/en/categories/visual-studio-code/</link>
-        <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/categories/visual-studio-code/</guid>
-        <description></description>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/visual-studio-code/Visual%20Studio%20Code.png" alt="Featured image of post Visual Studio Code" /&gt;</description>
         </item>
         <item>
-        <title>Apache</title>
-        <link>https://tsairongfu.github.io/en/categories/apache/</link>
-        <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+        <title>Windows</title>
+        <link>https://tsairongfu.github.io/en/categories/windows/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/en/categories/apache/</guid>
-        <description></description>
+        <guid>https://tsairongfu.github.io/en/categories/windows/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/windows/Windows.png" alt="Featured image of post Windows" /&gt;</description>
+        </item>
+        <item>
+        <title>XAMPP</title>
+        <link>https://tsairongfu.github.io/en/categories/xampp/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/xampp/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/xampp/XAMPP.png" alt="Featured image of post XAMPP" /&gt;</description>
+        </item>
+        <item>
+        <title>YouTube</title>
+        <link>https://tsairongfu.github.io/en/categories/youtube/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/categories/youtube/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/en/categories/youtube/YouTube.png" alt="Featured image of post YouTube" /&gt;</description>
         </item>
         
     </channel>
