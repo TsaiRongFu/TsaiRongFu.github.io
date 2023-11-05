@@ -613,33 +613,34 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
         <div class="section-card">
             <div class="section-details">
-                <h3 class="section-count">21 pages</h3>
+                <h3 class="section-count">22 pages</h3>
                 <h1 class="section-term">Categories</h1>
                 
             </div>
         </div>
     </header>
-        
     
     <section class="article-list--compact">
         
             <article>
-    <a href="/en/categories/apache/">
+    <a href="/en/categories/xampp/">
         <div class="article-details">
-            <h2 class="article-title">Apache</h2>
+            <h2 class="article-title">XAMPP</h2>
             <footer class="article-time">
-                <time datetime='2019-10-26T00:00:00Z'>Oct 26, 2019</time>
+                <time datetime='0001-01-01T00:00:00Z'>Jan 01, 0001</time>
             </footer>
         </div>
-            <div class="article-image">
-                <img src="/en/categories/apache/Apache_hub147fcb4c4f563634d44ec58b4a4d56d_21076_120x120_fill_box_smart1_3.png" 
-                        width="120"
-                        height="120" 
-                        alt="Apache"
-                        loading="lazy">
-                
-            </div>
+    </a>
+</article>
         
+            <article>
+    <a href="/en/categories/youtube/">
+        <div class="article-details">
+            <h2 class="article-title">YouTube</h2>
+            <footer class="article-time">
+                <time datetime='0001-01-01T00:00:00Z'>Jan 01, 0001</time>
+            </footer>
+        </div>
     </a>
 </article>
         
@@ -710,7 +711,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         <div id="player"></div>
     </div>
     <script>
-        fetch('/json/music.json')
+        fetch('/json/musicDropbox.json')
             .then(response => response.json())
             .then(data => {
                 var ap = new APlayer({

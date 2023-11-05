@@ -1,5 +1,26 @@
 [
     {
+        "name": "憂愁",
+        "artist": "小安",
+        "url": "https://drive.google.com/uc?export=download&id=1IhRgRH08gM51VHeupvGhOXnpZxDnRnaP",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaDVPdbZWWs8OeHiK6NZnB2FEldXu5EbLKZkzF51wdCUW6fZTzJv1iGahtcF1Pu36-jsKVhGvpX74OEpWeFoWyvUUooH=w150-h913",
+        "lrc": "/lrc/小安－憂愁.lrc"
+    },
+    {
+        "name": "憂愁",
+        "artist": "魚丁糸",
+        "url": "https://drive.google.com/uc?export=download&id=1W_o0JqvxTVdet-reiuOdv3DfXWYm-fWL",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaBEuh7qdv01Y2x76nUTMxj3AAI_9lTDM3oHqcaAY6mwif4fK8iq_PgeGj7Q-R_orknsb1EVXQBUzonp_lbB-7bbA3GAzQ=w335-h913",
+        "lrc": "/lrc/魚丁糸－憂愁.lrc"
+    },
+    {
+        "name": "大風吹",
+        "artist": "草東沒有派對",
+        "url": "https://drive.google.com/uc?export=download&id=1VkRkNTsokY3fQtYhtgLKPLGdg2Tps5VS",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaDEqblfa0kpwWjam0IkV9f2dZD0gSwyUjPGFjwAjttKAhyYqu3G0jBxa1tTRrIeOuVSEqjLsyOUiCr1mQXOVv2kgwN1=w1239-h913",
+        "lrc": "/lrc/大風吹.lrc"
+    },
+    {
         "name": "戀人",
         "artist": "美秀集團",
         "url": "https://drive.google.com/uc?export=download&id=1DEROqbdFUc8YGBU4DHRFA660BMEeluaa",
