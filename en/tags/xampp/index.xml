@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>XAMPP on Tsai の Antarctica</title>
-        <link>https://tsairongfu.github.io/en/tags/xampp/</link>
+        <link>http://localhost:5566/en/tags/xampp/</link>
         <description>Recent content in XAMPP on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/tags/xampp/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:5566/en/tags/xampp/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Mac OS XAMPP can’t open</title>
-        <link>https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/</link>
+        <link>http://localhost:5566/en/p/mac-os-xampp-can-not-open/</link>
         <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/picture.jpg" alt="Featured image of post Mac OS XAMPP can’t open" /&gt;&lt;p&gt;mysql cannot be opened
+        <guid>http://localhost:5566/en/p/mac-os-xampp-can-not-open/</guid>
+        <description>&lt;img src="http://localhost:5566/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/picture.jpg" alt="Featured image of post Mac OS XAMPP can’t open" /&gt;&lt;p&gt;mysql cannot be opened
 The reason for this is because the sql service is occupied by mac system resources&lt;/p&gt;
 &lt;p&gt;Solution
 Open Terminal&lt;/p&gt;

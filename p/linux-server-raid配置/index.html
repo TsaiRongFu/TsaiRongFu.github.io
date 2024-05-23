@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
-    <head><meta charset='utf-8'>
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=5566&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='askubuntu-973632
 Unable to Mount RAID1 md0 - wrong fs type, bad option, bad superblock on /dev/md0, missing codepage or helper program, or other error
 掛載磁區 1 sudo mount /home/Raid6 1 sudo mount /dev/sdb* /path 查看磁碟指令 1 sudo blkid 1 sudo fdisk -l 1 sudo fdisk -l /dev/sd* 1 df 格式化硬碟 1 sudo mkfs.ext4 /dev/sd* 配置開機自掛載 1 sudo nano /etc/fstab 1 UUID=e8d9acdd-4161-4efc-9ad1-7907e6a339a4 /path ext4 defaults 0 1 測試
 1 sudo mount -a '>
 <title>Linux server Raid配置</title>
 
-<link rel='canonical' href='https://tsairongfu.github.io/p/linux-server-raid%E9%85%8D%E7%BD%AE/'>
+<link rel='canonical' href='http://localhost:5566/p/linux-server-raid%E9%85%8D%E7%BD%AE/'>
 
 <link rel="stylesheet" href="/scss/style.min.85e822a6327dc34d11ac818b02d5dfdcf1226f5707614285bfec735e544b2f4f.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" src="https://tsairongfu.github.io/js/animation.js"></script><meta property='og:title' content='Linux server Raid配置'>
+    <script type="text/javascript" src="http://localhost:5566/js/animation.js"></script><meta property='og:title' content='Linux server Raid配置'>
 <meta property='og:description' content='askubuntu-973632
 Unable to Mount RAID1 md0 - wrong fs type, bad option, bad superblock on /dev/md0, missing codepage or helper program, or other error
 掛載磁區 1 sudo mount /home/Raid6 1 sudo mount /dev/sdb* /path 查看磁碟指令 1 sudo blkid 1 sudo fdisk -l 1 sudo fdisk -l /dev/sd* 1 df 格式化硬碟 1 sudo mkfs.ext4 /dev/sd* 配置開機自掛載 1 sudo nano /etc/fstab 1 UUID=e8d9acdd-4161-4efc-9ad1-7907e6a339a4 /path ext4 defaults 0 1 測試
 1 sudo mount -a '>
-<meta property='og:url' content='https://tsairongfu.github.io/p/linux-server-raid%E9%85%8D%E7%BD%AE/'>
+<meta property='og:url' content='http://localhost:5566/p/linux-server-raid%E9%85%8D%E7%BD%AE/'>
 <meta property='og:site_name' content='Tsaiの南極洲'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Server' /><meta property='article:tag' content='Raid' /><meta property='article:tag' content='Commadn' /><meta property='article:tag' content='Terminal' /><meta property='article:published_time' content='2021-10-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-10-09T00:00:00&#43;00:00'/><meta property='og:image' content='https://tsairongfu.github.io/p/linux-server-raid%E9%85%8D%E7%BD%AE/picture.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='Server' /><meta property='article:tag' content='Raid' /><meta property='article:tag' content='Commadn' /><meta property='article:tag' content='Terminal' /><meta property='article:published_time' content='2021-10-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-10-09T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:5566/p/linux-server-raid%E9%85%8D%E7%BD%AE/picture.jpg' />
 <meta name="twitter:title" content="Linux server Raid配置">
 <meta name="twitter:description" content="askubuntu-973632
 Unable to Mount RAID1 md0 - wrong fs type, bad option, bad superblock on /dev/md0, missing codepage or helper program, or other error
 掛載磁區 1 sudo mount /home/Raid6 1 sudo mount /dev/sdb* /path 查看磁碟指令 1 sudo blkid 1 sudo fdisk -l 1 sudo fdisk -l /dev/sd* 1 df 格式化硬碟 1 sudo mkfs.ext4 /dev/sd* 配置開機自掛載 1 sudo nano /etc/fstab 1 UUID=e8d9acdd-4161-4efc-9ad1-7907e6a339a4 /path ext4 defaults 0 1 測試
 1 sudo mount -a "><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://tsairongfu.github.io/p/linux-server-raid%E9%85%8D%E7%BD%AE/picture.jpg' />
+    <meta name="twitter:image" content='http://localhost:5566/p/linux-server-raid%E9%85%8D%E7%BD%AE/picture.jpg' />
     <link rel="shortcut icon" href="/images/TW-Penguin.png" />
+
+  
+
 
     </head>
     <body class="
@@ -347,9 +350,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         
-                            <option value="https://tsairongfu.github.io/" selected>繁體中文</option>
+                            <option value="http://localhost:5566/" selected>繁體中文</option>
                         
-                            <option value="https://tsairongfu.github.io/en/" >English</option>
+                            <option value="http://localhost:5566/en/" >English</option>
                         
                     </select>
                 </li>
@@ -459,7 +462,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     
     <header class="article-category">
         
-            <a href="/categories/linux/" >
+            <a href="/categories/linux/" style="background-color: #2a9d8f; color: #fff;">
                 Linux
             </a>
         
@@ -527,7 +530,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
             <div>
                 
-                    <a href="https://tsairongfu.github.io/en/p/linux-server-raid/" class="link">English</a>
+                    <a href="http://localhost:5566/en/p/linux-server-raid/" class="link">English</a>
                 
             </div>
         </footer>
@@ -643,7 +646,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
             <a href="/tags/linux/">Linux</a>
         
-            <a href="/tags/server/">server</a>
+            <a href="/tags/server/">Server</a>
         
             <a href="/tags/raid/">Raid</a>
         
@@ -818,7 +821,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
             2022 - 
         
-        2023 Tsaiの南極洲
+        2024 Tsaiの南極洲
     </section>
     
     <section class="powerby">
