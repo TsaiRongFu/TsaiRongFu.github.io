@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Chrome on Tsai の Antarctica</title>
-        <link>http://localhost:6969/en/tags/chrome/</link>
+        <link>http://localhost:3695/en/tags/chrome/</link>
         <description>Recent content in Chrome on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:6969/en/tags/chrome/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:3695/en/tags/chrome/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Python selenium solves the problem that chrome://settings cannot be located</title>
-        <link>http://localhost:6969/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</link>
+        <link>http://localhost:3695/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</link>
         <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:6969/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</guid>
-        <description>&lt;img src="http://localhost:6969/p/python-selenium-%E8%A7%A3%E6%B1%BA-chrome-settings-%E7%84%A1%E6%B3%95%E5%AE%9A%E4%BD%8D%E5%95%8F%E9%A1%8C/picture.jpg" alt="Featured image of post Python selenium solves the problem that chrome://settings cannot be located" /&gt;&lt;h2 id=&#34;great-god-answers&#34;&gt;Great God answers:&lt;/h2&gt;
+        <guid>http://localhost:3695/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</guid>
+        <description>&lt;img src="http://localhost:3695/p/python-selenium-%E8%A7%A3%E6%B1%BA-chrome-settings-%E7%84%A1%E6%B3%95%E5%AE%9A%E4%BD%8D%E5%95%8F%E9%A1%8C/picture.jpg" alt="Featured image of post Python selenium solves the problem that chrome://settings cannot be located" /&gt;&lt;h2 id=&#34;great-god-answers&#34;&gt;Great God answers:&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56763683/selenium-python-unable-to-clear-chrome-browser-cache&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;stackoverflow-56763683&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://stackoverflow.com/questions/56380091/how-to-interact-with-the-elements-within-shadow-root-open-while-clearing-brow&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;

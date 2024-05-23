@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Environment Variable on Tsai の Antarctica</title>
-        <link>http://localhost:6969/en/tags/environment-variable/</link>
+        <link>http://localhost:3695/en/tags/environment-variable/</link>
         <description>Recent content in Environment Variable on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 24 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:6969/en/tags/environment-variable/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 24 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:3695/en/tags/environment-variable/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Mac OS environment variable settings</title>
-        <link>http://localhost:6969/en/p/mac-os-environment-variable-settings/</link>
+        <link>http://localhost:3695/en/p/mac-os-environment-variable-settings/</link>
         <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:6969/en/p/mac-os-environment-variable-settings/</guid>
-        <description>&lt;img src="http://localhost:6969/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/picture.jpg" alt="Featured image of post Mac OS environment variable settings" /&gt;&lt;h2 id=&#34;view-file-contents&#34;&gt;View file contents&lt;/h2&gt;
+        <guid>http://localhost:3695/en/p/mac-os-environment-variable-settings/</guid>
+        <description>&lt;img src="http://localhost:3695/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/picture.jpg" alt="Featured image of post Mac OS environment variable settings" /&gt;&lt;h2 id=&#34;view-file-contents&#34;&gt;View file contents&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cat ~/.zshrc&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;if-the-file-does-not-exist-or-if-it-exists-enter-the-editing-state-directly&#34;&gt;If the file does not exist, or if it exists, enter the editing state directly&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;nano ~/.zshrc&lt;/code&gt;&lt;/p&gt;

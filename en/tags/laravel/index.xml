@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Laravel on Tsai の Antarctica</title>
-        <link>http://localhost:6969/en/tags/laravel/</link>
+        <link>http://localhost:3695/en/tags/laravel/</link>
         <description>Recent content in Laravel on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:6969/en/tags/laravel/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:3695/en/tags/laravel/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>A Several Laravel tips</title>
-        <link>http://localhost:6969/en/p/a-several-laravel-tips/</link>
+        <link>http://localhost:3695/en/p/a-several-laravel-tips/</link>
         <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:6969/en/p/a-several-laravel-tips/</guid>
-        <description>&lt;img src="http://localhost:6969/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/picture.jpg" alt="Featured image of post A Several Laravel tips" /&gt;&lt;h2 id=&#34;there-was-an-error-in-opening-the-project&#34;&gt;There was an error in opening the project&lt;/h2&gt;
+        <guid>http://localhost:3695/en/p/a-several-laravel-tips/</guid>
+        <description>&lt;img src="http://localhost:3695/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/picture.jpg" alt="Featured image of post A Several Laravel tips" /&gt;&lt;h2 id=&#34;there-was-an-error-in-opening-the-project&#34;&gt;There was an error in opening the project&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;try &lt;code&gt;Composer update&lt;/code&gt; OR &lt;code&gt;Composer i&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
