@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Apple on Tsaiの南極洲</title>
-        <link>http://localhost:5566/tags/apple/</link>
+        <link>http://localhost:6969/tags/apple/</link>
         <description>Recent content in Apple on Tsaiの南極洲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:5566/tags/apple/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 23 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:6969/tags/apple/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Mac OS XAMPP 啟動錯誤</title>
-        <link>http://localhost:5566/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</link>
+        <link>http://localhost:6969/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</link>
         <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:5566/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</guid>
-        <description>&lt;img src="http://localhost:5566/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/picture.jpg" alt="Featured image of post Mac OS XAMPP 啟動錯誤" /&gt;&lt;p&gt;mysql打不開
+        <guid>http://localhost:6969/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/</guid>
+        <description>&lt;img src="http://localhost:6969/p/mac-os-xampp-%E5%95%9F%E5%8B%95%E9%8C%AF%E8%AA%A4/picture.jpg" alt="Featured image of post Mac OS XAMPP 啟動錯誤" /&gt;&lt;p&gt;mysql打不開
 出現此原因是因為sql服務被mac系統資源佔用&lt;/p&gt;
 &lt;p&gt;解決辦法
 打開Terminal&lt;/p&gt;
@@ -28,11 +28,11 @@
         </item>
         <item>
         <title>Mac OS 環境變數設定</title>
-        <link>http://localhost:5566/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/</link>
+        <link>http://localhost:6969/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/</link>
         <pubDate>Sun, 24 Nov 2019 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:5566/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/</guid>
-        <description>&lt;img src="http://localhost:5566/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/picture.jpg" alt="Featured image of post Mac OS 環境變數設定" /&gt;&lt;h2 id=&#34;查看檔案內容&#34;&gt;查看檔案內容&lt;/h2&gt;
+        <guid>http://localhost:6969/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/</guid>
+        <description>&lt;img src="http://localhost:6969/p/mac-os-%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8%E8%A8%AD%E5%AE%9A/picture.jpg" alt="Featured image of post Mac OS 環境變數設定" /&gt;&lt;h2 id=&#34;查看檔案內容&#34;&gt;查看檔案內容&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;cat ~/.zshrc&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;如果檔案不存在或者存在直接進入編輯狀態&#34;&gt;如果檔案不存在，或者存在直接進入編輯狀態&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;nano ~/.zshrc&lt;/code&gt;&lt;/p&gt;

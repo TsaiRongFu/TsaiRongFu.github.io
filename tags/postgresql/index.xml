@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>PostgreSQL on Tsaiの南極洲</title>
-        <link>http://localhost:5566/tags/postgresql/</link>
+        <link>http://localhost:6969/tags/postgresql/</link>
         <description>Recent content in PostgreSQL on Tsaiの南極洲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sun, 08 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:5566/tags/postgresql/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 08 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:6969/tags/postgresql/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>PostgreSQL pgAdmin重置密碼</title>
-        <link>http://localhost:5566/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/</link>
+        <link>http://localhost:6969/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/</link>
         <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:5566/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/</guid>
-        <description>&lt;img src="http://localhost:5566/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/picture.jpg" alt="Featured image of post PostgreSQL pgAdmin重置密碼" /&gt;&lt;ol&gt;
+        <guid>http://localhost:6969/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/</guid>
+        <description>&lt;img src="http://localhost:6969/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/picture.jpg" alt="Featured image of post PostgreSQL pgAdmin重置密碼" /&gt;&lt;ol&gt;
 &lt;li&gt;將 pg_hba.conf 文件中所有行的 METHOD 從 scram-sha-256 更改為 trust&lt;/li&gt;
 &lt;li&gt;將 Postgres 安裝的 bin 文件夾添加到路徑中，如果沒有的話&lt;/li&gt;
 &lt;li&gt;打開命令提示符並輸入&lt;code&gt;psql -U postgres&lt;/code&gt; 這裡不會要求你輸入密碼。&lt;/li&gt;
@@ -24,11 +24,11 @@
         </item>
         <item>
         <title>一些關於Laravel的小提示</title>
-        <link>http://localhost:5566/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/</link>
+        <link>http://localhost:6969/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/</link>
         <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:5566/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/</guid>
-        <description>&lt;img src="http://localhost:5566/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/picture.jpg" alt="Featured image of post 一些關於Laravel的小提示" /&gt;&lt;h2 id=&#34;專案打開出現錯誤&#34;&gt;專案打開出現錯誤&lt;/h2&gt;
+        <guid>http://localhost:6969/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/</guid>
+        <description>&lt;img src="http://localhost:6969/p/%E4%B8%80%E4%BA%9B%E9%97%9C%E6%96%BClaravel%E7%9A%84%E5%B0%8F%E6%8F%90%E7%A4%BA/picture.jpg" alt="Featured image of post 一些關於Laravel的小提示" /&gt;&lt;h2 id=&#34;專案打開出現錯誤&#34;&gt;專案打開出現錯誤&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;嘗試 &lt;code&gt;Composer update&lt;/code&gt; OR &lt;code&gt;Composer i&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;

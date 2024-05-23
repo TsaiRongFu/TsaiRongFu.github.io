@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Flutter on Tsai の Antarctica</title>
-        <link>http://localhost:5566/en/tags/flutter/</link>
+        <link>http://localhost:6969/en/tags/flutter/</link>
         <description>Recent content in Flutter on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:5566/en/tags/flutter/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:6969/en/tags/flutter/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Flutter Install environment</title>
-        <link>http://localhost:5566/en/p/flutter-install-environment/</link>
+        <link>http://localhost:6969/en/p/flutter-install-environment/</link>
         <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:5566/en/p/flutter-install-environment/</guid>
-        <description>&lt;img src="http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/picture.jpg" alt="Featured image of post Flutter Install environment" /&gt;&lt;h1 id=&#34;install-flutter&#34;&gt;Install Flutter&lt;/h1&gt;
+        <guid>http://localhost:6969/en/p/flutter-install-environment/</guid>
+        <description>&lt;img src="http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/picture.jpg" alt="Featured image of post Flutter Install environment" /&gt;&lt;h1 id=&#34;install-flutter&#34;&gt;Install Flutter&lt;/h1&gt;
 &lt;h3 id=&#34;1-flutterhttpsdocsflutterdevget-startedinstall-download&#34;&gt;1. &lt;a class=&#34;link&#34; href=&#34;https://docs.flutter.dev/get-started/install&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Flutter&lt;/a&gt; download&lt;/h3&gt;
 &lt;h3 id=&#34;2-set-environmental-variables&#34;&gt;2. set environmental variables&lt;/h3&gt;
@@ -79,10 +79,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;if-you-do-not-have-visual-studio-please-visit-visual-studiohttpsvisualstudiomicrosoftcomdownloads-to-download-and-install-desktop-development-with-c&#34;&gt;If you do not have Visual Studio, please visit &lt;a class=&#34;link&#34; href=&#34;https://visualstudio.microsoft.com/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Visual Studio&lt;/a&gt; to download and install Desktop development with C++.&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Desktop-development-with-C&amp;#43;&amp;#43;.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Desktop-development-with-C&amp;#43;&amp;#43;.jpg&#34;
 	width=&#34;1280&#34;
 	height=&#34;720&#34;
-	srcset=&#34;http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Desktop-development-with-C&amp;#43;&amp;#43;_hufbc847a58e3515a3e23b94d6807b05d6_191523_480x0_resize_q75_box.jpg 480w, http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Desktop-development-with-C&amp;#43;&amp;#43;_hufbc847a58e3515a3e23b94d6807b05d6_191523_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Desktop-development-with-C&amp;#43;&amp;#43;_hufbc847a58e3515a3e23b94d6807b05d6_191523_480x0_resize_q75_box.jpg 480w, http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Desktop-development-with-C&amp;#43;&amp;#43;_hufbc847a58e3515a3e23b94d6807b05d6_191523_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -94,10 +94,10 @@
 &lt;h3 id=&#34;if-you-do-not-have-android-sdk-please-visit-android-studiohttpsgooglxxqghq-to-download-and-install-android-studio-giraffe&#34;&gt;If you do not have Android SDK, please visit &lt;a class=&#34;link&#34; href=&#34;https://goo.gl/XxQghQ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Android Studio&lt;/a&gt; to download and install Android Studio Giraffe.&lt;/h3&gt;
 &lt;h3 id=&#34;if-youve-already-installed-android-sdk-and-are-still-encountering-errors-please-go-to-android-sdk-sdk-tools-and-check-the-option-to-download-android-sdk-command-line-tools&#34;&gt;If you&amp;rsquo;ve already installed Android SDK and are still encountering errors, please go to Android SDK SDK Tools and check the option to download Android SDK Command-line Tools.&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/flutter-Error.png&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/flutter-Error.png&#34;
 	width=&#34;1115&#34;
 	height=&#34;468&#34;
-	srcset=&#34;http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/flutter-Error_hu261d12c37db150fe94bbfe2c7f0fa97a_50948_480x0_resize_box_3.png 480w, http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/flutter-Error_hu261d12c37db150fe94bbfe2c7f0fa97a_50948_1024x0_resize_box_3.png 1024w&#34;
+	srcset=&#34;http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/flutter-Error_hu261d12c37db150fe94bbfe2c7f0fa97a_50948_480x0_resize_box_3.png 480w, http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/flutter-Error_hu261d12c37db150fe94bbfe2c7f0fa97a_50948_1024x0_resize_box_3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -106,10 +106,10 @@
 		data-flex-basis=&#34;571px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Android-sdk-command-tool.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Android-sdk-command-tool.jpg&#34;
 	width=&#34;984&#34;
 	height=&#34;713&#34;
-	srcset=&#34;http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Android-sdk-command-tool_huecae9896360fb34c09955be3e3bac32b_148554_480x0_resize_q75_box.jpg 480w, http://localhost:5566/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Android-sdk-command-tool_huecae9896360fb34c09955be3e3bac32b_148554_1024x0_resize_q75_box.jpg 1024w&#34;
+	srcset=&#34;http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Android-sdk-command-tool_huecae9896360fb34c09955be3e3bac32b_148554_480x0_resize_q75_box.jpg 480w, http://localhost:6969/p/flutter%E5%AE%89%E8%A3%9D%E7%92%B0%E5%A2%83/Android-sdk-command-tool_huecae9896360fb34c09955be3e3bac32b_148554_1024x0_resize_q75_box.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Reset on Tsai の Antarctica</title>
-        <link>http://localhost:5566/en/tags/reset/</link>
+        <link>http://localhost:6969/en/tags/reset/</link>
         <description>Recent content in Reset on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 08 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:5566/en/tags/reset/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 08 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:6969/en/tags/reset/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>PostgreSQL pgAdmin reset password</title>
-        <link>http://localhost:5566/en/p/postgresql-pgadmin-reset-password/</link>
+        <link>http://localhost:6969/en/p/postgresql-pgadmin-reset-password/</link>
         <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:5566/en/p/postgresql-pgadmin-reset-password/</guid>
-        <description>&lt;img src="http://localhost:5566/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/picture.jpg" alt="Featured image of post PostgreSQL pgAdmin reset password" /&gt;&lt;ol&gt;
+        <guid>http://localhost:6969/en/p/postgresql-pgadmin-reset-password/</guid>
+        <description>&lt;img src="http://localhost:6969/p/postgresql-pgadmin%E9%87%8D%E7%BD%AE%E5%AF%86%E7%A2%BC/picture.jpg" alt="Featured image of post PostgreSQL pgAdmin reset password" /&gt;&lt;ol&gt;
 &lt;li&gt;Change METHOD of all rows in your pg_hba.conf file from scram-sha-256 to trust&lt;/li&gt;
 &lt;li&gt;Add bin folder of Postgres installation to path, if you haven&amp;rsquo;t&lt;/li&gt;
 &lt;li&gt;Open command prompt and enter &lt;code&gt;psql -U postgres&lt;/code&gt; You won&amp;rsquo;t be asked for password here.&lt;/li&gt;
