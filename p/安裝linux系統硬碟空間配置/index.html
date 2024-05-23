@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=3695&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='/boot 1.選擇空閒區，點擊“&#43;”號添加引導分區： 大小：400MB 新分區的類型：主分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/boot
 swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置為實際內存的2倍： 大小：8192MB(4GB×2) 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：交換空間
 / 3.繼續選擇空閒區，點擊“&#43;”號添加root分區： 大小：至少10-20GB 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/
@@ -9,20 +9,20 @@ swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置�
 如果要保留Windows的引導器，就選 /boot分區。'>
 <title>安裝Linux系統硬碟空間配置</title>
 
-<link rel='canonical' href='http://localhost:3695/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/'>
+<link rel='canonical' href='https://tsairongfu.github.io/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/'>
 
 <link rel="stylesheet" href="/scss/style.min.85e822a6327dc34d11ac818b02d5dfdcf1226f5707614285bfec735e544b2f4f.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" src="http://localhost:3695/js/animation.js"></script><meta property='og:title' content='安裝Linux系統硬碟空間配置'>
+    <script type="text/javascript" src="https://tsairongfu.github.io/js/animation.js"></script><meta property='og:title' content='安裝Linux系統硬碟空間配置'>
 <meta property='og:description' content='/boot 1.選擇空閒區，點擊“&#43;”號添加引導分區： 大小：400MB 新分區的類型：主分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/boot
 swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置為實際內存的2倍： 大小：8192MB(4GB×2) 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：交換空間
 / 3.繼續選擇空閒區，點擊“&#43;”號添加root分區： 大小：至少10-20GB 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/
 /home 4.繼續選擇空閒區，點擊“&#43;”號添加home分區： 大小：餘下所有的空間 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/home
 安裝啟動引導器的設備 如果要用Ubuntu的引導器代替Windows的引導器，就選 /dev/sda。
 如果要保留Windows的引導器，就選 /boot分區。'>
-<meta property='og:url' content='http://localhost:3695/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/'>
+<meta property='og:url' content='https://tsairongfu.github.io/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/'>
 <meta property='og:site_name' content='Tsaiの南極洲'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='System' /><meta property='article:tag' content='config' /><meta property='article:tag' content='Disk' /><meta property='article:published_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:3695/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='System' /><meta property='article:tag' content='config' /><meta property='article:tag' content='Disk' /><meta property='article:published_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://tsairongfu.github.io/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg' />
 <meta name="twitter:title" content="安裝Linux系統硬碟空間配置">
 <meta name="twitter:description" content="/boot 1.選擇空閒區，點擊“&#43;”號添加引導分區： 大小：400MB 新分區的類型：主分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/boot
 swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置為實際內存的2倍： 大小：8192MB(4GB×2) 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：交換空間
@@ -30,7 +30,7 @@ swap 2.繼續選擇空閒區，點擊“&#43;”號添加交換分區，設置�
 /home 4.繼續選擇空閒區，點擊“&#43;”號添加home分區： 大小：餘下所有的空間 新分區的類型：邏輯分區 新分區的位置：空間起始位置 用於：Ext4日誌文件系統 掛載點：/home
 安裝啟動引導器的設備 如果要用Ubuntu的引導器代替Windows的引導器，就選 /dev/sda。
 如果要保留Windows的引導器，就選 /boot分區。"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:3695/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg' />
+    <meta name="twitter:image" content='https://tsairongfu.github.io/p/%E5%AE%89%E8%A3%9Dlinux%E7%B3%BB%E7%B5%B1%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93%E9%85%8D%E7%BD%AE/picture.jpg' />
     <link rel="shortcut icon" href="/images/TW-Penguin.png" />
 
   
@@ -356,9 +356,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         
-                            <option value="http://localhost:3695/" selected>繁體中文</option>
+                            <option value="https://tsairongfu.github.io/" selected>繁體中文</option>
                         
-                            <option value="http://localhost:3695/en/" >English</option>
+                            <option value="https://tsairongfu.github.io/en/" >English</option>
                         
                     </select>
                 </li>
@@ -537,7 +537,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
             <div>
                 
-                    <a href="http://localhost:3695/en/p/install-linux-system-hard-disk-space-configuration/" class="link">English</a>
+                    <a href="https://tsairongfu.github.io/en/p/install-linux-system-hard-disk-space-configuration/" class="link">English</a>
                 
             </div>
         </footer>

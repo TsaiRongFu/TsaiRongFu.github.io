@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-tw" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=3695&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+    <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=' 1 ffmpeg -i input.flv -ss 00:00:00.000 -pix_fmt rgb24 -r 10 -s 320x240 -t 00:00:10.000 output.gif 1 ffmpeg -ss 30 -t 3 -i input.mp4 -vf &amp;#34;fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&amp;#34; -loop 0 output.gif '>
 <title>使用FFmpeg將影片轉換成動圖</title>
 
-<link rel='canonical' href='http://localhost:3695/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/'>
+<link rel='canonical' href='https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/'>
 
 <link rel="stylesheet" href="/scss/style.min.85e822a6327dc34d11ac818b02d5dfdcf1226f5707614285bfec735e544b2f4f.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script type="text/javascript" src="http://localhost:3695/js/animation.js"></script><meta property='og:title' content='使用FFmpeg將影片轉換成動圖'>
+    <script type="text/javascript" src="https://tsairongfu.github.io/js/animation.js"></script><meta property='og:title' content='使用FFmpeg將影片轉換成動圖'>
 <meta property='og:description' content=' 1 ffmpeg -i input.flv -ss 00:00:00.000 -pix_fmt rgb24 -r 10 -s 320x240 -t 00:00:10.000 output.gif 1 ffmpeg -ss 30 -t 3 -i input.mp4 -vf &amp;#34;fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&amp;#34; -loop 0 output.gif '>
-<meta property='og:url' content='http://localhost:3695/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/'>
+<meta property='og:url' content='https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/'>
 <meta property='og:site_name' content='Tsaiの南極洲'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='FFmpeg' /><meta property='article:tag' content='Video' /><meta property='article:tag' content='Gif' /><meta property='article:published_time' content='2021-03-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-03-18T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:3695/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/picture.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='FFmpeg' /><meta property='article:tag' content='Video' /><meta property='article:tag' content='Gif' /><meta property='article:published_time' content='2021-03-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-03-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/picture.jpg' />
 <meta name="twitter:title" content="使用FFmpeg將影片轉換成動圖">
 <meta name="twitter:description" content=" 1 ffmpeg -i input.flv -ss 00:00:00.000 -pix_fmt rgb24 -r 10 -s 320x240 -t 00:00:10.000 output.gif 1 ffmpeg -ss 30 -t 3 -i input.mp4 -vf &amp;#34;fps=10,scale=320:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse&amp;#34; -loop 0 output.gif "><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='http://localhost:3695/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/picture.jpg' />
+    <meta name="twitter:image" content='https://tsairongfu.github.io/p/%E4%BD%BF%E7%94%A8ffmpeg%E5%B0%87%E5%BD%B1%E7%89%87%E8%BD%89%E6%8F%9B%E6%88%90%E5%8B%95%E5%9C%96/picture.jpg' />
     <link rel="shortcut icon" href="/images/TW-Penguin.png" />
 
   
@@ -341,9 +341,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
                     <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
                         
-                            <option value="http://localhost:3695/" selected>繁體中文</option>
+                            <option value="https://tsairongfu.github.io/" selected>繁體中文</option>
                         
-                            <option value="http://localhost:3695/en/" >English</option>
+                            <option value="https://tsairongfu.github.io/en/" >English</option>
                         
                     </select>
                 </li>
@@ -487,7 +487,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 
             <div>
                 
-                    <a href="http://localhost:3695/en/p/video-to-gif-use-ffmpeg/" class="link">English</a>
+                    <a href="https://tsairongfu.github.io/en/p/video-to-gif-use-ffmpeg/" class="link">English</a>
                 
             </div>
         </footer>

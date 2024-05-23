@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Darknet on Tsaiの南極洲</title>
-        <link>http://localhost:3695/tags/darknet/</link>
+        <link>https://tsairongfu.github.io/tags/darknet/</link>
         <description>Recent content in Darknet on Tsaiの南極洲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Sun, 23 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:3695/tags/darknet/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 23 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/tags/darknet/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Nvidia NX 編譯 Darknet</title>
-        <link>http://localhost:3695/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</link>
+        <link>https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</link>
         <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:3695/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</guid>
-        <description>&lt;img src="http://localhost:3695/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/picture.jpg" alt="Featured image of post Nvidia NX 編譯 Darknet" /&gt;&lt;h3 id=&#34;用sudo-nano-edit-makefile-nvcc-path&#34;&gt;用sudo nano edit Makefile NVCC path&lt;/h3&gt;
+        <guid>https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/</guid>
+        <description>&lt;img src="https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/picture.jpg" alt="Featured image of post Nvidia NX 編譯 Darknet" /&gt;&lt;h3 id=&#34;用sudo-nano-edit-makefile-nvcc-path&#34;&gt;用sudo nano edit Makefile NVCC path&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
