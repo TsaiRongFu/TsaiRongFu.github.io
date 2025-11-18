@@ -1,128 +1,149 @@
 [
     {
+        "name": "離開我的依賴",
+        "artist": "王艷薇",
+        "url": "https://www.dropbox.com/scl/fi/ljdgx9qx0t9iecwpgji3n/.mp3?rlkey=3lcj50zgg05nlsdmusfojdgyz&dl=1",
+        "cover": "https://drive.google.com/drive-viewer/AKGpihaTVpo4IwvcRB4rFOSC4jqKVvPsYlL9Ipww1AweStvJevUgaNuRlrLz7rg7q67ixqMjNTLT-6ZZyRL5bZQmqom0mtmJyjikdE0=w1920-h509",
+        "lrc": "/lrc/離開我的依賴.lrc"
+    },
+    {
+        "name": "白鯨",
+        "artist": "美秀集團",
+        "url": "https://www.dropbox.com/scl/fi/43e1h4gi3j3splz3pj34z/.mp3?rlkey=9drjv1zi6lqjuhw7v6zmq4afh&st=8oicj44w&dl=1",
+        "cover": "https://drive.google.com/drive-viewer/AKGpihbJF27OAPXsnZTui8yItAHxfDuZiViTXdwmYjxBuEEVv5ZJtG1B4dqU-bM_bXmVmuJWvbvGs6ecaxtpKgAMCkURnNB_W5wm_34=w1920-h947",
+        "lrc": "/lrc/白鯨.lrc"
+    },
+    {
+        "name": "若無你我欲去佗位",
+        "artist": "黃奇斌",
+        "url": "https://www.dropbox.com/scl/fi/8js5jc8ac1eau94bunbom/.mp3?rlkey=61weddaqd8meiy4y6tj9ngrgr&dl=1",
+        "cover": "https://drive.google.com/drive-viewer/AKGpihbGHC-p5DzNTW0hTWOlXIk9JQlcSmQ-HJndfqV8qnV8Em7XIqsI3Wag1uHqsEPHPFYMBJo85EYuxxkvs72i6BdB4EvmvShpVw=w1920-h947",
+        "lrc": "/lrc/若無你我欲去佗位.lrc"
+    },
+    {
         "name": "憂愁",
         "artist": "小安",
         "url": "https://www.dropbox.com/scl/fi/1qkbfozotaod8dopr0j17/.mp3?rlkey=uczmbdfyprvf6bystdxki8rky&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/小安－憂愁-.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaDVPdbZWWs8OeHiK6NZnB2FEldXu5EbLKZkzF51wdCUW6fZTzJv1iGahtcF1Pu36-jsKVhGvpX74OEpWeFoWyvUUooH=w150-h913",
         "lrc": "/lrc/小安－憂愁.lrc"
     },
     {
         "name": "憂愁",
         "artist": "魚丁糸",
         "url": "https://www.dropbox.com/scl/fi/yr4gbah9fu1oq4z2g6byt/.mp3?rlkey=8tlatw2ndbt8tak02h3ukr3h9&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/魚丁糸－憂愁.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaBEuh7qdv01Y2x76nUTMxj3AAI_9lTDM3oHqcaAY6mwif4fK8iq_PgeGj7Q-R_orknsb1EVXQBUzonp_lbB-7bbA3GAzQ=w335-h913",
         "lrc": "/lrc/魚丁糸－憂愁.lrc"
     },
     {
         "name": "大風吹",
         "artist": "草東沒有派對",
         "url": "https://www.dropbox.com/scl/fi/384yt2c3st0i1gf8u81e1/.mp3?rlkey=arjhr3wvbd1ws01gn3qzybkvp&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/草東沒有派對－大風吹.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaDEqblfa0kpwWjam0IkV9f2dZD0gSwyUjPGFjwAjttKAhyYqu3G0jBxa1tTRrIeOuVSEqjLsyOUiCr1mQXOVv2kgwN1=w1239-h913",
         "lrc": "/lrc/大風吹.lrc"
     },
     {
         "name": "戀人",
         "artist": "美秀集團",
         "url": "https://www.dropbox.com/scl/fi/yt958sikev0rx21zwpp97/.mp3?rlkey=g1f2h0s0ytqzwzyube3ztd1g7&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/美秀集團－戀人.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaB2FdBjHbtQ_8OcjbO0E5dypetpO1IXgOctbVibatO6m_XqICqdfviwefN4wuwumFRnIRBFxDJvspAZR8y1pn997giSqw=w707-h913",
         "lrc": "/lrc/戀人.lrc"
     },
     {
         "name": "我要你愛",
         "artist": "美秀集團",
         "url": "https://www.dropbox.com/scl/fi/tzexps592ox41s7iju0ul/.mp3?rlkey=gcbhm0klid2ohc5ehka31kc68&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/美秀集團－我要你愛.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaAQS_Kvm9gmPC-XCh7zLgcGM9vI2Nct0ck5472SWZmKX_snKrTLywDEkWqp8A969qqx-ZVRmG-TnbONlaM3lm08Rtfm=w473-h913",
         "lrc": "/lrc/我要你愛.lrc"
     },
     {
         "name": "小老婆",
         "artist": "美秀集團",
         "url": "https://www.dropbox.com/scl/fi/3wa668d2f7sflp05ty7aq/.mp3?rlkey=lkljwmaaq41hf60tmubstafey&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/美秀集團－小老婆.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaAnObY40FF7yJbeIy57FJfPrRg-M2gy6qWlg5YgRT0pJeGIwzYBwzCzf9wko8eStzXjcSi2Z57Lh7rxRoi8Few7JQytMw=w473-h913",
         "lrc": "/lrc/小老婆.lrc"
     },
     {
         "name": "捲菸",
         "artist": "美秀集團",
         "url": "https://www.dropbox.com/scl/fi/tql7iu6t4x39h68pb68rl/.mp3?rlkey=kda616ly1antsj5uvdagvwvpx&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/美秀集團－捲菸.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaDqmmnVxmjZtE3iaLNATBYyHs6W_Kh511ou8u9LmiIJAsjt8zZ8wqO04fV637BtV_DM9d2cSTyO8uXjzLIesMsl_-AjVQ=w473-h913",
         "lrc": "/lrc/捲菸.lrc"
     },
     {
         "name": "檔一根",
         "artist": "美秀集團",
         "url": "https://www.dropbox.com/scl/fi/52sar60311yd2qigiog4y/.mp3?rlkey=il4s0n000pqte4t77o6uucuvt&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/美秀集團－擋一根.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaCia6f0I3PfJFY9HENwXivvomZF5oopg-SMIUBx2rzg8ozqC5OIweGG7Jd8twJ8-OJbw-mIi7qy46O2YkeYDzgoyESEJg=w860-h958",
         "lrc": "/lrc/檔一根.lrc"
     },
     {
         "name": "愛情你比我想的閣較偉大",
         "artist": "茄子蛋",
         "url": "https://www.dropbox.com/scl/fi/cnkvoq8dbf1tg3nyeorub/.mp3?rlkey=h9ok768p2t4421pszv0f6cl72&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/茄子蛋－愛情你比我想的閣較偉大.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaB32XefMAW6n-RYOJ64-3TBkNO3Yrn5Y7_Rbya046dhZPt3oITcmRjHmqCHh1ozzsA-AH6q-tmW6BpaQ-pu85oih55xKw=w894-h958",
         "lrc": "/lrc/愛情你比我想的閣較偉大.lrc"
     },
     {
         "name": "閣愛妳一擺",
         "artist": "茄子蛋",
         "url": "https://www.dropbox.com/scl/fi/hvleyimc106tzenvw6itr/.mp3?rlkey=72cnf6b8ivyjqcxqtcc1kqnw5&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/茄子蛋－閣愛妳一擺.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaCQoLp5R4_mjhusDKpfaYNa-09V4lMmtPSYo4JOy8jISxep_kFZPUkh_jDY1Gr14kNv0giqWIxpga28cfPxvylQPuJBqA=w894-h958",
         "lrc": "/lrc/閣愛妳一擺.lrc"
     },
     {
         "name": "ロリ神レクイエム",
         "artist": "しぐれうい",
         "url": "https://www.dropbox.com/scl/fi/3204hcqc18ue45sijyr0w/.mp3?rlkey=jv3c96vj3pf5qyl878cqzijc8&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/しぐれうい-－粛聖!!-ロリ神レクイエム.jpeg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaAXYzVMEbluM6m_fH563-4VAloGpycEVHRPUviQS0q4puoz_iNLfOJvo1IY5ShfTq2RpFV686n8kEb6H8_daz29WcIrsQ=w475-h913",
         "lrc": "/lrc/ロリ神レクイエム.lrc"
     },
     {
         "name": "萬千花蕊慈母悲哀",
         "artist": "珂拉琪",
         "url": "https://www.dropbox.com/scl/fi/u61h4iv5uhlirb4xvl9y5/.mp3?rlkey=oj8m5peeh8g9mlsjcrmkbe4u7&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/珂拉琪－萬千花蕊慈母悲哀.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaB18aqJ4g8MeltODNycxxbGjUYnnoTKIQjPMdP017F-47cU-2j8Xe7sxkMCniIp9wb2pmtx3LgLrl_gT9D2upc3VM2_Cw=w472-h948",
         "lrc": "/lrc/千萬花蕊慈母悲哀.lrc"
     },
     {
         "name": "葬予規路火烌猶在",
         "artist": "珂拉琪",
         "url": "https://www.dropbox.com/scl/fi/sv50o28a2e1c4hffdpg4i/.mp3?rlkey=ddealmow23frflhjl8kxccjs8&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/珂拉琪－葬予規路火烌猶在.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaDjxna5TH02GTNakkQ6wp2KxSLqqUGY_uTaNbZV4e9Mv9G1MWzOPLK3dZi1nKTDMeggcv6ZG6_6TF-63-kj2Neb_EaZgQ=w472-h948",
         "lrc": "/lrc/葬予規路火烌猶在.lrc"
     },
     {
         "name": "這該死的拘執佮愛",
         "artist": "珂拉琪",
         "url": "https://www.dropbox.com/scl/fi/phg7h3ulaneg8jt2xitws/.mp3?rlkey=urthcppgg2fhx9xthg85dlc98&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/珂拉琪－這該死的拘執佮愛.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaBDLFYFCantbqr0T_ztkSyAJCD2hPVHYnwxRdlKzlAj2RlUMsqcpj0IhPetWK6STTJu0Hm9miGOhWaB90eYk5nSjv9uBw=w795-h948",
         "lrc": "/lrc/這該死的拘執佮愛.lrc"
     },
     {
         "name": "蓮花空行身染愛",
         "artist": "珂拉琪",
         "url": "https://www.dropbox.com/scl/fi/3wtdx9nxc0wytotbjh1b6/.mp3?rlkey=dzkquhexopcz3tse7svfdn887&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/珂拉琪－蓮花空行身染愛.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaCU9STvoSbmcKcsNd7PsjY80TkdQrCep8lqzaSYqJUgAw9V1fJXaY0q3TzZ1CkAt8vb7Q_aTKgfEnFbMO3cmBEfDMmxoQ=w472-h948",
         "lrc": "/lrc/蓮花空行身染愛.lrc"
     },
     {
         "name": "TORATORA",
         "artist": "珂拉琪",
         "url": "https://www.dropbox.com/scl/fi/tmpbxwv5vmysqcfqe0upf/TORATORA.mp3?rlkey=jbkxlw4uhozuph60mhhjqr210&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/珂拉琪－TORATORA.jpeg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaDC2H05f_yzlxVJfxw10rfm_6mcwpYuUZtM3KMpuJEneONrPZZ-FSZgUWc4s6j8JGF2pwQow6cCIS2W_8KZ0IQ33wPI=w406-h948",
         "lrc": "/lrc/TORATORA.lrc"
     },
     {
         "name": "‘ADINGO",
         "artist": "珂拉琪",
         "url": "https://www.dropbox.com/scl/fi/q0cpu5ex34yrkxxba117f/ADINGO.mp3?rlkey=rtx8rd9dfzkmjsuj21nt6degl&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/珂拉琪－‘ADINGO.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaDWGr28wa0QGp4xokLmZrYkjnJGkkjHdGGshtjG6vVx-jJa3VgPEcuHF_9gcoKhWyty10NoMWsMGVjxevzbVdBPY1cRuw=w406-h948",
         "lrc": "/lrc/‘ADINGO.lrc"
     },
     {
         "name": "TALACOWA",
         "artist": "珂拉琪",
         "url": "https://www.dropbox.com/scl/fi/47lnm1evv81z77rbjo3lq/TALACOWA.mp3?rlkey=rtew1ux0dp2vvwrl59j4z4gqe&dl=1",
-        "cover": "https://github.com/Penguin-Eggs/picx-images-hosting/raw/master/blog/music/cover/珂拉琪－TALACOWA.jpg",
+        "cover": "https://lh3.googleusercontent.com/drive-viewer/AK7aPaBoW0UzQme7cJTDH1W7hsFwoSIFg--MhgujgoGgzN5Y6tlkGvztojFQQYG_c2WdpsU7CnDdxToPMs44-3h6Oznei4uCug=w795-h948",
         "lrc": "/lrc/TALACOWA.lrc"
     }
 ]

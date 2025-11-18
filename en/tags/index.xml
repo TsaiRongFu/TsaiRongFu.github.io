@@ -6,31 +6,7 @@
         <description>Recent content in Tags on Tsai の Antarctica</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Thu, 23 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Command</title>
-        <link>https://tsairongfu.github.io/en/tags/command/</link>
-        <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/tags/command/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Terminal</title>
-        <link>https://tsairongfu.github.io/en/tags/terminal/</link>
-        <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/tags/terminal/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Windows</title>
-        <link>https://tsairongfu.github.io/en/tags/windows/</link>
-        <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/en/tags/windows/</guid>
-        <description></description>
-        </item>
-        <item>
+        <lastBuildDate>Wed, 13 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Android</title>
         <link>https://tsairongfu.github.io/en/tags/android/</link>
         <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
@@ -47,11 +23,35 @@
         <description></description>
         </item>
         <item>
+        <title>Windows</title>
+        <link>https://tsairongfu.github.io/en/tags/windows/</link>
+        <pubDate>Wed, 13 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/tags/windows/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Command</title>
+        <link>https://tsairongfu.github.io/en/tags/command/</link>
+        <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/tags/command/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>FFmpeg</title>
         <link>https://tsairongfu.github.io/en/tags/ffmpeg/</link>
         <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/tags/ffmpeg/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Terminal</title>
+        <link>https://tsairongfu.github.io/en/tags/terminal/</link>
+        <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://tsairongfu.github.io/en/tags/terminal/</guid>
         <description></description>
         </item>
         <item>
@@ -71,7 +71,7 @@
         <description></description>
         </item>
         <item>
-        <title>Youtube-Dl</title>
+        <title>Youtube-dl</title>
         <link>https://tsairongfu.github.io/en/tags/youtube-dl/</link>
         <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
         
@@ -79,7 +79,7 @@
         <description></description>
         </item>
         <item>
-        <title>Yt-Dlp</title>
+        <title>Yt-dlp</title>
         <link>https://tsairongfu.github.io/en/tags/yt-dlp/</link>
         <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
         
@@ -87,7 +87,7 @@
         <description></description>
         </item>
         <item>
-        <title>Password</title>
+        <title>password</title>
         <link>https://tsairongfu.github.io/en/tags/password/</link>
         <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
@@ -95,7 +95,7 @@
         <description></description>
         </item>
         <item>
-        <title>PgAdmin</title>
+        <title>pgAdmin</title>
         <link>https://tsairongfu.github.io/en/tags/pgadmin/</link>
         <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
@@ -111,7 +111,7 @@
         <description></description>
         </item>
         <item>
-        <title>Reset</title>
+        <title>reset</title>
         <link>https://tsairongfu.github.io/en/tags/reset/</link>
         <pubDate>Sun, 08 May 2022 00:00:00 +0000</pubDate>
         
@@ -135,7 +135,7 @@
         <description></description>
         </item>
         <item>
-        <title>Port</title>
+        <title>port</title>
         <link>https://tsairongfu.github.io/en/tags/port/</link>
         <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
         
@@ -159,7 +159,7 @@
         <description></description>
         </item>
         <item>
-        <title>Technology</title>
+        <title>technology</title>
         <link>https://tsairongfu.github.io/en/tags/technology/</link>
         <pubDate>Fri, 26 Nov 2021 00:00:00 +0000</pubDate>
         
@@ -199,7 +199,7 @@
         <description></description>
         </item>
         <item>
-        <title>Server</title>
+        <title>server</title>
         <link>https://tsairongfu.github.io/en/tags/server/</link>
         <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
         
@@ -215,7 +215,7 @@
         <description></description>
         </item>
         <item>
-        <title>Config</title>
+        <title>config</title>
         <link>https://tsairongfu.github.io/en/tags/config/</link>
         <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
         
@@ -263,7 +263,7 @@
         <description></description>
         </item>
         <item>
-        <title>Settings</title>
+        <title>settings</title>
         <link>https://tsairongfu.github.io/en/tags/settings/</link>
         <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
         
@@ -271,7 +271,7 @@
         <description></description>
         </item>
         <item>
-        <title>Http</title>
+        <title>http</title>
         <link>https://tsairongfu.github.io/en/tags/http/</link>
         <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
         
@@ -279,7 +279,7 @@
         <description></description>
         </item>
         <item>
-        <title>Https</title>
+        <title>https</title>
         <link>https://tsairongfu.github.io/en/tags/https/</link>
         <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
         
@@ -287,7 +287,7 @@
         <description></description>
         </item>
         <item>
-        <title>Nginx</title>
+        <title>NGINX</title>
         <link>https://tsairongfu.github.io/en/tags/nginx/</link>
         <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
         
@@ -295,7 +295,7 @@
         <description></description>
         </item>
         <item>
-        <title>Iframe</title>
+        <title>iframe</title>
         <link>https://tsairongfu.github.io/en/tags/iframe/</link>
         <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
         
@@ -303,7 +303,7 @@
         <description></description>
         </item>
         <item>
-        <title>Darknet</title>
+        <title>darknet</title>
         <link>https://tsairongfu.github.io/en/tags/darknet/</link>
         <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
         
@@ -311,7 +311,7 @@
         <description></description>
         </item>
         <item>
-        <title>Make</title>
+        <title>make</title>
         <link>https://tsairongfu.github.io/en/tags/make/</link>
         <pubDate>Sun, 23 May 2021 00:00:00 +0000</pubDate>
         
@@ -359,7 +359,7 @@
         <description></description>
         </item>
         <item>
-        <title>Git.io</title>
+        <title>git.io</title>
         <link>https://tsairongfu.github.io/en/tags/git.io/</link>
         <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
         
@@ -399,7 +399,7 @@
         <description></description>
         </item>
         <item>
-        <title>Ssh</title>
+        <title>ssh</title>
         <link>https://tsairongfu.github.io/en/tags/ssh/</link>
         <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
         
@@ -407,7 +407,7 @@
         <description></description>
         </item>
         <item>
-        <title>Ssh-Agent</title>
+        <title>ssh-agent</title>
         <link>https://tsairongfu.github.io/en/tags/ssh-agent/</link>
         <pubDate>Mon, 18 Jan 2021 00:00:00 +0000</pubDate>
         
@@ -487,7 +487,7 @@
         <description></description>
         </item>
         <item>
-        <title>Privacy</title>
+        <title>privacy</title>
         <link>https://tsairongfu.github.io/en/tags/privacy/</link>
         <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
         
@@ -495,7 +495,7 @@
         <description></description>
         </item>
         <item>
-        <title>Shortcodes</title>
+        <title>shortcodes</title>
         <link>https://tsairongfu.github.io/en/tags/shortcodes/</link>
         <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
         

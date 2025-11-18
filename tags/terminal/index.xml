@@ -6,78 +6,7 @@
         <description>Recent content in Terminal on Tsaiの南極洲</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-tw</language>
-        <lastBuildDate>Thu, 23 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Windows NSSM 服務管理員</title>
-        <link>https://tsairongfu.github.io/p/windows-nssm-%E6%9C%8D%E5%8B%99%E7%AE%A1%E7%90%86%E5%93%A1/</link>
-        <pubDate>Thu, 23 May 2024 00:00:00 +0000</pubDate>
-        
-        <guid>https://tsairongfu.github.io/p/windows-nssm-%E6%9C%8D%E5%8B%99%E7%AE%A1%E7%90%86%E5%93%A1/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/windows-nssm-%E6%9C%8D%E5%8B%99%E7%AE%A1%E7%90%86%E5%93%A1/picture.jpg" alt="Featured image of post Windows NSSM 服務管理員" /&gt;&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;下載 NSSM：首先，你需要下載 NSSM 工具。你可以在 &lt;a class=&#34;link&#34; href=&#34;https://nssm.cc/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;NSSM&lt;/a&gt; 官網上下載適合你系統的最新版本。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;解壓 NSSM：將下載的 NSSM 壓縮包解壓到一個你能方便訪問的位置。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;使用 NSSM GUI：打開命令提字元，並進入 NSSM 解壓後的目錄。然後執行以下命令來打開GUI。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;nssm install MyService&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;使用 NSSM 創建服務：打開命令提示符，並進入 NSSM 解壓後的目錄。然後執行以下命令來創建一個服務(如果使用GUI請依照需求自行填寫)。&lt;/p&gt;
-&lt;p&gt;以下以Djnago應用為例子：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nssm install DjangoServer &amp;#34;C:\Users\AppData\Local\Programs\Python\Python312\python.exe&amp;#34; &amp;#34;C:\Users\Desktop\Djnago\manage.py&amp;#34; runserver 127.0.0.1:6969
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置服務：NSSM 會彈出一個 GUI 視窗，你可以在其中配置服務的各種屬性，例如啟動類型、工作目錄等。確保你設置了適當的參數，並點擊 &amp;ldquo;Install service&amp;rdquo; 按鈕來安裝服務。你也可以使用命令行配置工作目錄：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;nssm set DjangoServer AppDirectory &amp;quot;C:\Users\Desktop\Djnago&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;啟動服務：通過 NSSM 或者命令行啟動剛剛創建的服務：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;net start DjangoServer&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;查看現在運行的服務：你可以使用命令提示符中的 sc 命令來查看當前正在運行的服務。以下是一些常用的 sc 命令：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sc query                                         #列出所有服務的狀態信息。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sc queryex &amp;lt;service_name&amp;gt;                        #顯示指定服務的詳細信息。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sc start &amp;lt;service_name&amp;gt;                          #啟動指定的服務。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sc stop &amp;lt;service_name&amp;gt;                           #停止指定的服務。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sc config &amp;lt;service_name&amp;gt; start= &amp;lt;start_type&amp;gt;     #修改指定服務的啟動類型。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;Example：
-要查看所有服務的狀態信息，可以執行以下命令：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sc query&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;要查看特定服務的詳細信息，可以執行：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sc queryex DjangoServer&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;啟動服務：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;net start DjangoServer&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;中止服務：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sc stop DjangoServer&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;刪除服務：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sc delete DjangoServer&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        </item>
-        <item>
+        <lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://tsairongfu.github.io/tags/terminal/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>一些FFmpeg指令</title>
         <link>https://tsairongfu.github.io/p/%E4%B8%80%E4%BA%9Bffmpeg%E6%8C%87%E4%BB%A4/</link>
         <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
@@ -499,11 +428,11 @@ route_number=3逆時針旋轉90度再左右鏡像&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install git+https://github.com/will8211/unimatrix.git
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-v&#34; data-lang=&#34;v&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;git&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;https&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//github.com/will8211/unimatrix.git
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;  &lt;span class=&#34;nv&#34;&gt;no&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;module&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;named&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;_curses&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;if  no module named &amp;#39;_curses&amp;#39;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pip install windows-curses
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;pip&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;install&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;windows&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;curses&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;hr&gt;

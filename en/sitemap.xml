@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tsairongfu.github.io/en/</loc>
-    <lastmod>2024-05-23T00:00:00+00:00</lastmod>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-tw"
@@ -13,84 +13,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/en/tags/command/</loc>
-    <lastmod>2024-05-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/tags/command/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/tags/command/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/en/post/</loc>
-    <lastmod>2024-05-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/post/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/en/tags/</loc>
-    <lastmod>2024-05-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/tags/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/en/tags/terminal/</loc>
-    <lastmod>2024-05-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/tags/terminal/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/tags/terminal/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/en/tags/windows/</loc>
-    <lastmod>2024-05-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/tags/windows/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/tags/windows/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/en/p/windows-nssm-service-manager/</loc>
-    <lastmod>2024-05-23T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/p/windows-nssm-%E6%9C%8D%E5%8B%99%E7%AE%A1%E7%90%86%E5%93%A1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/p/windows-nssm-service-manager/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/tags/android/</loc>
@@ -106,6 +28,32 @@
                 href="https://tsairongfu.github.io/en/tags/android/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/tags/flutter/</loc>
     <lastmod>2023-09-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -117,6 +65,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/flutter/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/flutter/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/flutter/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/flutter/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/p/flutter-install-environment/</loc>
@@ -132,6 +93,45 @@
                 href="https://tsairongfu.github.io/en/p/flutter-install-environment/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/post/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/post/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/tags/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/tags/windows/</loc>
+    <lastmod>2023-09-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/windows/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -145,6 +145,19 @@
                 href="https://tsairongfu.github.io/en/p/a-several-ffmpeg-command/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/tags/command/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/command/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/command/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/tags/ffmpeg/</loc>
     <lastmod>2022-08-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -156,6 +169,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/ffmpeg/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/ffmpeg/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/ffmpeg/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/ffmpeg/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/tags/terminal/</loc>
+    <lastmod>2022-08-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/tags/terminal/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/tags/terminal/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/tags/download-video/</loc>
@@ -182,6 +221,32 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/facebook/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/facebook/</loc>
+    <lastmod>2022-07-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/facebook/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/facebook/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/youtube/</loc>
+    <lastmod>2022-07-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/youtube/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/youtube/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/tags/youtube-dl/</loc>
@@ -250,6 +315,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/postgresql/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/postgresql/</loc>
+    <lastmod>2022-05-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/postgresql/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/postgresql/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/p/postgresql-pgadmin-reset-password/</loc>
@@ -369,6 +447,19 @@
                 href="https://tsairongfu.github.io/en/tags/technology/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/windows/</loc>
+    <lastmod>2021-11-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/windows/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/windows/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/p/windows-port-state-command/</loc>
     <lastmod>2021-11-26T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -393,6 +484,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/hacker/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/hacker/</loc>
+    <lastmod>2021-10-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/hacker/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/hacker/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/tags/wifi/</loc>
@@ -432,6 +536,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/linux/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/linux/</loc>
+    <lastmod>2021-10-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/linux/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/p/linux-server-raid/</loc>
@@ -564,6 +681,19 @@
                 href="https://tsairongfu.github.io/en/tags/chrome/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/chrome/</loc>
+    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/chrome/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/chrome/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/tags/python/</loc>
     <lastmod>2021-07-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -575,6 +705,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/python/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/python/</loc>
+    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/python/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/python/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/p/python-selenium-solves-the-problem-that-chrome-settings-cannot-be-located/</loc>
@@ -601,6 +744,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/selenium/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/selenium/</loc>
+    <lastmod>2021-07-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/selenium/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/selenium/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/tags/settings/</loc>
@@ -653,6 +809,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/nginx/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/nginx/</loc>
+    <lastmod>2021-06-30T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/nginx/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/nginx/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/p/nginx-all-http-to-https/</loc>
@@ -744,6 +913,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/nvidia/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/nvidia/</loc>
+    <lastmod>2021-05-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/nvidia/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/nvidia/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/p/nvidia-nx-make-darknet/</loc>
@@ -863,6 +1045,19 @@
                 href="https://tsairongfu.github.io/en/tags/github/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/github/</loc>
+    <lastmod>2021-02-07T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/github/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/github/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/p/github-short-url-use-git.io/</loc>
     <lastmod>2021-02-07T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -980,6 +1175,19 @@
                 href="https://tsairongfu.github.io/en/tags/apple/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/apple/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/apple/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/apple/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/p/mac-os-xampp-can-not-open/</loc>
     <lastmod>2020-09-23T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -1004,6 +1212,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/xampp/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/xampp/</loc>
+    <lastmod>2020-09-23T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/xampp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/xampp/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/p/a-several-laravel-tips/</loc>
@@ -1032,6 +1253,19 @@
                 href="https://tsairongfu.github.io/en/tags/composer/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/composer/</loc>
+    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/composer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/composer/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/tags/laravel/</loc>
     <lastmod>2020-09-18T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -1043,6 +1277,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/laravel/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/laravel/</loc>
+    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/laravel/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/laravel/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/tags/reporting-servers/</loc>
@@ -1071,7 +1318,23 @@
                 href="https://tsairongfu.github.io/en/tags/ubuntu/"
                 />
   </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/ubuntu/</loc>
+    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/ubuntu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/ubuntu/"
+                />
+  </url><url>
     <loc>https://tsairongfu.github.io/en/tags/visual-studio-code/</loc>
+    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/visual-studio-code/</loc>
     <lastmod>2020-09-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tsairongfu.github.io/en/tags/environment-variable/</loc>
@@ -1124,6 +1387,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/tags/apache/"
+                />
+  </url><url>
+    <loc>https://tsairongfu.github.io/en/categories/apache/</loc>
+    <lastmod>2019-10-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://tsairongfu.github.io/categories/apache/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://tsairongfu.github.io/en/categories/apache/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/archives/</loc>
@@ -1252,18 +1528,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://tsairongfu.github.io/en/categories/apple/"
-                />
-  </url><url>
-    <loc>https://tsairongfu.github.io/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://tsairongfu.github.io/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://tsairongfu.github.io/en/categories/"
                 />
   </url><url>
     <loc>https://tsairongfu.github.io/en/categories/chrome/</loc>

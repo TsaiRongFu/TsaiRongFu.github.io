@@ -12,7 +12,7 @@
         <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/reporting-server-installation/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/reporting-server-%E5%AE%89%E8%A3%9D/picture.jpg" alt="Featured image of post Reporting Server installation" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/reporting-server-installation/picture.jpg" alt="Featured image of post Reporting Server installation" /&gt;&lt;p&gt;SQL Server Configuration Manager&lt;/p&gt;
 &lt;p&gt;SQL Server network configuration TCP to open&lt;/p&gt;
 &lt;p&gt;Connection Test Open with Microsoft SQL Server Managerment Studio
 tcp:hostname/databasename,Port&lt;/p&gt;

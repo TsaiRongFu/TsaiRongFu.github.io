@@ -12,7 +12,7 @@
         <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
         
         <guid>https://tsairongfu.github.io/en/p/linux-server-raid/</guid>
-        <description>&lt;img src="https://tsairongfu.github.io/p/linux-server-raid%E9%85%8D%E7%BD%AE/picture.jpg" alt="Featured image of post Linux server Raid" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://askubuntu.com/questions/973632/unable-to-mount-raid1-md0-wrong-fs-type-bad-option-bad-superblock-on-dev-md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="https://tsairongfu.github.io/en/p/linux-server-raid/picture.jpg" alt="Featured image of post Linux server Raid" /&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://askubuntu.com/questions/973632/unable-to-mount-raid1-md0-wrong-fs-type-bad-option-bad-superblock-on-dev-md&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;askubuntu-973632&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Unable to Mount RAID1 md0 - wrong fs type, bad option, bad superblock on /dev/md0, missing codepage or helper program, or other error&lt;/p&gt;
 &lt;hr&gt;

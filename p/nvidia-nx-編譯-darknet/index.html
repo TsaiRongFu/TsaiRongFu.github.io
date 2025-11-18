@@ -18,9 +18,6 @@
     <meta name="twitter:image" content='https://tsairongfu.github.io/p/nvidia-nx-%E7%B7%A8%E8%AD%AF-darknet/picture.jpg' />
     <link rel="shortcut icon" href="/images/TW-Penguin.png" />
 
-  
-
-
     </head>
     <body class="
     article-page
@@ -455,8 +452,8 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     
     <header class="article-category">
         
-            <a href="/categories/nvidia/" style="background-color: #2a9d8f; color: #fff;">
-                Nvidia
+            <a href="/categories/nvidia/" >
+                NVIDIA
             </a>
         
     </header>
@@ -549,15 +546,15 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="n">NVCC</span> <span class="o">=</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">cuda</span><span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">nvcc</span>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">NVCC = /usr/local/cuda/bin/nvcc
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">export</span> <span class="n">PATH</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">cuda10</span><span class="o">.</span><span class="mi">2</span><span class="o">/</span><span class="n">bin</span><span class="o">$</span><span class="p">{</span><span class="n">PATH</span><span class="p">:</span><span class="o">+</span><span class="p">:</span><span class="o">$</span><span class="p">{</span><span class="n">PATH</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">export PATH=/usr/local/cuda10.2/bin${PATH:+:${PATH}}
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">export</span> <span class="n">LD_LIBRARY_PATH</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="n">cuda10</span><span class="o">.</span><span class="mi">2</span><span class="o">/</span><span class="n">lib64</span>\<span class="o">$</span><span class="p">{</span><span class="n">LD_LIBRARY_PATH</span><span class="p">:</span><span class="o">+</span><span class="p">:</span><span class="o">$</span><span class="p">{</span><span class="n">LD_LIBRARY_PATH</span><span class="p">}}</span>
+</span></span><span class="line"><span class="cl">export LD_LIBRARY_PATH=/usr/local/cuda10.2/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">export</span> <span class="o">$</span><span class="n">LD_LIBRARY_PATH</span>
+</span></span><span class="line"><span class="cl">export $LD_LIBRARY_PATH
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">export</span> <span class="o">$</span><span class="n">PATH</span>
+</span></span><span class="line"><span class="cl">export $PATH
 </span></span></code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -576,7 +573,7 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="s1">&#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&#39;</span>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#39;nvarguscamerasrc ! video/x-raw(memory:NVMM), width=(int)1280, height=(int)720,format=(string)NV12, framerate=(fraction)30/1 ! nvvidconv flip-method=0 ! video/x-raw, format=(string)BGRx ! videoconvert ! video/x-raw, format=(string)BGR ! appsink&#39;
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -591,9 +588,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
         
             <a href="/tags/nx/">NX</a>
         
-            <a href="/tags/make/">Make</a>
+            <a href="/tags/make/">make</a>
         
-            <a href="/tags/darknet/">Darknet</a>
+            <a href="/tags/darknet/">darknet</a>
         
     </section>
 
@@ -712,9 +709,9 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
     <section class="copyright">
         &copy; 
         
-            2019 - 
+            2022 - 
         
-        2024 Tsaiの南極洲
+        2025 Tsaiの南極洲
     </section>
     
     <section class="powerby">
